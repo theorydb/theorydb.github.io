@@ -1,0 +1,41 @@
+---
+layout: post
+title:  "git 되돌리기"
+subtitle:   "실수했다."
+categories: devlog
+tags: git devlog
+---
+
+실수했다.
+
+오늘도 코드를 작성하다 실수를 했다. 항상 하는 실수지만 좀 커다란 실수였다. Atom에서 Replace를 잘못하는 바람에 코드가 뒤죽박죽되어 다 날려버렸다.
+
+결론적으로 배운건 2가지
+
+1. git을 자주 커밋하자.
+
+2. 이전으로 git 되돌리는 법.
+
+하... 한숨 한번 쉬고 git 되돌리는 법을 알아보자.
+
+## git 되돌리기
+
+1. git add 명령을 하기 전
+
+    > git checkout {file}
+
+    file이 아니라 dir을 넣을 경우 dir내의 모든 file이 되돌아간다.
+
+2. git add를 한 경우
+
+    HEAD를 이전으로 돌려서 commit을 없앤다.
+
+    > git reset --hard HEAD^
+
+3. push한 기록을 없애려면
+
+    > git reset HEAD^ //되돌리고
+    > git commit //커밋하고
+    > git push origin +master //강제로 씌운다.
+
+이제 어제 하던 작업을 다시하러가야겠다.

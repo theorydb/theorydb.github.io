@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "[JavaScript]모바일 페이지에서 keyup, keydown이 안먹힐때 "
+subtitle:   "모바일 페이지에서 keyup, keydown이 안먹힐때"
+categories: devlog
+tags: devlog javascript mobile
+---
+
+모바일 페이지를 열심히 만들다 실제 테스트를 해보면 가끔 문제가 있다.
+
+이번 문제는 키업 이벤트가 작동을 안하는 문제였다. 아마 iphone은 잘 먹는 걸로 알고 있는데, 안드로이드에서 보통 발생하는 문제인 것 같다.
+
+이럴 때 해결방법은 keyup keydown에 이어 change 이벤트가 있을 경우를 추가로 바인드 해준다.
+
+```js
+$('#input').keyup(function(event) {
+
+...
+
+});
+```
+
+이 파트를 아래와 같이 수정한다.
+
+```js
+$('#input').bind("change keyup input", function(event) {
+
+...
+
+});
+```

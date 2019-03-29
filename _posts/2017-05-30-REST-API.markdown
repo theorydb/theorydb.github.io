@@ -1,0 +1,105 @@
+---
+layout: post
+title:  "REST API #1 - REST의 기본"
+subtitle:   "REST에 대해 알아보자."
+categories:  devlog
+tags: web rest
+---
+
+REST에 대해 알아보자.
+
+## REST
+---
+
+REST란 REpresentational Safe Transfer의 약자이다. HTTP에 대한 논문을 준비하던 로이 필딩이 발표한 개념인 REST는 발표이후 많은 인기를 얻고 인터넷세상은 REST API시대를 맞는다.
+
+로이 필딩은 당시의 웹 아키텍쳐가 웹의 본래 설계의 우수성을 많이 사용하지 못하고 있다고 판단해 웹의 장점을 최대한 활용할 수 있는 네트워크 기반의 아키텍쳐를 설계했다.
+
+### REST의 구성
+
+```
+REST = 리소스 + 메서드 + 메세지
+```
+
+리소스는 행위의 대상이 되는 자원을 이야기하고, 메서드는 어떤 행위를 할 것인지, 메세지는 행위가 대상에게 전해주는 메세지를 이야기한다.
+
+```
+HTTP GET, http://domain/users/
+{
+    name : 'tom'
+}
+```
+
+예를 들어 위와 같은 REST 콜은 리소스가 users고 메서드는 GET 메세지는 name : 'tom'이 된다.
+
+### REST 메서드
+
+REST는 HTTP에서 CRUD에 해당하는 4가지 메서드를 사용한다.
+
+#### POST (Create)
+
+```
+HTTP POST, http://domain/users/
+{
+    name : 'tom',
+    job : 'student'
+}
+```
+
+#### GET (Read)
+
+```
+HTTP GET, http://domain/users/tom
+```
+
+#### PUT (Update)
+
+```
+HTTP PUT, http://domain/users/tom
+{
+    name : 'tom',
+    job : 'developer'
+}
+```
+
+#### DELETE (Delete)
+
+```
+HTTP DELETE, http://domain/users/tom
+```
+
+충분히 직관적이기 때문에 별다른 설명은 하지 않겠다. 단순히 리소스를 URI로 정해준 후, 메소드와 메시지를 보내면 된다.
+
+이때 POST를 제외한 나머지 메서드들은 함수를 실행할 때마다 똑같은 결과를 반환한다. 이런 개념을 Idempotent라고 한다.
+
+예를 들어 GET을 실행했을때 게시물의 조회수를 올린다면 이건 Idempotent하지 않다고 할 수 있다.
+
+a++은 Idempotent하지 않지만 a=3은 Idempotent하다.
+
+게시물 조회수같이 크리티컬한게 아니라면 큰 문제가 되지 않겠지만, 만약 게시물 조회시 조회수를 ++해준다면 실패시에 --를 해주는 트랜젝션을 처리해야하고 이런 방식은 REST의 안티패턴이다.
+
+### REST Architecture의 원칙
+
+#### 균일한 인터페이스
+
+REST는 HTTP 표준에만 따르면 어디서든 사용가능한 인터페이스이다. 예를들어 HTTP + JSON으로 REST API를 정의했다면, 웹이던 안드로이드던 iOS던, HTTP와 JSON을 사용할 수만 있다면 어디서든 사용할 수 있다.
+
+#### Stateless
+
+Stateless라는 개념은 [JWT](https://isme2n.github.io/jwt/2017/04/14/JWT/)를 다룰때도 다뤘었는데, 사용자나 클라이언트의 상태를 저장할 필요가 없다는거다.
+
+독릭적으로 모든 메서드는 리소스와 메세지 정보만으로 실행된다.
+
+#### 캐시
+
+Last-Modified 또는 E-Tag를 이용해 캐싱을 구현할 수 있다. 요청시 Last-Modified 값을 함께 보내면, 컨텐츠 변화가 없을 때 304 Not Modified를 리턴하여 클라이언트 자체 캐쉬에 저장된 값을 사용하게 된다.
+
+이런 캐시방법은 서버작업을 하지 않기때문에 성능향상에 도움을 줄 수 있다.
+
+#### 클라이언트/서버
+
+서버는 API를 이용해 정보를 제공하고, 비즈니스 로직을 실행한다. 클라이언트는 API를 요청하고 사용자 인증을 관리하고 응답된 값을 처리한다. 이처럼 클라이언트와 서버의 분리는 개발자들간의 협업 증대에 큰 역할을 한다.
+
+#### 계층 시스템
+
+계층 시스템이란 클라이언트/서버 방식의 발전형이라고 볼 수 있는데, 클라이언트는 정말 요청과 응답 처리만하고 인증 계층, 암호화, 로드밸런싱 등등의 계층을 추가하여 마이크로 서비스 아키텍쳐를 구현하는 것이다.

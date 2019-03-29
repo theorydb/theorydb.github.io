@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "[Facebook DevC] 커뮤니티 주도 개발"
+subtitle:   "masocon"
+categories: review
+tags: event
+comments: true
+---
+
+개발자를 때려쳤다가 타이타늄 사용자 모임에서 개발을 시작하게 됨.
+
+좋은 사람들과 커뮤니케이션하며 좋은 제품을 만드는 것.
+
+스타트업을 시작하게 됨.
+
+---
+
+커뮤니티에서 영감을 얻고, 지식을 얻고
+
+뎁씨 서울
+
+---
+

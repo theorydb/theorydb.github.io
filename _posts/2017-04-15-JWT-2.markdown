@@ -1,0 +1,112 @@
+---
+layout: post
+title:  "JWT - 토큰기반인증 #2 구조"
+subtitle:   "실제구조에 대해 알아보자."
+categories: devlog
+tags: web jwt token
+---
+
+실제구조에 대해 알아보자.
+
+## JWT란?
+---
+
+- JWT(JSON Web Token)는 웹표준([RFC 7519](https://tools.ietf.org/html/rfc7519))으로 JSON 객체를 사용하여 정보를 안전성있게 전달해준다.
+
+- 다양한 언어에서 JWT를 지원하고 있으며 지원 현황은 [여기](http://jwt.io/)에서 확인할 수 있다.
+
+- 토큰정보, 전달할 정보, 증명정보를 포함하고있다.
+
+- 쉽게 전달할 수 있다.
+
+- 회원 인증과 정보 교류에 자주사용된다.
+
+## JWT의 구조
+---
+
+```
+헤더.내용.서명
+```
+
+### 헤더 (JSON Object Signing and Encryption header)
+
+헤더는 두가지 정보를 지니고 있다.
+
+- typ : 토큰의 타입. 'JWT'
+
+- alg : 해싱 알고리즘. 보통 HMAC SHA256 또는 RSA가 사용된다.
+
+아래의 모양과 같다.
+
+```
+{
+    "typ": "JWT",
+    "alg" : "HS256"
+}
+```
+이 정보를 base64로 인코딩한 값이 헤더가 된다.
+
+### 내용 (JWT Claim Set / Payload)
+
+내용에는 전달된 내용을 넣는다. 보통 라이브러리를 사용하면 내가 전달하고 싶은 것만 신경쓰면 되지만 실제로는 꽤 많은게 포함된다.
+
+등록 클레임, 공개 클레임, 비밀 클레임
+
+#### 등록 클레임 (Registered)
+
+모든 값이 필수 값은 아니지만 기본값이 정해져있다. 선택적으로 이용하면 된다.
+
+- iss: 토큰 발급자 (issuer)
+- sub: 토큰 제목 (subject)
+- aud: 토큰 대상자 (audience)
+- exp: 토큰의 만료시간 (expiration)
+- nbf: 토큰의 활성 날짜 (not before)
+- iat: 토큰이 발급된 시간 (issued at)
+- jti: 고유식별자 (jwt identity)
+
+
+#### 공개 클레임 (Public)
+
+충돌방지를 위해 공개된 클레임이다. 보통 URI형식으로 짓는다.
+
+#### 비공개 클레임 (Private)
+
+서버와 클라이언트간에 협의된 클레임 이름이다.
+
+보통 라이브러리를 사용하면 비공개 클레임만 작성하면 된다.
+
+```
+{
+    "name" : "metaDeveloper",
+    "role" : "owner"
+}
+```
+
+### 서명(Signature)
+
+서명은 헤더의 base64값과 내용의 base64값을 합친 후 비밀키로 해쉬하여 생성한다.
+
+
+스키마는 대략 다음과 같다.
+
+```
+//header
+b64({
+    "typ": "JWT",
+    "alg" : "HS256"
+})
+
+//payload
+b64({
+    "name" : "metaDeveloper",
+    "role" : "owner"
+})
+
+//signature
+HMACSHA256(b64(header)+'.'+b64(payload),secret)
+```
+
+## 마치며
+---
+
+토큰기반인증과 JWT의 장점, 원리, 구조등을 알아보았다.

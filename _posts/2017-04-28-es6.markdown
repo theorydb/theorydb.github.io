@@ -1,0 +1,219 @@
+---
+layout: post
+title:  "프론트엔드 개발자를 위한 ES6 #1"
+subtitle:   "ES6에 대해 알아보자."
+categories: devlog
+tags : es6 javascript
+---
+
+ES6에 대해 알아보자.
+
+ES6란 자바스크림트 표준을 이야기한다. 풀네임은 ECMAScript 6.
+
+여러기업들이 모여서 만든거라고 한다.
+
+매해가 갈수록 마지막 숫자가 올라가고있다.
+
+현재는 ES7이 릴리즈 버전이고, 대부분 자바스크립트를 위주로 쓴다고하면 ES5+의 스펙을 원한다.
+
+올해 3분기쯤에 ES8이 릴리즈 될 예정이다.
+
+## ES6
+---
+
+### Constants
+---
+
+#### Constants
+
+ES6에서부터 상수를 지원하기 시작했다. 상수라는 개념은 보통 Immutable 하다는 개념과 같다.
+
+자바스크립트에서 Immutable하게 사용하기위해 asign을 사용하던 방식을 편하게 만들었다.
+
+하지만 주의할게 있는데, 만약 상수의 내용물이 객체일 경우 객체의 내용은 바뀔 수 있다.
+
+### Scoping
+---
+
+#### Block-Scoped Variables
+
+let이라고 하는 블락 스코프 변수가있다. 블락 내에서만 사용할 때, 예를 들어 for문 같은곳에서 사용한다.
+
+#### Block-Scoped Functions
+
+block 안에 같은 이름의 함수를 선언해도 유효 블락에서만 작동한다.
+
+```js
+{
+    function foo () { return 1 }
+    foo() === 1
+    {
+        function foo () { return 2 }
+        foo() === 2
+    }
+    foo() === 1
+}
+```
+
+### Arrow Functions
+---
+
+#### Expression Bodies && Statement Bodies
+
+화살표함수는 아주 많이 쓰이는 개념이다. 직관적이고 간편하다.
+
+```js
+odds  = evens.map(v => v + 1)
+pairs = evens.map(v => ({ even: v, odd: v + 1 }))
+nums  = evens.map((v, i) => v + i)
+
+nums.forEach(v => {
+   if (v % 5 === 0)
+       fives.push(v)
+})
+```
+
+#### Lexical this
+
+this가 좀더 명확해 졌다. 이전엔 self같은 것에 복사해서 사용하던 것도 간편히 사용할 수 있다.
+
+```js
+this.nums.forEach((v) => {
+    if (v % 5 === 0)
+        this.fives.push(v)
+})
+```
+
+### Extended Parameter Handling
+---
+
+#### Default Parameter Values
+
+간단하고 직관적으로 함수 파라미터에서 디폴트 값을 줄수 있다.
+
+```js
+function f (x, y = 7, z = 42) {
+    return x + y + z
+}
+f(1) === 50
+```
+
+#### Rest Parameter
+
+나머지 파라미터를 ...으로 핸들링할 수 있다.
+
+```js
+function f (x, y, ...a) {
+    return (x + y) * a.length
+}
+f(1, 2, "hello", true, 7) === 9
+```
+
+#### Spread Operator
+
+배열등등의 반복적인 콜렉션을 ...으로 핸들링 할 수 있다.
+
+```js
+var params = [ "hello", true, 7 ]
+var other = [ 1, 2, ...params ] // [ 1, 2, "hello", true, 7 ]
+f(1, 2, ...params) === 9
+
+var str = "foo"
+var chars = [ ...str ] // [ "f", "o", "o" ]
+```
+
+### Template Literals
+---
+
+쉽게 멀티라인이나 싱글라인에 변수들을 삽입할 수 있다.
+
+```js
+var customer = { name: "Foo" }
+var card = { amount: 7, product: "Bar", unitprice: 42 }
+var message = `Hello ${customer.name},
+want to buy ${card.amount} ${card.product} for
+a total of ${card.amount * card.unitprice} bucks?`
+```
+
+#### Custom Interpolation
+
+플렉서블하게 변수를 삽입 할 수 있다.
+
+```js
+get`http://example.com/foo?bar=${bar + baz}&quux=${quux}`
+```
+
+#### Raw String Access
+
+raw하게 스트링에 접근할 수 있다.
+
+```js
+function quux (strings, ...values) {
+    strings[0] === "foo\n"
+    strings[1] === "bar"
+    strings.raw[0] === "foo\\n"
+    strings.raw[1] === "bar"
+    values[0] === 42
+}
+quux `foo\n${ 42 }bar`
+
+String.raw `foo\n${ 42 }bar` === "foo\\n42bar"
+```
+
+### Extended Literals
+---
+
+#### Binary & Octal Literal
+
+직접 바이너리나 옥탈을 해석한다.
+
+```js
+0b111110111 === 503
+0o767 === 503
+```
+
+#### Unicode String & RegExp Literal
+
+유니코드와 정규식을 지원한다.
+
+```js
+"𠮷".length === 2
+"𠮷".match(/./u)[0].length === 2
+"𠮷" === "\uD842\uDFB7"
+"𠮷" === "\u{20BB7}"
+"𠮷".codePointAt(0) == 0x20BB7
+for (let codepoint of "𠮷") console.log(codepoint)
+```
+
+### Enhanced Regular Expression
+---
+
+#### Regular Expression Sticky Matching
+
+어떤 것과 일치하는 위치를 끈끈하게 묶어두면 임의의 수의 고유 한 정규 표현식을 사용하여 긴 임의의 입력 문자열을 효율적으로 파싱 할 수 있다.
+
+```js
+let parser = (input, match) => {
+    for (let pos = 0, lastPos = input.length; pos < lastPos; ) {
+        for (let i = 0; i < match.length; i++) {
+            match[i].pattern.lastIndex = pos
+            let found
+            if ((found = match[i].pattern.exec(input)) !== null) {
+                match[i].action(found)
+                pos = match[i].pattern.lastIndex
+                break
+            }
+        }
+    }
+}
+
+let report = (match) => {
+    console.log(JSON.stringify(match))
+}
+parser("Foo 1 Bar 7 Baz 42", [
+    { pattern: /^Foo\s+(\d+)/y, action: (match) => report(match) },
+    { pattern: /^Bar\s+(\d+)/y, action: (match) => report(match) },
+    { pattern: /^Baz\s+(\d+)/y, action: (match) => report(match) },
+    { pattern: /^\s*/y,         action: (match) => {}            }
+])
+```

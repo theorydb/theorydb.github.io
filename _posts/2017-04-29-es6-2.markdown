@@ -1,0 +1,520 @@
+---
+layout: post
+title:  "프론트엔드 개발자를 위한 ES6 #2"
+subtitle:   "ES6에 대해 알아보자."
+categories: devlog
+tags : es6 javascript
+---
+
+ES6에 대해서 이어서 알아보자.
+
+총 3부작이 될 예정이다.
+
+### Enhanced object Properties
+---
+
+#### Property Shorhand
+
+객체의 프로퍼티값 배정할 때 줄여서 쓸 수 있다.
+
+```js
+obj = { x, y } //obj = { x: x, y: y }
+```
+
+#### Computed Property Names
+
+객체를 정의할 때 이름에 계산식을 쓸 수 있게 되었다.
+
+```js
+let obj = {
+    foo: "bar",
+    [ "baz" + quux() ]: 42
+}
+```
+
+#### Method Properties
+
+객체에 메소드를 프로퍼티로 사용할 수 있다.
+
+```js
+obj = {
+    foo (a, b) {
+        …
+    },
+    bar (x, y) {
+        …
+    },
+    *quux (x, y) {
+        …
+    }
+}
+```
+
+### Destructuring Assignment
+---
+
+#### Array Matching
+
+직관적이고 유연하게 배열의 값을 배정할 수 있게 되었다.
+
+```js
+var list = [ 1, 2, 3 ]
+var [ a, , b ] = list
+[ b, a ] = [ a, b ]
+```
+
+#### Object Matching, Shorthand Notation, Deep Matching
+
+직관적이고 유연하게 객체를 배정할 수 있게되었다.
+
+```js
+var { op, lhs, rhs } = getASTNode()
+var { op: a, lhs: { op: b }, rhs: c } = getASTNode() //Deep Matching
+```
+
+#### Object And Array Matching, Default Values
+
+간단하고 직관적인 객체와 배열의 기본 값을 사용할 수 있다.
+
+```js
+var obj = { a: 1 }
+var list = [ 1 ]
+var { a, b = 2 } = obj
+var [ x, y = 2 ] = list
+```
+
+#### Parameter Context Matching
+
+함소를 호출할 때 각각의 파라미터를 직관적이고 유연하게 객체와 배열에서 사용할 수 있다.
+
+```js
+function f ([ name, val ]) {
+    console.log(name, val)
+}
+function g ({ name: n, val: v }) {
+    console.log(n, v)
+}
+function h ({ name, val }) {
+    console.log(name, val)
+}
+f([ "bar", 42 ])
+g({ name: "foo", val:  7 })
+h({ name: "bar", val: 42 })
+```
+
+#### Fail-Soft Destructuring
+
+실패에 유연하게 기본값을 선택할 수 있다.
+
+```js
+var list = [ 7, 42 ]
+var [ a = 1, b = 2, c = 3, d ] = list
+a === 7
+b === 42
+c === 3
+d === undefined
+```
+
+### Modules
+---
+
+#### Value Export/Import
+
+export/import를 지원한다.
+
+```js
+//  lib/math.js
+export function sum (x, y) { return x + y }
+export var pi = 3.141593
+
+//  someApp.js
+import * as math from "lib/math"
+console.log("2π = " + math.sum(math.pi, math.pi))
+
+//  otherApp.js
+import { sum, pi } from "lib/math"
+console.log("2π = " + sum(pi, pi))
+```
+
+#### Default & Wildcard
+
+와일드카드 또는 디폴트를 사용하여 export할 수있다.
+
+```js
+//  lib/mathplusplus.js
+export * from "lib/math"
+export var e = 2.71828182846
+export default (x) => Math.exp(x)
+
+//  someApp.js
+import exp, { pi, e } from "lib/mathplusplus"
+console.log("e^{π} = " + exp(pi))
+```
+
+### Class
+---
+
+#### Class Definition
+
+객체지향적 스타일로 좀 더 직관적이 되었다.
+
+```js
+
+class Shape {
+    constructor (id, x, y) {
+        this.id = id
+        this.move(x, y)
+    }
+    move (x, y) {
+        this.x = x
+        this.y = y
+    }
+}
+```
+
+#### Class Inheritance
+
+객체지향적 스타일로 좀 더 직관적이 되었다.
+
+```js
+class Rectangle extends Shape {
+    constructor (id, x, y, width, height) {
+        super(id, x, y)
+        this.width  = width
+        this.height = height
+    }
+}
+class Circle extends Shape {
+    constructor (id, x, y, radius) {
+        super(id, x, y)
+        this.radius = radius
+    }
+}
+```
+
+#### Class Inheritance, From Expressions
+
+믹스인 스타일로 상속도 더 쉽게 할 수 있게 되었다.
+
+```js
+var aggregation = (baseClass, ...mixins) => {
+    let base = class _Combined extends baseClass {
+        constructor (...args) {
+            super(...args)
+            mixins.forEach((mixin) => {
+                mixin.prototype.initializer.call(this)
+            })
+        }
+    }
+    let copyProps = (target, source) => {
+        Object.getOwnPropertyNames(source)
+            .concat(Object.getOwnPropertySymbols(source))
+            .forEach((prop) => {
+            if (prop.match(/^(?:constructor|prototype|arguments|caller|name|bind|call|apply|toString|length)$/))
+                return
+            Object.defineProperty(target, prop, Object.getOwnPropertyDescriptor(source, prop))
+        })
+    }
+    mixins.forEach((mixin) => {
+        copyProps(base.prototype, mixin.prototype)
+        copyProps(base, mixin)
+    })
+    return base
+}
+
+class Colored {
+    initializer ()     { this._color = "white" }
+    get color ()       { return this._color }
+    set color (v)      { this._color = v }
+}
+
+class ZCoord {
+    initializer ()     { this._z = 0 }
+    get z ()           { return this._z }
+    set z (v)          { this._z = v }
+}
+
+class Shape {
+    constructor (x, y) { this._x = x; this._y = y }
+    get x ()           { return this._x }
+    set x (v)          { this._x = v }
+    get y ()           { return this._y }
+    set y (v)          { this._y = v }
+}
+
+class Rectangle extends aggregation(Shape, Colored, ZCoord) {}
+
+var rect = new Rectangle(7, 42)
+rect.z     = 1000
+rect.color = "red"
+console.log(rect.x, rect.y, rect.z, rect.color)
+```
+
+#### Base Class Access
+
+프로토타입을 사용하지 않고도 직관적으로 기본 클래스 컨스트럭터와 메소드에 접근 할 수 있게 되었다.
+
+```js
+class Shape {
+    …
+    toString () {
+        return `Shape(${this.id})`
+    }
+}
+class Rectangle extends Shape {
+    constructor (id, x, y, width, height) {
+        super(id, x, y)
+        …
+    }
+    toString () {
+        return "Rectangle > " + super.toString()
+    }
+}
+class Circle extends Shape {
+    constructor (id, x, y, radius) {
+        super(id, x, y)
+        …
+    }
+    toString () {
+        return "Circle > " + super.toString()
+    }
+}
+```
+
+#### Static Members
+
+정적인 멤버에대한 간단한 지원이 된다.
+
+```js
+class Rectangle extends Shape {
+    …
+    static defaultRectangle () {
+        return new Rectangle("default", 0, 0, 100, 100)
+    }
+}
+class Circle extends Shape {
+    …
+    static defaultCircle () {
+        return new Circle("default", 0, 0, 100)
+    }
+}
+var defRectangle = Rectangle.defaultRectangle()
+var defCircle    = Circle.defaultCircle()
+```
+
+#### Getter/Setter
+
+Getter/Setter 도 클래스내에서 직접 사용할 수 있다.
+
+```js
+class Rectangle {
+    constructor (width, height) {
+        this._width  = width
+        this._height = height
+    }
+    set width  (width)  { this._width = width               }
+    get width  ()       { return this._width                }
+    set height (height) { this._height = height             }
+    get height ()       { return this._height               }
+    get area   ()       { return this._width * this._height }
+}
+var r = new Rectangle(50, 20)
+r.area === 1000
+```
+
+### Symbol Type
+
+---
+
+
+#### Symbol Type
+
+객체의 프로퍼티로 유니크하고 변하지않는 데이터타입이 식별자로써 사용되곤한다. 심볼은 디버깅목적으로 설명을 가질 수 있다.
+
+```js
+Symbol("foo") !== Symbol("foo")
+const foo = Symbol()
+const bar = Symbol()
+typeof foo === "symbol"
+typeof bar === "symbol"
+let obj = {}
+obj[foo] = "foo"
+obj[bar] = "bar"
+JSON.stringify(obj) // {}
+Object.keys(obj) // []
+Object.getOwnPropertyNames(obj) // []
+Object.getOwnPropertySymbols(obj) // [ foo, bar ]
+```
+
+#### Global Symbols
+
+유니크키로써 글로벌 심볼을 사용할 수 있다.
+
+```js
+Symbol.for("app.foo") === Symbol.for("app.foo")
+const foo = Symbol.for("app.foo")
+const bar = Symbol.for("app.bar")
+Symbol.keyFor(foo) === "app.foo"
+Symbol.keyFor(bar) === "app.bar"
+typeof foo === "symbol"
+typeof bar === "symbol"
+let obj = {}
+obj[foo] = "foo"
+obj[bar] = "bar"
+JSON.stringify(obj) // {}
+Object.keys(obj) // []
+Object.getOwnPropertyNames(obj) // []
+Object.getOwnPropertySymbols(obj) // [ foo, bar ]
+```
+
+### Iterators
+---
+
+#### Iterator & For-Of Operator
+
+간편한 반복문을 사용할 수 있다.
+
+```js
+let fibonacci = {
+    [Symbol.iterator]() {
+        let pre = 0, cur = 1
+        return {
+           next () {
+               [ pre, cur ] = [ cur, pre + cur ]
+               return { done: false, value: cur }
+           }
+        }
+    }
+}
+
+for (let n of fibonacci) {
+    if (n > 1000)
+        break
+    console.log(n)
+}
+```
+
+### Generator
+---
+
+#### Generator Function, Iterator Protocol
+
+제너레이터를 지원한다. 반복자가 제너레이터함수를 지니고있으면, 컨트롤 플로우를 멈추거나 다시시작할 수 있다.
+
+```js
+let fibonacci = {
+    *[Symbol.iterator]() {
+        let pre = 0, cur = 1
+        for (;;) {
+            [ pre, cur ] = [ cur, pre + cur ]
+            yield cur
+        }
+    }
+}
+
+for (let n of fibonacci) {
+    if (n > 1000)
+        break
+    console.log(n)
+}
+```
+
+#### Generator Function, Direct Use
+
+```js
+function* range (start, end, step) {
+    while (start < end) {
+        yield start
+        start += step
+    }
+}
+
+for (let i of range(0, 10, 2)) {
+    console.log(i) // 0, 2, 4, 6, 8
+}
+```
+
+#### Generator Matching
+
+```js
+let fibonacci = function* (numbers) {
+    let pre = 0, cur = 1
+    while (numbers-- > 0) {
+        [ pre, cur ] = [ cur, pre + cur ]
+        yield cur
+    }
+}
+
+for (let n of fibonacci(1000))
+    console.log(n)
+
+let numbers = [ ...fibonacci(1000) ]
+
+let [ n1, n2, n3, ...others ] = fibonacci(1000)
+```
+
+#### Generator Control-Flow
+
+코루틴 방식으로 프라미스와 결합한 비동기적 프로그래밍을 지원한다.
+
+```js
+//  generic asynchronous control-flow driver
+function async (proc, ...params) {
+    var iterator = proc(...params)
+    return new Promise((resolve, reject) => {
+        let loop = (value) => {
+            let result
+            try {
+                result = iterator.next(value)
+            }
+            catch (err) {
+                reject(err)
+            }
+            if (result.done)
+                resolve(result.value)
+            else if (   typeof result.value      === "object"
+                     && typeof result.value.then === "function")
+                result.value.then((value) => {
+                    loop(value)
+                }, (err) => {
+                    reject(err)
+                })
+            else
+                loop(result.value)
+        }
+        loop()
+    })
+}
+
+//  application-specific asynchronous builder
+function makeAsync (text, after) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => resolve(text), after)
+    })
+}
+
+//  application-specific asynchronous procedure
+async(function* (greeting) {
+    let foo = yield makeAsync("foo", 300)
+    let bar = yield makeAsync("bar", 200)
+    let baz = yield makeAsync("baz", 100)
+    return `${greeting} ${foo} ${bar} ${baz}`
+}, "Hello").then((msg) => {
+    console.log("RESULT:", msg) // "Hello foo bar baz"
+})
+```
+
+#### Generator Methods
+
+```js
+class Clz {
+    * bar () {
+        …
+    }
+}
+let Obj = {
+    * foo () {
+        …
+    }
+}
+```

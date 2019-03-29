@@ -1,0 +1,164 @@
+---
+layout: post
+title:  "[vue]vue.js에 대해"
+subtitle:   "vue.js에 대해"
+categories: devlog
+tags: vue
+comments: true
+
+---
+
+이번에 사내 백오피스를 전면 개편하면서 vue.js를 사용하기로 했다. vue를 사용해본적이 없기 때문에 공부하면서 내용을 정리하려한다.
+
+## Vue.js
+
+---
+
+뷰라고 읽는다. Vue는 발음대로 뷰에 최적화된 프레임워크이다. 프레임워크라고해서 거창하게 볼 것 없고 UI를 다루는 라이브러리라고 생각하면 쉽다. 실제로 핵심라이브러리는 뷰 레이어에 초점을 맞추어 다른 라이브러리나 기존 사용중이던 프로젝트와의 통합이 매우 쉽다.
+
+공식 문서에 제시되어있는 [다른 프레임워크와의 비교](https://kr.vuejs.org/v2/guide/comparison.html)는 너무 좋은 글이니 꼭 한번 읽어보자. 나도 따로 정리해 놓으려고 한다.
+
+## 시작하기
+
+---
+
+### 선언적 렌더링
+
+Vue의 핵심은 템플릿 구문을 통해 선언적으로 데이터를 렌더링하는 것이다.
+
+```html
+<div id="app">
+  {{ message }}
+</div>
+```
+
+```js
+var app = new Vue({
+  el: '#app',
+  data: {
+    message: '안녕하세요 Vue!'
+  }
+})
+```
+
+데이터는 리엑티브하다. 브라우저의 콘솔을 열고 app.message를 다른 값으로 바꾸면 바뀐 값이 렌더링 되는 것을 볼 수 있다.
+
+### 조건문
+
+v-if를 사용해 조건을 테스트한다.
+
+```html
+<div id="app-2">
+  <p v-if="seen">이제 나를 볼 수 있어요</p>
+</div>
+```
+
+```js
+var app2 = new Vue({
+  el: '#app-2',
+  data: {
+    seen: true
+  }
+})
+```
+
+이번에도 물론 app2.seen = false를 콘솔에 입력하면 메세지가 사라진다.
+
+### 반복문
+
+```html
+<div id="app-3">
+  <ol>
+    <li v-for="todo in todos">
+      {{ todo.text }}
+    </li>
+  </ol>
+</div>
+```
+
+```js
+var app3 = new Vue({
+  el: '#app-3',
+  data: {
+    todos: [
+      { text: 'JavaScript 배우기' },
+      { text: 'Vue 배우기' },
+      { text: '무언가 멋진 것을 만들기' }
+    ]
+  }
+})
+```
+
+이때도 역시 `app3.todos.push({ text: ' new item' })`을 입력하면 새항목이 추가된다.
+
+### 입력 핸들링
+
+앱과 상호작용할 수 있게 하기위해 v-on을 사용하여 이벤트리스너를 등록할 수있다.
+
+```html
+<div id="app-4">
+  <p>{{ message }}</p>
+  <button v-on:click="reverseMessage">메시지 뒤집기</button>
+</div>
+```
+
+```js
+var app4 = new Vue({
+  el: '#app-4',
+  data: {
+    message: '안녕하세요! Vue.js!'
+  },
+  methods: {
+    reverseMessage: function () {
+      this.message = this.message.split('').reverse().join('')
+    }
+  }
+})
+```
+
+### 양방향 바인딩
+
+v-model을 이용해 양방향 바인딩을 구현할 수 있다.
+
+```html
+<div id="app-5">
+  <p>{{ message }}</p>
+  <input v-model="message">
+</div>
+```
+
+```js
+var app5 = new Vue({
+  el: '#app-5',
+  data: {
+    message: '안녕하세요 Vue!'
+  }
+})
+```
+
+입력폼에서 값을 바꾸면 DOM에서도 바뀐다.
+
+### 컴포넌트
+
+컴포넌트는 제 기능을 가진 재사용가능한 개념이라고 생각할 수 있다.
+
+```js
+// todo-item 이름을 가진 컴포넌트를 정의합니다
+Vue.component('todo-item', {
+  template: '<li>할일 항목 하나입니다.</li>'
+})
+```
+
+위는 todo-item을 컴포넌트로 등록한 것이다. 이후에는 아래처럼 사용할 수 있다.
+
+```js
+<ol>
+  <!-- todo-item 컴포넌트의 인스턴스 만들기 -->
+  <todo-item></todo-item>
+</ol>
+```
+
+## 앞으로
+---
+
+뷰는 빠르고, 가볍다. 원하는 만큼 배워서 원하는만큼만 사용할 수 있고, 필요할 때 가져다 쓸 수 있다는 장점이 있다. 지금 이 글은 거의 공식문서를 긁어온 수준에 불과하며, 공식문서가 엄청 잘 되어있으니 vue를 시작한다면 항상 옆에 켜놓고 있으면 좋을 것 같다.
