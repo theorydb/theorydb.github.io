@@ -8,21 +8,22 @@ theorydb:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    훌륭한 Data scientist가 되고 싶은 개발자.
+    1세상에서 가장 게으르기 위해 가장 부지런한 타입.
+    글쓰는 것과 디자인, 개발을 좋아한다. 좋은게 좋은거고, 예쁜게 좋은거고, 노는게 좋은거라고 생각한다. 좋아하는게 많은 편.
 
   # This photo will be used in the about section
   picture:
-    src:             /assets/img/me.jpg
+    src:             /assets/img/me.jpeg
     # srcset is optional, but can be used to provide higher res versions for retina displays
     srcset:
-      1x:            /assets/img/me.jpg
-      2x:            /assets/img/me.jpg
+      1x:            /assets/img/me.jpeg
+      2x:            /assets/img/me.jpeg
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide
   # Icons appear in order, can be rearranged:
   social:
-    facebook:        cantouchmin
+    facebook:        zooqzqz
     # twitter:         <username>
     # google:          <number>
     # vk:              <username>
@@ -57,7 +58,7 @@ theorydb:
     # delicious:       <username>
     # stumbleupon:     <username>
     # paypal:          <username>
-    email:           mailto:theorydb@gmail.com
+    email:           mailto:zooqzqz@gmail.com
     rss:             https://theorydb.github.io/feed.xml
 
 # Another author
