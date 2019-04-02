@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: ML
-slug: ml
-category: dev
+title: Review
+slug: review
+category: review
 menu: false
 order: 1
 ---

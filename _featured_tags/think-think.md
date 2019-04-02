@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: ML
-slug: ml
-category: dev
+title: Think
+slug: think
+category: think
 menu: false
 order: 1
 ---
