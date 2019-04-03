@@ -27,6 +27,10 @@ header-img: img/2019-04-02-review-book-hyperledger-fabric-1-Flow-Diagram.png
 
 > 리눅스의 철학
 
+## DevOps의 최신트렌드를 가장 직선으로 배우는 방법
+
+도커, git
+> "사실
 
 ## 추천
 
@@ -35,3 +39,11 @@ header-img: img/2019-04-02-review-book-hyperledger-fabric-1-Flow-Diagram.png
 - Dapp개발자
 - 블록체인에 관심이 많은 프로그래머
 
+* http://www.hanbit.co.kr/store/books/look.php?p_code=B8475831198
+http://www.kyobobook.co.kr/product/detailViewKor.laf?
+mallGb=KOR&ejkGb=KOR&linkClass=3301&barcode=9791188612925#review
+
+
+http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&linkClass=3301&barcode=9791188621453#review
+
+http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791158390853&orderClick=LA7&Kc=#review
