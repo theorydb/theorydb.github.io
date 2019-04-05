@@ -18,10 +18,10 @@ header-img: img/2019-04-02-review-book-hyperledger-fabric-1-Flow-Diagram.png
 
 이제는 너무나도 자주 언급되는 "4차 산업혁명".
 
-## 블록체인과 비트코인
+## 블록체인과 비트코인, 그리고 리눅스 재단의 선택
 ---
 
-![테스트이미지](./img/2019-04-02-review-book-hyperledger-fabric-1-Flow-Diagram.png)
+![테스트이미지](img/2019-04-02-review-book-hyperledger-fabric-1-Flow-Diagram.png)
 블록체인이란 
 
 
