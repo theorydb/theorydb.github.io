@@ -18,7 +18,7 @@ tagline:             "All roads lead to data."
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
-  딥선생님...!! Data Science가 하고 싶어요...
+  하지만 블로그라도 하지 않으면 회사짱 딥러닝에 관심도 없는걸..
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
