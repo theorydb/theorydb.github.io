@@ -5,7 +5,7 @@ subtitle:   "파이썬 라이브러리를 활용한 머신러닝"
 categories: review
 tags: review ml python
 comments: true
-header-img: img/review/2019-06-05-review-book-intro-ml-py-Cover.png
+header-img: img/review/2019-06-05-review-book-intro-ml-py-Cover.jpg
 ---
 
 ## 개요
