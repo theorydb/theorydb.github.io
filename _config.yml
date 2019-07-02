@@ -42,13 +42,6 @@ google_fonts:        Merriweather-Light
 # If you do not use a Google Fonts, uncomment the line below
 # no_google_fonts:     true
 
-# Disqus
-disqus: True
-disqus_shortname: theorydb
-# disqus는 온라인 댓글 시스템. 댓글 기능을 사용하기 위해
-# disqus를 이용할 것인지 여부와 만약 사용하면
-# disqus shortname을 입력 ( disqus username이 아님 )
-
 # Set your Google Analytics id to receive `pageview` events.
 # To remove Google Anaylics from your page, remove the line below.
 google_analytics:    UA-137374202-1
