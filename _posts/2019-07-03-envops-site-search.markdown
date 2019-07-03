@@ -12,9 +12,9 @@ comments: true
 > `Tipue Search`를 활용하여, 블로그 검색 기능을 구축한 과정에 대한 기록입니다.  
   
 - 목차
-	- [Tipue Search란?](#Tipue-Search란) 
-	- [Tipue Search 설치](#Tipue-Search-설치)
-	- [Tipue Search 환경설정](#Tipue-Search-환경설정)
+	- [Tipue Search란?](#tipue-search란) 
+	- [Tipue Search 설치](#tipue-search-설치)
+	- [Tipue Search 환경설정](#tipue-search-환경설정)
 	- [최적화 적용을 위한 디테일 마무리](#최적화-적용을-위한-디테일-마무리)
   
   
