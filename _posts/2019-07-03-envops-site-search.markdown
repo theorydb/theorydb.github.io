@@ -115,7 +115,7 @@ Jekyll 테마에 따라 설정이 약간 다를 수 있다. 본 블로그의 테
 ---
 Tipue Search의 디폴트 기능만 설치된 상태이므로 필자는 블로그에 보다 친화적으로 어울릴 수 있도록 기능을 수정해보았다. 이번 단계는 귀차니즘 가동 시 건너뛰셔도 무방하다. 
 
-1. `검색 입력창` 사이즈 조정을 위해 `C:\githubPages\zzsza.github.io-master\zzsza.github.io\assets\tipuesearch\css\tipuesearch.css`의 CSS 속성을 변경하였다.  
+1. `검색 입력창` 사이즈 조정을 위해 `C:\githubPages\theorydb.github.io\assets\tipuesearch\css\tipuesearch.css`의 CSS 속성을 변경하였다.  
 	```css
 	#tipue_search_input
 	{
@@ -133,7 +133,7 @@ Tipue Search의 디폴트 기능만 설치된 상태이므로 필자는 블로�
 	}
 	```
 
-1. `검색버튼(돋보기모양)`이 좌측 메뉴의 배경색에 가려져 잘 보이지 않아 색상을 조절하였고, 본 테마의 img 태그 CSS 속성이 검색창 모양을 삐뚫어져 보이게 만들어 해당 태그의 CSS속성을 상속받아 사이즈를 수정하였다. 마찬가지로 `C:\githubPages\zzsza.github.io-master\zzsza.github.io\assets\tipuesearch\css\tipuesearch.css` 파일에서 아래와 같이 CSS 속성을 변경하였다.  
+1. `검색버튼(돋보기모양)`이 좌측 메뉴의 배경색에 가려져 잘 보이지 않아 색상을 조절하였고, 본 테마의 img 태그 CSS 속성이 검색창 모양을 삐뚫어져 보이게 만들어 해당 태그의 CSS속성을 상속받아 사이즈를 수정하였다. 마찬가지로 `C:\githubPages\theorydb.github.io\assets\tipuesearch\css\tipuesearch.css` 파일에서 아래와 같이 CSS 속성을 변경하였다.  
 	```css
 	.tipue_search_icon
 	{
