@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "[Jekyll Blog] Tipue Search 플러그인을 이용하여 검색기능 만들기"
+title:  "[Jekyll Blog] Tipue Search를 이용하여 블로그 검색 기능 만들기"
 subtitle:   "Tipue Search 플러그인"
 categories: envops
-tags: envops blog jekyll site search tipue
+tags: envops blog github pages jekyll site search tipue
 comments: true
 ---
 

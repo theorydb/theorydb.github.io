@@ -32,13 +32,16 @@ comments: true
 그동안 알려진 국내외 경진대회 사이트들을 정리해보았다. 경진대회 일정은 수시로 변하기 때문에 본인의 업무 도메인 및 보유 스킬셋과 가장 적합한 커뮤니티를 골라 수시로 방문한다면 많은 정보를 얻을 수 있다.
  
 - __1. 국내__
+  - [AI RUSH 2019 (Naver)](https://ai-rush.com/)
+  - [2019 AI Starthon (과학기술정보통신부)](http://www.aistarthon2019.co.kr/)
+  - [2019 빅콘테스트](http://www.bigcontest.or.kr/)
+  - [문화.관광 빅데이터 분석대회](http://www.tourbigdata.kr/)
   - [데이터 사이언스 경진대회](http://dacon.io/)
-  - [인공지능 R&D 그랜드 챌린지 대회(과학기술정통부)](https://www.ai-challenge.kr/)
+  - [인공지능 R&D 그랜드 챌린지 대회(과학기술정보통신부)](https://www.ai-challenge.kr/)
   - [Samsung AI Challenge 2018(삼성)](https://research.samsung.com/aichallenge/data)
   - [네이버 Data Science Competition 2019](http://stat.snu.ac.kr/sri/kor/document/board/notice.php?id=7)
   - [카카오 아레나](https://arena.kakao.com/)
   - [빅 콘테스트(한국정보통신진흥협회)](http://bigcontest.or.kr/)
-  - [문화.관광 빅데이터 분석대회](http://www.tourbigdata.kr/)
   - [날씨 빅데이터 콘테스트(기상청)](http://big.kma.go.kr/contest)  
   - [디지털 헬스 해커톤(삼성융합의과학원)](https://www.digitalhealthhack.org/)
   
@@ -50,4 +53,8 @@ comments: true
   - [오픈 데이터 해커톤(Open Data Hackathon)](http://opendatacy.com/)
   - [아시아 오픈 데이터 해커톤(Asia Open Data Hackathon)](http://odhack.asia/) 
 
-``` ※ 계속 업데이트 예정입니다. 오류 또는 최신정보가 있으신 경우 댓글로 알려주시면 감사하겠습니다.```
+- __3. 기타__
+  - [WEVIFY (공모전 공고 모음)](https://www.wevity.com/index_biz.php?c=find&s=1&gub=1&cidx=21)  
+
+
+``` ※ 수시 업데이트 예정(오류 또는 최신정보가 있으신 경우 댓글로 알려주시면 감사하겠습니다.)```
