@@ -43,7 +43,9 @@ Jekyll과 Git을 사용하면서 디자인에 집중하거나 웹 프로그래�
 3. 패스워드를 입력한 후, `Confirm password`를 클릭한다.
 ![그림3](https://theorydb.github.io/assets/img/envops/2019-07-04-envops-blog-posting-prose-io-3.jpg)
   
-Git의 Project들이 전부 연동된 것을 확인할 수 있다. 이것으로 연동이 끝났다! 참~ 쉽죠?
+Git의 Project들이 전부 연동된 것을 확인할 수 있다. 이것으로 연동이 끝났다! 
+![그림참쉽죠](https://theorydb.github.io/assets/img/fun/bob-rose.jpg)
+참~ 쉽죠?
   
 
 ## Prose.io로 포스트 수정하기
