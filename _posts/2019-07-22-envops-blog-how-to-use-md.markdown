@@ -9,16 +9,16 @@ comments: true
 
 
 ## 개요
-> 지금 당장 필요한 `마크다운(Markdown)` 문법부터 단계적으로 배워봅니다.  
+> 지금 당장 필요한 `마크다운(Markdown)` 문법부터 단계적으로 배워봅시다.  
   
 - 목차
-	- [Markdown이란?](#) 
-	- [Markdown 에디터 뭘 쓸까?](#)
-	- [Markdown의 문법1(반드시 알아야 하는)](#)
-	- [Markdown의 문법2(부가기능)](#)
-	- [실전연습](#)
-	- [이미지 관리 및 업로드](#)
-	- [작성 중 소소한 Tip 그리고 문제 해결방법](#)
+	- [Markdown이란?](#markdown이란) 
+	- [Markdown 에디터 뭘 쓸까?](#markdown-에디터-뭘-쓸까)
+	- [Markdown 문법1(반드시 알아야 하는)](#markdown-문법1반드시-알아야-하는)
+	- [Markdown 문법2(유용한 부가기능)](#markdown-문법2유용한-부가기능)
+	- [실전연습](#실전연습)
+	- [이미지를 쉽게 업로드 하는 방법](#이미지를-쉽게-업로드-하는-방법)
+	- [소소한 Tip 그리고 고장났을 때](#소소한-tip-그리고-고장났을-때)
   
   
 ## Markdown이란?  
@@ -84,7 +84,7 @@ comments: true
   
   
 
-## Markdown의 반드시 알아야 하는 문법  
+## Markdown 문법1(반드시 알아야 하는)  
 ---
 글을 작성할 때 한번 이상 사용하는 주요 문법들을 간추려 글을 쓰는 순서대로 기술하였다. 처음 접하는 분들은 이 부분만 숙지하고 바로 예제를 작성하신 후, 궁금한 점이 있을 때 [Markdown의 기타 문법](#)으로 넘어가시기 바란다.
 
@@ -232,7 +232,7 @@ _이탤릭체(기울여서)_
   
 이상 글을 쓸 때 매번 사용하는 Markdown의 문법을 알아보았다. 
 
-## Markdown의 유용한 부가기능  
+## Markdown 문법2(유용한 부가기능)  
 ---
 이 Chapter에서 배울 것들은 위의 기능보다는 사용 빈도가 낮지만 굉장히 고차원 적인 표현을 가능하게 해주는 매우 유용한 문법들이다. 필요할 때마다 참고하여 익히면 큰 도움이 될 것이다.  
 
@@ -283,41 +283,15 @@ $$x = argmax_k((x_t-x_u+x_v)^T*x_m)/(||x_b-x_k+x_l||)$$
   
 ---
 *  __[3단계] `UML 다이어그램` : 순서도, 흐름도 등을 표현할 때 유용하다.__  
+필요시 아래 링크를 참조하기 바란다.
   
-```flow
-st=>start: Start
-e=>end
-op=>operation: My Operation
-cond=>condition: Yes or No?
-
-st->op->cond
-cond(yes)->e
-cond(no)->op
-```
-
-st=>start: Start
-e=>end
-op=>operation: My Operation
-cond=>condition: Yes or No?
-
-st->op->cond
-cond(yes)->e
-cond(no)->op
+> * [Flow charts](http://flowchart.js.org/)
+> * [Sequence diagrams](https://bramp.github.io/js-sequence-diagrams/)  
   
-> * 필자가 사용하는 지킬 테마는 별도 설정없이 위 예제와 같이 자유롭게 사용할 수 있다.   
-> * 수식 표현에 제한이 있는 경우, `MathJax` Javascript를 include하여 사용한다.
-> ```
-> <script type="text/javascript" 
-> src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
-> </script>
-> ```
-> * 표현형식은 [Latex](https://en.wikibooks.org/wiki/LaTeX/Mathematics) 표기법과 동일하다.
-  
-
 
 ## 실전연습  
 ---
-이제 Markdown의 거의 모든 문법을 알아보았다. `백문이 불여일타`이므로 반드시 직접 마크다운 문서를 작성해보자.
+자! 이제 Markdown의 거의 모든 문법을 알아보았다. `백문이 불여일타`이므로 반드시 직접 마크다운 문서를 작성해보자.
 
 1. 연습문제1 : 위의 문법 실습을 그대로 타이핑하는 문서 만들기  
 2. 연습문제2 : 이 포스팅과 동일한 문서 만들기  
@@ -330,12 +304,35 @@ cond(no)->op
 > 3. `/theorydb.github.io-master/_posts/` 폴더 이동  
 > 4. `2019-07-22-envops-blog-how-to-use-md.markdown`를 확인 
 
+## 이미지를 쉽게 업로드 하는 방법
+이미지를 웹 어디에 저장하는 것이 편리할까? 더불어 포스트 뿐만 아니라 이미지도 마치 데이터베이스 처럼 평생 관리하고 싶다면? 필자가 추천하고 싶은 방식은 크게 3가지이다.  
+
+* __GitHub의 Issue를 이용하는 방법__
+  + 1. 일종의 편법인데 GitHub에서 Issue를 하나 생성한다.   
+    ![이미지1](https://theorydb.github.io/assets/img/envops/2019-07-22-envops-blog-how-to-use-md-1.jpg)
+  + 2. Write 탭에 PC에 있는 이미지를 Drag & Drop한다. 최종 저장을 안해도 GitHub에 자동으로 업로드가 된다.
+    ![이미지2](https://theorydb.github.io/assets/img/envops/2019-07-22-envops-blog-how-to-use-md-2.jpg)
+  + 3. 업로드가 다 되면 위 그림과 같은 경로가 생기므로 해당 URL을 복사해서 사용한다. 테스트로 복사한 URL로 접속해보았다.
+    ![이미지3](https://theorydb.github.io/assets/img/envops/2019-07-22-envops-blog-how-to-use-md-3.jpg)
+  + 이 방식은 즉석 URL을 생성하는데는 최고의 방법이나, 대신 이미지를 체계적으로 관리하기가 어렵다. 대신 중요하지 않은 그림은 이 방식으로 운영하면 편리하다고 하겠다. 
+  
+* __GitHub를 이용하는 방법__  
+  + 필자가 자주 애용하는 방식이다.
+  + 예를 들면 `theorydb.github.io\assets\img\`의 위치에 포스트 계층과 동일하게 폴더를 만들어 `포스트 제목-일련번호`의 형태로 파일을 저장한 후, `https://theorydb.github.io/assets/img/think/2019-06-25-think-future-ai-1.png`와 같은 방식으로 링크를 걸어 활용한다.
+  + 물론, 이미지 파일 관리에 있어 노가다가 첨가되고 GitHub에 이미지를 먼저 올리지 않으면 Markdown을 작성하며 실시간으로 확인할 수 없다는 불편한 점이 있다.
+  + 하지만 필자가 처음 블로그를 개발했을 때 가장 중요했던 목적 하나는 블로그 서비스가 종료되더라도 포스트와 이미지를 개인 DB화 하여 영구 보존하는 것이었기에 큰 불만이 없는 방식이다. 더불어 숙달되어 큰 불편을 느끼지 않는다.
+
+* __기타__
+  + 구글드라이브, 플리커, 드랍박스에 이미지를 체계적으로 관리하고 URL을 생성하여 연결하는 것도 한가지 방법이다.
+  + 큰 불편함을 느끼지 않아 더 찾아보지는 않았는데 이 부분을 쉽게 처리해 줄 Plug-in이 존재할 것으로 믿는다.ㅎㅎ  
+  
+
+## 소소한 Tip 그리고 고장났을 때
+---
+이 부분은 본 포스트에 댓글로 질문이 달릴 경우 하나씩 추가해 나갈 예정이다. 더불어 언제나 통용되는 한가지 해결책을 남긴다. 
+
+* 마크다운에서 지원하지 않거나 표현하기 어려운 경우 HTML 태그로 직접 표현하는 것도 한가지 방법이다. 
+  
 
 
-
-
-
-이로써 Tipue Search 오픈소스를 활용하여 블로그에 멋진 검색 기능을 구축하였다. 다음 기능으로는 Jekyll 기반 블로그의 `Disqus` 댓글 기능 추가에 대하여 포스팅 할 예정임을 미리알려드린다.  
-
-
-> Jekyll 기반의 깃헙 페이지 블로그 구축 포스팅은 계속될 예정입니다. 처음 구축하는 방법부터 올리려고 했는데 시간 부족으로 계속 미루고 있네요^^; 포스팅 순서가 어긋나더라도 차후 개인적으로 구현하려는 목표가 모두 완성되는대로 `구축을 위한 설계도` 개념의 포스팅에서 통합 정리 및 링크부여를 통해 가급적 편하게 보시며 구축하실 수 있도록 노력하겠습니다. 읽어주셔서 감사합니다. 
+이것으로 Markdown의 사용법 강좌를 마치려한다. 꽤 오랜 시간을 내어 성의 작성했기에 자주 들리셔서 레퍼런스로 활용해 주시면 감사하겠다. 부족한 점은 댓글로 남겨주시면 계속 보완해 나가겠다.  
