@@ -34,9 +34,10 @@ comments: true
 가능하다. 하지만 `생산성(작성 속도 및 편리성)에 큰 차이`가 있다. 더욱이 WEB언어를 모르는 사람이라면 익숙하지 않은 프로그래밍의 문법을 다시 배우고 능숙해지는데 꽤 큰 노력과 긴 시간을 필요로 하게 될 것이다.
 
 * __그 외에 좋은점은 뭔가요?__   
-  - Text로 저장한 후 `HTML으로의 변환이 가능`하다. 변환을 지원하는 도구나 Eco(생태계)가 매우 많다.
+  - 배우기가 정말 `쉽고 직관적`이다.  
+  - Text로 저장한 후 `HTML으로의 변환이 가능`하다. 변환을 지원하는 도구나 Eco(생태계)가 매우 많다.  
   - Text로 저장하기 때문에 `Git을 통한 버전관리가 가능`하고, `용량이 적어 보관이 용이`하다.  
-  - 배우기가 정말 `쉽고 직관적`이다. 
+  - Python의 주피터노트북, R의 R Markdown 등 다른 기술에의 진입장벽을 낮춰준다.  
 
 * __안 좋은점은?__  
 유일하게 안 좋은 점이 하나 있는데 표준이 없다. 핵심 문법을 제외하고는 에디터 도구에 따라 결과물이 약간 달라질 수 있다.    
@@ -231,8 +232,10 @@ _이탤릭체(기울여서)_
   
 이상 글을 쓸 때 매번 사용하는 Markdown의 문법을 알아보았다. 
 
-## Markdown의 기타 문법  
+## Markdown의 유용한 부가기능  
 ---
+이 Chapter에서 배울 것들은 위의 기능보다는 사용 빈도가 낮지만 굉장히 고차원 적인 표현을 가능하게 해주는 매우 유용한 문법들이다. 필요할 때마다 참고하여 익히면 큰 도움이 될 것이다.  
+
 ---
 *  __[1단계] `표(Table)` : 표 그리기__  
   
@@ -248,38 +251,68 @@ _이탤릭체(기울여서)_
 | 철수             | 90            | 참잘했어요. |  
 | 영희           | 50            | 분발하세요. |
   
-> * 라인 단위로 생각하면서 구분자(`|`)로 열을 구분해주면 대충 그려도 알아서 편리하게 완성된다.  
+> * 라인 단위로 생각하면서 구분자(`|`)로 열을 구분해주면 위와 같이 대충 그려도 알아서 예쁘게 완성된다.  
 > * 헤더(머리글)를 분리하고 싶은 경우, 위 예제와 같이 2번째 라인에 `---`을 사용하면 된다.
 > * 정렬이 필요한 경우, 콜론(`:`) 기호를 구분선(`---`) 왼쪽, 오른쪽, 양쪽에 배치한다.      
    
 ---
-*  __[2단계] `수식` : 수학, 논문등에 사용__  
+*  __[2단계] `수식` : 수학, 논문분석 등에 사용__  
   
 ```
-$$f(x)= if x < x_{max} : (x/x_{max})^a$$  
-$$otherwise : 1$$  
-$$P(w)=U(x)(3/4)/Z$$  
-$$p_{\theta}(x) = \int p_{\theta}(z)p_{\theta}(x\mid z)dz$$  
-$$d = argmax_i((x_b-x_a+x_c)^T*x_i)/(||x_b-x_a+x_c||)$$  
+$$f(x)= if x < x_{min} : (x/x_{min})^a$$  
+$$otherwise : 0$$  
+$$P(w)=U(x/2)(7/5)/Z$$  
+$$p_{\theta}(x) = \int p_{\theta}(2z)p_{\theta}(y\mid k)dz$$  
+$$x = argmax_k((x_t-x_u+x_v)^T*x_m)/(||x_b-x_k+x_l||)$$  
 ```
 
-$$f(x)= if x < x_{max} : (x/x_{max})^a$$  
-$$otherwise : 1$$  
-$$P(w)=U(x)(3/4)/Z$$  
-$$p_{\theta}(x) = \int p_{\theta}(z)p_{\theta}(x\mid z)dz$$  
-$$d = argmax_i((x_b-x_a+x_c)^T*x_i)/(||x_b-x_a+x_c||)$$  
+$$f(x)= if x < x_{min} : (x/x_{min})^a$$  
+$$otherwise : 0$$  
+$$P(w)=U(x/2)(7/5)/Z$$  
+$$p_{\theta}(x) = \int p_{\theta}(2z)p_{\theta}(y\mid k)dz$$  
+$$x = argmax_k((x_t-x_u+x_v)^T*x_m)/(||x_b-x_k+x_l||)$$  
   
-> * 필자가 쓰는 지킬 테마는 별도 설정없이 위 예제와 같이 자유롭게 사용할 수 있다.   
-> * 수식 표현에 오류가 나는 경우, MathJax Javascript를 인클루드하여 사용한다.
+> * 필자가 사용하는 지킬 테마는 별도 설정없이 위 예제와 같이 자유롭게 사용할 수 있다.   
+> * 수식 표현에 제한이 있는 경우, `MathJax` Javascript를 include하여 사용한다.
 > ```
 > <script type="text/javascript" 
 > src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
 > </script>
 > ```
-> * 표현형식은 [Latex](https://en.wikibooks.org/wiki/LaTeX/Mathematics)와 동일하다.      
+> * 표현형식은 [Latex](https://en.wikibooks.org/wiki/LaTeX/Mathematics) 표기법과 동일하다.
   
+---
+*  __[3단계] `UML 다이어그램` : 순서도, 흐름도 등을 표현할 때 유용하다.__  
+  
+```flow
+st=>start: Start
+e=>end
+op=>operation: My Operation
+cond=>condition: Yes or No?
 
+st->op->cond
+cond(yes)->e
+cond(no)->op
+```
 
+st=>start: Start
+e=>end
+op=>operation: My Operation
+cond=>condition: Yes or No?
+
+st->op->cond
+cond(yes)->e
+cond(no)->op
+  
+> * 필자가 사용하는 지킬 테마는 별도 설정없이 위 예제와 같이 자유롭게 사용할 수 있다.   
+> * 수식 표현에 제한이 있는 경우, `MathJax` Javascript를 include하여 사용한다.
+> ```
+> <script type="text/javascript" 
+> src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+> </script>
+> ```
+> * 표현형식은 [Latex](https://en.wikibooks.org/wiki/LaTeX/Mathematics) 표기법과 동일하다.
+  
 
 
 ## 실전연습  
