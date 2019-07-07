@@ -1,16 +1,18 @@
 ---
-layout: about
+layout: page
 title: About
-menu: true
-order: 10
+permalink: /about/
 ---
 
-## 소개
+This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
-훌륭한 Data Scientist가 되고 싶은 개발자.
+You can find the source code for Minima at GitHub:
+[jekyll][jekyll-organization] /
+[minima](https://github.com/jekyll/minima)
+
+You can find the source code for Jekyll at GitHub:
+[jekyll][jekyll-organization] /
+[jekyll](https://github.com/jekyll/jekyll)
 
 
-## 하고싶은 말
-
-(Github pages 블로그를 새로 만드는 중입니다.) 올해 머신러닝, 블록체인, Git의 생활화가 목표인 개발자이기에 플랫폼에 종속되는 블로그가 싫어 새로 만들고 있는 중입니다. Jekyll 블로그를 만들면서 얻은 Tip, 개발자로 경험하고 깨달았던 것들, 그리고 데이터 사이언스까지 열심히 공부하여 많은 글을 공유할 예정입니다. 
-
+[jekyll-organization]: https://github.com/jekyll
