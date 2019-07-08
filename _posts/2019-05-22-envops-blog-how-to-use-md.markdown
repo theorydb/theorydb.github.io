@@ -273,6 +273,7 @@ $$x = argmax_k((x_t-x_u+x_v)^T*x_m)/(||x_b-x_k+x_l||)$$
 > </script>
 > ```
 > * 표현형식은 [Latex](https://en.wikibooks.org/wiki/LaTeX/Mathematics) 표기법과 동일하다.
+> * 몇가지 예를 들자면, 수식은 `$$`으로 둘러쌓여야 하고 `(),{}`으로 감싸면 우선순위를 고려한 동일 단위로 인식한다.
   
 ---
 *  __[3단계] `코드 블록(Code Block)` : 소스코드, 외부 인용자료 블록처리 등에 사용__  
