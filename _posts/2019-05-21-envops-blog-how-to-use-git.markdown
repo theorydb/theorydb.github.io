@@ -79,6 +79,18 @@ Bash란 커맨드모드로 텍스트 기반의 명령어를 통해서 Git을 사
 			tags: []
 	```
 
+## 매일 쓰는 명령어(글 쓸 때마다)  
+---
+* 집에서 (git_home/ 폴더)
+git add f1.txt
+git commit f1.txt
+git push
+* 회사에서 (git_office/ 폴더)
+git pull
+git add f1.txt
+git commit f1.txt
+git push
+
 
 ## 더 알고 싶다면...  
 ---
