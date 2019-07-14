@@ -129,7 +129,7 @@ C:\githubPages\theorydb.github.io>bundle exec jekyll serve
   ![그림14](https://theorydb.github.io/assets/img/envops/2019-05-03-envops-blog-github-pages-jekyll-14.jpg)
 
 * 9. 설치는 1회에 걸쳐 끝나기 때문에 앞으로는 위의 복잡한 과정을 전부 숙지할 필요는 없다. 평소 포스팅 작성 시 루비에 접속하여 지킬을 실행하는 정도의 명령어만 알면 되기 때문에 편의상 요약 명령어를 알려드리니 숙지하시기 바란다.
-  > `시작`> start command prompt with ruby > C:\githubPages\theorydb.github.io > jekyll serve
+  > `시작` -> start command prompt with ruby -> C:\githubPages\theorydb.github.io -> jekyll serve
 
 * 10. 마무리
   사실 단순하고 쉬운 과정이었지만 세상 만사가 어디 그렇게 쉬운가.. 분명 위 과정을 따라하시다가 오류가 나신 분도 계실 것이기에 `트러블 슈팅`에 관한 포스팅을 따로 정리할 예정이다. 그때까지는 번거로우시더라도 하단에 댓글을 남겨주시면 대답해 드릴 예정이다. 
@@ -197,14 +197,27 @@ C:\githubPages\theorydb.github.io>bundle exec jekyll serve
 ---
 드디어 내가 수정한 파일을 GitHub 저장소에 올려보자. 여기까지 따라오시느라 정말 고생 많으셨다. 마지막 관문이니 만큼 조금만 더 힘을 내서 수정된 블로그를 웹에서 감상하시기 바란다.
 
-* 1. 아래 코드와 같이 수정한 파일을 포함한 모든 파일을 로컬 저장소에 업로드 한다.
-```ruby
+* 1. Git Bash를 실행한 후, 아래 코드와 같이 수정한 파일을 포함한 모든 파일을 `로컬 저장소에 업로드` 한다.
+```git
 $ git add --all
 ```
-  ![그림13](https://theorydb.github.io/assets/img/envops/2019-05-03-envops-blog-github-pages-jekyll-13.jpg)
+  ![그림15](https://theorydb.github.io/assets/img/envops/2019-05-03-envops-blog-github-pages-jekyll-15.jpg)
 
+* 2. 수정된 파일들을 `로컬저장소에 커밋`한다. 
+```git
+$ git commit -m "updates"
+```
+  ![그림16](https://theorydb.github.io/assets/img/envops/2019-05-03-envops-blog-github-pages-jekyll-16.jpg)
 
+* 3. 로컬저장소에 커밋된 파일을 `원격저장소`에 업로드한다. 
+```git
+$ git push -u origin master
+```
+  ![그림17](https://theorydb.github.io/assets/img/envops/2019-05-03-envops-blog-github-pages-jekyll-17.jpg)
 
+* 4. 여러분의 블로그 URL(`https://[username].github.io`)에 접속하면 몇 초 뒤 수정된 사항이 반영된 것을 확인할 수 있다.
+ 
+  
 이로써 여러분의 블로그가 완성되었음을 축하드린다. 다만 Jekyll과 GitHub에 적응하기까지 제법 시간이 걸릴지도 모른다. 그래서 다음글[Prose.io 연동으로 포스팅을 쉽게! 배포는 더 쉽게!](https://theorydb.github.io/envops/2019/05/04/envops-blog-posting-prose-io/)에서는 배포없이 좀 더 편하게 포스팅 할 수 있는 방법에 대해 알려드리고자 한다. 
 
 > 필자가 수정 보완한 테마는 Free 라이센스이며 별도 동의없이 자유롭게 사용하실 수 있습니다. 마음에 드신다면 [필자의 블로그 저장소](https://github.com/theorydb/theorydb.github.io) Fork 버튼 왼쪽에 있는 `★Star` 버튼을 눌러주시면 큰 힘이 날 것 같네요. ^^. 긴 글 읽으시느라 고생 많으셨습니다.   
