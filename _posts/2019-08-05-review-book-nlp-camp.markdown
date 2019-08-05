@@ -54,7 +54,7 @@ NLP 기술이 왜 중요한지 그리고 미래에 얼마나 유망한지 위 �
 * __다양한 전처리 기법 및 정규표현식의 소개__
   + 그간의 전처리에서 겪었던 시행착오를 한방에 깔끔하게 정리해주었다.
   + 아래 그림과 같이 알기쉬운 도식을 통해 정규표현식 또한 엑기스를 뽑아 전수해준다.
-  ![몬테카를로](https://theorydb.github.io/assets/img/review/2019-08-05-review-book-nlp-camp-2.jpg)
+  ![정규표현식](https://theorydb.github.io/assets/img/review/2019-08-05-review-book-nlp-camp-2.jpg)
 
 * __기계번역을 정면돌파한다.__
   + 그간 시중의 NLP 서적이 마음에 안들었던 이유는 크게 한국어, 번역 두 부분이었다.
@@ -65,7 +65,7 @@ NLP 기술이 왜 중요한지 그리고 미래에 얼마나 유망한지 위 �
   + 아래 그림은 몬테카를로 샘플링에 관한 설명이다. 기본 수학을 떼신 분이라면 꽤 깔끔하게 직관적으로 설명하는 저자의 능력 덕분에 그간 복잡하게 엉켜있던 수학의 개념이 쉽게 정리되는 것을 느끼실 수 있을 것이다.
    ![몬테카를로](https://theorydb.github.io/assets/img/review/2019-08-05-review-book-nlp-camp-3.jpg)
   + 아래 그림은 벡터유사도에 관한 설명이다. 쉽게 설명한다는 핑계로 수식을 열거하지 않는 책들이 많은데 그렇게 쉽게 얻은 지식은 희미한 개념으로만 남을 뿐 다른 분야에 적용할 때 그 한계를 드러내기 마련이다. 가급적 간명한 설명을 통해 하나도 근본 원리를 놓치지 않으려는 저자의 시도가 마음에 들었다. 
-   ![벡터유사도](https://theorydb.github.io/assets/img/review/2019-08-05-review-book-nlp-camp-3.jpg)
+   ![벡터유사도](https://theorydb.github.io/assets/img/review/2019-08-05-review-book-nlp-camp-4.jpg)
 
 * __기타__
   + 그 외에도 패스트캠퍼스의 검증된 강의를 기반으로 한다는 점
