@@ -1,6 +1,6 @@
 ---
 layout: tag-blog
-title: R
+title: Statistics & R
 slug: r
 category: dev
 menu: false
