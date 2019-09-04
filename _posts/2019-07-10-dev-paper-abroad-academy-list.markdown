@@ -1,19 +1,19 @@
 ---
 layout: post
-title:  "[Competition] 데이터 사이언스 관련 해외학회 모음"
+title:  "[Paper] 데이터 사이언스 관련 해외학회 모음"
 subtitle:   "해외학회 모음"
 categories: dev
-tags: paper academy list
+tags: papertomath academy list
 comments: true
 ---
 ## 개요
 > `데이터 사이언스 관련 해외학회` 목록을 정리해 보았습니다.
 
 - 목차
-	- [Machine Learning / Data Mining](#)
-	- [Information Systems](#)
-	- [Computer Vision / Image Processing](#)
-	- [기타 MeetUp / Community](#) 
+	- [Machine Learning / Data Mining](#machine-learning--data-mining)
+	- [Information Systems](#information-systems)
+	- [Computer Vision / Image Processing](#computer-vision--image-processing)
+	- [기타 MeetUp / Community](#기타-meetup--community) 
 
 
 ## Machine Learning / Data Mining

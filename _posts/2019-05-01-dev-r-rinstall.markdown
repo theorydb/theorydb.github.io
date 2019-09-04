@@ -11,10 +11,10 @@ comments: true
 > `R`을 활용한 데이터 분석의 첫관문. 설치 및 환경구성에 관한 포스트입니다.
   
 - 목차
-	- [R이란 무엇인가?](#R이란-무엇인가) 
-	- [R설치(Window PC 버전)](#R설치Window-PC-버전)
-	- [R Studio설치(Window PC 버전)](#R-Studio설치)
-	- [R Studio 환경설정](#R-Studio-환경설정)
+	- [R이란 무엇인가?](#r이란-무엇인가) 
+	- [R설치(Window PC 버전)](#r설치window-pc-버전)
+	- [R Studio설치(Window PC 버전)](#r-studio설치window-pc-버전)
+	- [R Studio 환경설정](#r-studio-환경설정)
   
 ## R이란 무엇인가?
 ---

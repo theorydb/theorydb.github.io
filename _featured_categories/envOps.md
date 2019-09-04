@@ -6,5 +6,5 @@ menu: true
 submenu: false
 order: 2
 description: >
-  인프라 구축에서 IDE 환경 설정까지.  
+  주로 인프라 구축 및 IDE 환경설정 등 개발환경을 구축하는 방법에 관한 글.  
 ---

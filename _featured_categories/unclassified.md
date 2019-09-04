@@ -6,5 +6,5 @@ menu: true
 submenu: false
 order: 5
 description: >
-  미분류. 그 외 기타 문서.
+  경제. 취미. 그 외 살면서 필요한 기타 문서.
 ---
