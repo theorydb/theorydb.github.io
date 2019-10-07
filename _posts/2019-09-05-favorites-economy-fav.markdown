@@ -27,7 +27,7 @@ comments: true
   * [아파트투유](https://www.apt2you.com/) :   	 
   * [LH 청약센터](https://apply.lh.or.kr) :  
   * [SH](http://www.i-sh.co.kr/) :  
-  * [KB 주택청약](https://oland.kbstar.com) :  
+  * [KB 주택청약](https://oland.kbstar.com/quics?page=ohsubs&QSL=F#loading) :  
   	
   * [온나라부동산](http://onnara.go.kr) : 분양알리미    
   * [LH 분양정보](http://www.lh.or.kr/) :  

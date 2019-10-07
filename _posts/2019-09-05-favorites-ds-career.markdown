@@ -47,7 +47,7 @@ comments: true
 ---
   * [변성윤 님의 AI채용 FAQ](https://github.com/Team-Neighborhood/I-want-to-study-Data-Science/wiki/FAQ)
   * [이현성은 어떻게 취업을 하게 되었는가](https://ita9naiwa.github.io/%EC%9D%BC%EA%B8%B0/2019/07/23/get-a-job.html?fbclid=IwAR3q6TyCYDaopHckiVk5QnGJX1BqrI3KCfAS3RHQSnKLTdvS0H2_5OWqnoU)
-  * [구글면접후기](http://incredible.ai/personal/2018/11/15/Why-I-Chose-Kakao-Instead-Of-Google/#)
+  * [`구글면접후기`](http://incredible.ai/personal/2018/11/15/Why-I-Chose-Kakao-Instead-Of-Google/#) : 이분의 블로그도 굉장히 얻을 지식이 많습니다.
 
 
 ## 현직 데이터 사이언티스트 Site  
@@ -82,11 +82,15 @@ comments: true
 
 ## 기타 Site  
 ---
-* [`대한민국 개발자 블로그 모음`](https://github.com/sarojaba/awesome-devblog) : 매우 중요한 사이트
-* [마인즈랩](https://mindslab.ai/kr)
+* [`대한민국 개발자 블로그 모음`](https://github.com/sarojaba/awesome-devblog) : 대한민국 개발자 거의 다 모여있음.
+* [`어썸 데브블로그`](https://awesome-devblog.netlify.com/) : 위 개발자 게시물 전부 모임
+* [`어썸 데브블로그(메일링리스트)`](http://daily-devblog.com/) : 메일링리스트 구독을 원한다면 이메일을 등록하세요.
+  - [메일링리스트 개발후기](https://taetaetae.github.io/2018/08/05/daily-dev-blog-1/)
+
 * [전세계 연봉순위](http://www.globalrichlist.com/)
 * [프리랜서 가이드라인](https://espressobook.com/books/1449)
 
+* [마인즈랩](https://mindslab.ai/kr)
 
 
 작성중입니다. 본 포스트는 주기적으로 업데이트 예정입니다.
