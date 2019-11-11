@@ -1,7 +1,7 @@
 ---  
 layout: post  
-title: "[리뷰] 다이내믹 프로그래밍"  
-subtitle: "Dynamic Programming"  
+title: "[리뷰] 다이내믹 프로그래밍 완전정복"  
+subtitle: "Dynamic Programming Completely"  
 categories: review  
 tags: review book dynamic programming   
 comments: true  
@@ -9,7 +9,7 @@ header-img: img/review/2019-11-11-review-book-dynamic-programming-1.jpg
 ---  
   
 ## 개요  
-> 본 리뷰는 `한빛미디어` 출판사 `"다이내믹 프로그래밍(미나크시, 카말 라와트 저)"`를 읽고 얻은 지식을 정리한 글입니다.  
+> 본 리뷰는 `한빛미디어` 출판사 `"다이내믹 프로그래밍 완전정복(미나크시, 카말 라와트 저)"`을 읽고 얻은 지식을 정리한 글입니다.  
   
 - 목차  
 	- [무서운 `재귀`, 더 무서운 `Dynamic Programming(DP)`](#무서운-재귀-더-무서운-dynamic-programmingdp)  
@@ -62,9 +62,9 @@ header-img: img/review/2019-11-11-review-book-dynamic-programming-1.jpg
   DP 자체를 명확히 이해하는 것도 중요하지만 공학분야에 있어서만큼은 언제, 어디에 적용할 수 있는지를 아는 것이 더 중요하다. ([참고 : WHAT << WHEN & WHERE](https://theorydb.github.io/review/2019/10/28/review-book-numpy-linear-algebra/#%EB%8F%84%EB%8C%80%EC%B2%B4-%EB%B3%B4%EC%8A%A4%ED%84%B4-%EC%A3%BC%ED%83%9D%EA%B0%80%EA%B2%A9-%EC%98%88%EC%B8%A1%EC%9D%B4-%EC%84%A0%ED%98%95%EB%8C%80%EC%88%98%EB%9E%91-%EB%AD%94-%EC%83%81%EA%B4%80%EC%9D%B4%EC%95%BC)) DP는 언제 어디에 적용할 수 있을까?
   + 부분적으로는 O(n^3) 등 다항식 수준의 시간복잡도를 O(n*logn) 등의 로그 수준으로 줄여 성능을 높일경우 DP를 활용할 수 있을지 판단해야 한다. 
   + 더불어 한단계 수준을 넘어선 전혀 다른 영역에의 응용이 가능하다. 예를들면 `강화학습`이 있다. 
-    > 강화학습은 각 Step별 Action을 취하는 문제를 Model-free(모델이 없는)상태에서 MDP(Markov Decision Process)를 활용하여 풀어나가는 방법이다. 때문에 Model의 Environment에 해당하는 Reward, State Transition Probability등을 최적화하기 위해 Learning(학습)을 해 나간다. 
+    > 강화학습은 각 Step별 Action을 취하는 문제를 모델이 없는(Model-free)상태에서 MDP(Markov Decision Process)를 활용하여 풀어나가는 방법이다. 때문에 Model의 Environment에 해당하는 Reward, State Transition Probability등을 최적화하기 위해 `Learning`(학습)을 해 나간다. 
   + DP와의 접점이 느껴지시지 않는지? 
-    > DP는 Model을 완벽히 안다는 전제하에(Model-based) Bellman Eqn.을 풀어 Environment를 구하는 방식이다. 그래서 Planning이라고 부르며 이를 보완하여 Learning을 통해 Environment를 최적의 상태로 찾아가는 것 즉, 강화학습 알고리즘을 만들게 된 것이다. 때문에 DP의 개념 및 활용방안을 정확히 모른다면 강화학습은 물론이고 보다 나은 방법을 찾기가 거의 불가능할 것이다. 
+    > DP는 Model을 완벽히 안다는 전제하에(Model-based) Bellman Equation을 풀어 Environment를 구하는 방식이다. 그래서 `Planning`이라고 부르며 이를 보완하여 Learning을 통해 Environment를 최적의 상태로 찾아가는 것 즉, 강화학습 알고리즘을 만들게 된 것이다. 때문에 DP의 개념 및 활용방안을 정확히 모른다면 강화학습에 대한 이해는 물론이고 보다 나은 방법을 찾기가 거의 불가능할 것이다. 
   + 더불어 문자열 연산을 다루는 `NLP`에 있어서도 DP의 문제 해결방식은 큰 도움을 준다.
 
 DP에 대해 더 설명하고 싶지만 필자의 짧은 지식으로는 여기까지다. 하지만 경제학 등 DP의 활용도는 무궁무진할 것이고 어떻게 다른 지식과 융합, 보완하느냐에 따라 멋진 걸작이 나올지도 모른다. 필자가 경험한 이 일련의 과정에 비추어 본 도서가 어떤 장점을 갖는지 다음장에서 간단히 다뤄보고자 한다.   
