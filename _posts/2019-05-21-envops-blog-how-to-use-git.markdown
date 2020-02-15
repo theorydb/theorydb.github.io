@@ -171,10 +171,12 @@ Git은 분산(`여러명`이 수정할 수 있다.)버전(`최최..종`을 자�
   ```
   ![그림15](https://theorydb.github.io/assets/img/envops/2019-05-03-envops-blog-github-pages-jekyll-15.jpg)
 
-  * (`트러블슈팅`) warning: LF will be replaced by CRLF in Gemfile.lock. 오류 발생 시 : 
-  블로그 최상위 폴더 아래의 Gemfile.lock 파일을 삭제 후 시도해 본다. (예: `C:\githubPages\theorydb.github.io\Gemfile.lock`)
-  ```ruby
-  > gem install public_suffix --version 3.1.1
+  (`트러블슈팅`) warning: LF will be replaced by CRLF in Gemfile.lock. 오류 발생 시 : 
+  시스템 간 개행문자(Line Feed)가 달라서 발생하는 문제이다. 리눅스는 LF, 윈도우는 CRLF을 사용하기 때문이다. 
+  협업자간 시스템이 동일하다면 autocrlf 기능을 활용하여 아래와 같은 명령어로 해결할 수 있다. 
+  ```git
+  $ git config --global core.autocrlf true # 윈도우끼리 사용하는 경우 
+  $ git config --global core.autocrlf true input # 리눅스, 맥끼리 사용하는 경우
   ```
 
 * __4. 수정된 파일들을 `로컬저장소에 업로드(Commit)`한다.__  
