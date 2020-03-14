@@ -8,7 +8,7 @@ theorydb:
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    훌륭한 Data scientist가 되고 싶은 개발자.
+    Data science enthusiast and addict :)
 
   # This photo will be used in the about section
   picture:

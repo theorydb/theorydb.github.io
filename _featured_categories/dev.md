@@ -6,5 +6,5 @@ menu: true
 submenu: true
 order: 3
 description: >
-  개발에 관련된 모든 것.  
+  주로 Data Science 및 그 외 개발에 관련된 모든 것.  
 ---
