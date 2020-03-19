@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[Colab] Google Colab 환경설정 및 사용법"
+title:  "[Colab] Google Colab (코랩) 환경설정 및 사용법"
 subtitle:   "Google Colab Preferences and Usage"
 categories: dev
 tags: ml google colab python jupyter notebook 
