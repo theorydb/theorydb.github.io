@@ -160,8 +160,8 @@ Git은 분산(`여러명`이 수정할 수 있다.)버전(`최최..종`을 자�
 	 $ git log  # 커밋내용 확인
     ```
 
-* __2. 새로운 파일을 `작성`한다.__  
-  + Jekyll 활용(정적컴파일 테스트 기능) : `시작`버튼 -> start command prompt with ruby -> 블로그 최상위 폴더 이동(예: C:\githubPages\theorydb.github.io) -> jekyll serve ([바로 위 챕터 "3.블로그 접속" 참고](#최초-1번만-참고-회사에서만-작성하다가-처음으로-집에서-수정할-일이-생겼다))
+* __2. `새로운 파일`을 작성한다.__  
+  + Jekyll 활용(정적컴파일 테스트 기능) : `시작`버튼 -> start command prompt with ruby -> 블로그 최상위 폴더 이동(예: C:\githubPages\theorydb.github.io) -> `bundle exec jekyll serve` ([바로 위 챕터 "3.블로그 접속" 참고](#최초-1번만-참고-회사에서만-작성하다가-처음으로-집에서-수정할-일이-생겼다))
   + 마크다운(Markdown) 사용법 및 예제 : 본 블로그 [게시글](https://theorydb.github.io/envops/2019/05/22/envops-blog-how-to-use-md/) 참고
 
 * __3. 아래 코드와 같이 수정한 파일을 포함한 모든 파일을 `로컬 저장소에 업로드(Staging)` 한다.__  
