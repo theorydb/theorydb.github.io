@@ -179,7 +179,7 @@ github.io 형태의 URL로 서비스가 제공되는 <u>Jekyll 기반의 Github 
   1. 블로그 댓글기능 추가
   2. 구글 애널리틱스로 방문자 유입 분석
   3. 구글 검색엔진 등록을 유리하게
-  4. 구글 애드센스를 장착하여 용돈벌기
+  4. [구글 애드센스(Google Adsense) 적용하기](https://theorydb.github.io/envops/2020/04/20/envops-blog-how-to-register-google-adsense/)
   5. 편리한 운영을 위한 기타 설정 및 오류 발생시 대처방법
 
 * `글쓰기`를 편하게  
