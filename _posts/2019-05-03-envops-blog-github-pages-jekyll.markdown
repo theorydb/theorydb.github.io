@@ -223,7 +223,7 @@ C:\githubPages\theorydb.github.io>bundle exec jekyll serve
 
 ## 블로그 운영하기
 --- 
-위에서 열거한 방법은 최초 구축을 위한 방법으로 블로그 포스팅을 작성하고 운영하며 매일 다루게 되는 방법과는 다르다. 이에 운영하며 필요로 하게 되는 방법들은 간략하게 모아 별도의 포스팅으로 작성하였다. 관심있는 분들은 [[Jekyll Blog] (운영에 필요한) GitHub & Jekyll 사용법](http://127.0.0.1:4000/envops/2019/05/21/envops-blog-how-to-use-git/)을 참고하시기 바란다.
+위에서 열거한 방법은 최초 구축을 위한 방법으로 블로그 포스팅을 작성하고 운영하며 매일 다루게 되는 방법과는 다르다. 이에 운영하며 필요로 하게 되는 방법들은 간략하게 모아 별도의 포스팅으로 작성하였다. 관심있는 분들은 [[Jekyll Blog] (운영에 필요한) GitHub & Jekyll 사용법](https://theorydb.github.io/envops/2019/05/21/envops-blog-how-to-use-git/)을 참고하시기 바란다.
 
 
 이로써 여러분의 블로그가 완성되었음을 축하드린다. 다만 Jekyll과 GitHub에 적응하기까지 제법 오랜 시간이 걸릴지도 모른다. 그래서 다음글 [Prose.io 연동으로 포스팅을 쉽게! 배포는 더 쉽게!](https://theorydb.github.io/envops/2019/05/04/envops-blog-posting-prose-io/)에서는 배포없이 좀 더 편하게 포스팅 할 수 있는 방법에 대해 알려드리고자 한다. 

@@ -97,7 +97,7 @@ comments: true
 
 ## Visual Studio 2019 설치 
 ---
-위에서 조사한바와 같이 윈도우 환경에서 컴파일러 도구로 Visual Studio가 필요하다는 것을 확인했다. Visual Studio를 설치하는 목적은 LightGBM, Surprise등의 패키지를 활용하기 위함이므로 Visual Studio 2019용 Build Tools을 설치해도 되는데 OpenCL등의 활용 가능성을 위해 여기서는 Community 라이센스를 설치한다. 버전은 위에서 확인한대로 2019을 설치한다.
+위에서 조사한바와 같이 윈도우 환경에서 컴파일러 도구로 Visual Studio가 필요하다는 것을 확인했다. Visual Studio를 설치하는 목적은 LightGBM, Surprise등의 패키지를 활용하기 위함이므로 Visual Studio 2019용 Build Tools을 설치해도 되는데 컴퓨터 비전을 위한 전처리 등 OpenCV의 활용 가능성을 위해 여기서는 Community 라이센스를 설치한다. 버전은 위에서 확인한대로 2019을 설치한다.
 
 * <https://visualstudio.microsoft.com/ko/downloads/>에 접속하여 아래 그림과 같이 Visual Studio 2019 Community 버전을 다운로드한다.
   ![Visual Studio 2019 Community](https://theorydb.github.io/assets/img/dev/dl/2020-02-14-dev-dl-setting-local-python-10.png)
