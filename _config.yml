@@ -37,7 +37,7 @@ font:                "'Merriweather-Light','Lato','-apple-system','Verdana','Pin
 
 # The string encoding what fonts to fetch from Google Fonts.
 # See: https://qwtel.com/hydejack/docs/configuration/
-google_fonts:        Merriweather-Light
+google_fonts:        Lato
 
 # If you do not use a Google Fonts, uncomment the line below
 # no_google_fonts:     true
@@ -57,7 +57,7 @@ copyright:           '&copy; 2019.04. by theorydb'
 permalink:           pretty
 
 # Pagination configuration (used by the `blog` layout)
-paginate:            8
+paginate:            20
 paginate_path:       '/page-:num/'
 
 # If you are upgrading form a v5 verison of Hydejack, uncomment the two lines below,
