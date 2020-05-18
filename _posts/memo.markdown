@@ -18,3 +18,21 @@ data-ad-slot attr제거
 업무도메인 : 교육, 책, 보안
 
 
+----------
+1. 배경지식 및 실습환경
+2. DVWA 취약점 점검 : XSS, CSRF, File Inclusion, Insecure Captcha 등 웹 해킹 기법
+3. 나만의 Docker Image 생성하기
+4. 애플리케이션 취약점 진단
+5. Metasploit 기초 
+6. Metasploit 활용 실습
+7. 루비 스크립트 
+
+
+
+칼리리눅스 : 리눅스 환경(OS)이 전부 설치됨
+도커 : 개발환경 한방에 설치 / 웹 관련 버전 충돌도 없고 별도 설치가 필요없어 재현가능
+칼리리눅스는 OS지만 거대 해킹도구라고 생각하면 된다. 특히 내장된 Metasploit은 Exploit Framework로서 가장 강력한 해킹도구이다.
+리눅스 설치 및 환경설정부터 ~~ 이르기까지 많은 것을 배울 수 있다.
+
+
+
