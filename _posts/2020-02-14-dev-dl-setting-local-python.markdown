@@ -146,7 +146,7 @@ comments: true
 (base) conda update -n base -c defaults conda
 ```
 
-* 새로운 가상환경을 만든다.
+* 새로운 가상환경을 만든다. (참고로, 쉽게 예시를 들기 위해 가상환경 이름을 test로 사용하였으나, 보통은 `tensorflow2_py37`와 같이 프레임워크 및 버전에 맞게 명명한다.)
 ```
 (base) conda create -n test python=3.7
 ```
@@ -164,6 +164,11 @@ comments: true
 * `쥬피터 노트북`과 관련된 라이브러리를 제일 먼저 설치한다.
 ```
 (test) conda install -n test ipython notebook jupyter 
+```
+
+* 개발중인 프로젝트가 의존성 및 버전 등에 민감한 경우, 아래와 같이 라이브러리의 `특정 버전`을 같이 명시할 수도 있다.
+```
+(test) conda install -n test numpy==1.16.4 # numpy의 특정 버전을 설치하고 싶은 경우 버전 명시
 ```
 
 * 다음으로 머신러닝 및 딥러닝에 자주 활용되는 패키지를 설치한다. 패키지명 각각의 기능이 궁금하다면 예전에 작성한 [머신러닝을 위한 파이썬의 도구들](https://theorydb.github.io/review/2019/06/05/review-book-intro-ml-py/#%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D%EC%9D%84-%EC%9C%84%ED%95%9C-%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9D%98-%EB%8F%84%EA%B5%AC%EB%93%A4scikit-learn-%EB%93%B1)을 참고하시기 바란다.
@@ -206,7 +211,14 @@ scikit-learn h5py pillow matplotlib tqdm
   (test) conda install -n test -c conda-forge pydot      # pydot
   ```
 
-이상으로 패키지 설치를 마친다. 그 외 Kaggle 혹은 실무 프로젝트의 필요에 의해 다른 패키지 설치가 필요한 경우 <https://anaconda.org/conda-forge/lightgbm>와 같은 공식문서의 검색을 활용하시기 바란다.
+* 그 외 `scikit-image, patsy, statsmodels, opencv` 등 별도로 필요한 라이브러리를 설치한다.
+
+* 설치가 모두 완료되었다면 이제 마지막 단계이다. 지금 구축한 가상환경을 ipython kernel로 등록한다.
+```
+python -m ipykernel install --user --name test
+```
+
+이상으로 라이브러리 설치를 마친다. 그 외 Kaggle 혹은 실무 프로젝트의 필요에 의해 다른 패키지 설치가 필요한 경우 <https://anaconda.org/conda-forge/lightgbm>와 같은 공식문서 혹은 검색을 활용하시기 바란다.
 
 
 ## 설치 환경 테스트
@@ -217,7 +229,7 @@ scikit-learn h5py pillow matplotlib tqdm
 ```
 (test) C:\projects\dl\test>jupyter notebook
 ```
-아래와 같이 예쁜(?) 쥬피터 노트북이 <http://localhost:8888/tree> 주소로 실행되는 것을 볼 수 있다. 우측의 `New > Python3` 버튼을 차례로 클릭한 후 아래 예제를 차례로 실행해본다.
+아래와 같이 예쁜(?) 쥬피터 노트북이 <http://localhost:8888/tree> 주소로 실행되는 것을 볼 수 있다. 우측의 `New` 버튼을 클릭하여 위에서 ipython kernel로 등록한 `test`를 선택한 후 아래 예제를 차례로 실행해본다.
 ![쥬피터 노트북](https://theorydb.github.io/assets/img/dev/dl/2020-02-14-dev-dl-setting-local-python-14.png)
 
 * 텐서플로 GPU 버전 설치여부 확인
