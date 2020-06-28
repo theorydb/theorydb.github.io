@@ -25,3 +25,10 @@ data-ad-slot attr제거
 -- 
 1. python
 
+※ git pull 충돌시 해결 방법 정리
+
+1. git stash
+
+2. git pull
+
+3 git stash pop
