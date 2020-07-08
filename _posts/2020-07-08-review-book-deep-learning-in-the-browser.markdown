@@ -13,7 +13,7 @@ header-img: img/review/review-book-deep-learning-in-the-browser-1.png
 ![표지](https://theorydb.github.io/assets/img/review/review-book-deep-learning-in-the-browser-1.png)  
 
 ---
-본 도서의 내용을 한 줄로 요약하자면 위에서 언급한 거대한 두 축인 `AI와 웹 개발의 만남`을 다룬 책이라고 할 수 있겠다. 
+본 도서의 내용을 한 줄로 요약하자면 `AI와 웹 개발의 만남`을 다룬 책이라고 할 수 있겠다. 
 
 이제 Front-End에서도 딥러닝을 학습할 수 있는 시대가 되었다. 개인적으로 2018년 당시 텐서플로 서밋과 구글 I/O는 정말 충격이었다. 
 
