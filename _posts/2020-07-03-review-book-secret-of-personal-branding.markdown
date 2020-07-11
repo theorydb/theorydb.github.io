@@ -118,3 +118,4 @@ header-img: img/review/2020-07-03-review-book-secret-of-personal-branding-1.png
 * [책소개 - 끌리는 퍼스널 브랜딩의 비밀](http://www.yes24.com/Product/goods/90611593)
 
 
+> YES24 리뷰어클럽 서평단 자격으로 작성한 리뷰입니다.

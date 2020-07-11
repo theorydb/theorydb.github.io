@@ -157,3 +157,4 @@ header-img: img/review/2020-07-07-review-book-meet-CEO-1.png
 * [책소개 - 사장님 만나주세요!](http://www.yes24.com/Product/goods/90451503)
 
 
+> YES24 리뷰어클럽 서평단 자격으로 작성한 리뷰입니다.
