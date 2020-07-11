@@ -8,7 +8,7 @@ comments: true
 header-img: img/review/2020-07-02-review-book-house-purchase-drift-1.png
 ---  
   
-> `성안당` 출판사의 `"생애최초주택구입 표류기(강병진 저)"`를 읽고 작성한 리뷰입니다.  
+> `북라이프` 출판사의 `"생애최초주택구입 표류기(강병진 저)"`를 읽고 작성한 리뷰입니다.  
 
 ![표지](https://theorydb.github.io/assets/img/review/2020-07-02-review-book-house-purchase-drift-1.png)  
 
