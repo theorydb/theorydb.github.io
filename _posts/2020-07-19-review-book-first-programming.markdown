@@ -85,12 +85,12 @@ header-img: img/review/2020-07-19-review-book-first-programming-1.png
 ---
 
 위 2가지 핵심을 충족하는 도서라면 처음 프로그래밍을 접하는 사람이 어려움을 느낄 요소는 흔치 않다고 생각한다. 그럼에도 학습 능률을 높여주는 다음의 추가 보완재들이 책의 신뢰를 높여주었다. 
-* [동영상강의](https://www.youtube.com/channel/UCK3srTIIG3LtqQRDFH1Gh4A)
+* [동영상강의](https://www.youtube.com/channel/UCK3srTIIG3LtqQRDFH1Gh4A)  
   한빛미디어 홈페이지 미치 유튜브에 저자의 동영상이 올라온다. 무료이다.
-* `눈코딩 - 손코딩` 구성
+* `눈코딩 - 손코딩` 구성  
   이 부분이 독특한 구성인데 이 책의 모든 코딩은 먼저 눈으로 짠다. 다음으로 손으로 옮기는 코딩을 하는데 초보자에게 있어 극찬할만한 구성이다.
   ![함수](https://theorydb.github.io/assets/img/review/2020-07-19-review-book-first-programming-4.png)  
-* 꼼꼼한 수험서 느낌의 학습 보조구성
+* 꼼꼼한 수험서 느낌의 학습 보조구성  
   - 용어노트, 확인문제, 해답, 실습코드, 핵심정리 등
   ![혼공용어노트](https://theorydb.github.io/assets/img/review/2020-07-19-review-book-first-programming-2.png)  
 
