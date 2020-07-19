@@ -51,15 +51,15 @@ header-img: img/review/2020-07-19-review-book-first-programming-1.png
 첫번째 질문의 답변으로 본 도서가 제시하는 솔루션으로 가장 마음에 들었던 것은 [`리플잇`](https://repl.it/) 클라우드 IDE의 활용이다. 
 
 프로그램을 만드는 과정은 본 도서에서 제시하는 아래 그림과 같은 과정을 따른다. 소스코드를 입력하고 이를 컴퓨터가 이해할 수 있는 기계어로 변환하는 과정이 필요한데 이 두 과정을 IDE가 담당하게 된다.
-![표지](https://theorydb.github.io/assets/img/review/2020-07-19-review-book-first-programming-8.png)  
+![프로그래밍](https://theorydb.github.io/assets/img/review/2020-07-19-review-book-first-programming-8.png)  
 
 프로그램을 만들고 싶다면 이 IDE를 설치하고 환경을 구성하는 과정이 필요하다는 의미이다. 주위를 살펴보면 컴퓨터나 기계를 다루는 감각이 부족하거나 공포심이 있는 경우 프로그래밍을 시작하기도 전에 IDE 구성 단계에서 어려움을 느껴 포기하는 경우를 종종 봐왔다.
 
 프로그래밍의 실체를 느껴보지도 못한채 포기라니.. 이를 해결하기 위한 좋은 방법이 리플잇을 활용하는 것이다. 접속해보면 알겠지만 IDE가 클라우드로 제공되고 있어 프로그램 소스 코드만 입력하면 실행은 리플잇이 대신해준다. 
-![표지](https://theorydb.github.io/assets/img/review/2020-07-19-review-book-first-programming-7.png)  
+![리플잇](https://theorydb.github.io/assets/img/review/2020-07-19-review-book-first-programming-7.png)  
 
 `군더더기를 떼어 버리고 프로그래밍에 바로 집중`할 수 있다는 것은 엄청난 장점이다. 그래서인지 여느 책과는 다르게 직접 개인 PC에 IDE를 구성하는 방법은 책의 맨 뒤 부록에서 언급한다. PC IDE를 구성하는 방법도 놓치지 않으면서, 프로그래밍 본연의 목적에 집중할 수 있게 배치된 구성이 마음에 들었다.
-![표지](https://theorydb.github.io/assets/img/review/2020-07-19-review-book-first-programming-3.png)  
+![VS Code](https://theorydb.github.io/assets/img/review/2020-07-19-review-book-first-programming-3.png)  
 
 ---
 
@@ -68,7 +68,7 @@ header-img: img/review/2020-07-19-review-book-first-programming-1.png
 > 계란 3개가 있는데 1개씩 후라이를 만들때마다 "1번 달걀이 프라이가 되었습니다.", "2번 달걀이..", "3번 달걀이.."와 같은 메시지를 출력하는 프로그램을 만들려면 어떻게 해야 할까?
 
 답은 책에 소개된 직관적인 그림으로 대신하려 한다.
-![표지](https://theorydb.github.io/assets/img/review/2020-07-19-review-book-first-programming-5.png)  
+![반복문](https://theorydb.github.io/assets/img/review/2020-07-19-review-book-first-programming-5.png)  
 
 프로그래밍이 뭔지 모르는 분들도 반복문이라는 용어 자체에서 똑같은 동작을 반복하는 프로그램 기능일 것이라는 감을 잡을 수 있다. 위 그림과 함께 생각해보자면 `for, in, :` 키워드만 있으면 반복문을 구현할 수 있다는 감을 잡을 수 있을것이다.
 
@@ -78,7 +78,7 @@ header-img: img/review/2020-07-19-review-book-first-programming-1.png
 
 프로그램은 일반적으로 위에서 아래로 소스 코드 순서대로 실행되는데, 제어문과 반복문이 어려운 이유는 사실 `소스 코드 순서대로 실행되지 않는 첫번째 로직`이기 때문에 어려움을 느끼는 것이다. 
 아래 반복문에서 가장 흔히 사용하는 2가지 키워드 coninue와 break를 시각화한 그림을 보자.
-![표지](https://theorydb.github.io/assets/img/review/2020-07-19-review-book-first-programming-6.png)  
+![continue_break](https://theorydb.github.io/assets/img/review/2020-07-19-review-book-first-programming-6.png)  
 
 화살표만 잘 따라간다면 소스코드가 실제 어떤 순서로 동작하는지 충분히 이해할 수 있을것이다. 그래서 두번째 질문도 합격점이다. 본 도서만 잘 따라간다면 충분히 프로그래밍의 첫 관문인 반복문과 제어문을 쉽게 이해할 수 있을 것이다.
 
@@ -86,11 +86,13 @@ header-img: img/review/2020-07-19-review-book-first-programming-1.png
 
 위 2가지 핵심을 충족하는 도서라면 처음 프로그래밍을 접하는 사람이 어려움을 느낄 요소는 흔치 않다고 생각한다. 그럼에도 학습 능률을 높여주는 다음의 추가 보완재들이 책의 신뢰를 높여주었다. 
 * [동영상강의](https://www.youtube.com/channel/UCK3srTIIG3LtqQRDFH1Gh4A)
-* 눈코딩 - 손코딩 구성
+  한빛미디어 홈페이지 미치 유튜브에 저자의 동영상이 올라온다. 무료이다.
+* `눈코딩 - 손코딩` 구성
+  이 부분이 독특한 구성인데 이 책의 모든 코딩은 먼저 눈으로 짠다. 다음으로 손으로 옮기는 코딩을 하는데 초보자에게 있어 극찬할만한 구성이다.
   ![함수](https://theorydb.github.io/assets/img/review/2020-07-19-review-book-first-programming-4.png)  
 * 꼼꼼한 수험서 느낌의 학습 보조구성
   - 용어노트, 확인문제, 해답, 실습코드, 핵심정리 등
-  ![혼공용어노트](https://theorydb.github.io/assets/img/review/2020-07-19-review-book-first-programming-4.png)  
+  ![혼공용어노트](https://theorydb.github.io/assets/img/review/2020-07-19-review-book-first-programming-2.png)  
 
 첫 입문서로 책이 마음에 들어 객관적으로 리뷰를 작성하고자 하였지만 아이가 이 책을 너무 마음에 들어하고 열심히 보고 있어 주관적으로는 이미 합격점이었다.
 
