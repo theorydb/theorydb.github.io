@@ -19,12 +19,12 @@ header-img: img/review/2020-08-28-review-book-brain-lies-1.png
 본 도서는 `내가 했음에도 이해가 되지 않는 행동 혹은 자동으로 하는 행동들에 대한 원인과 답`을 알려주는 책이다.
 
 구구절절한 설명보다 먼저 재미있는 현상 2개를 설명하려한다. 아래 그림을 보자. 
-![표지](https://theorydb.github.io/assets/img/review/2020-08-28-review-book-brain-lies-2.png)  
+![쌍안정](https://theorydb.github.io/assets/img/review/2020-08-28-review-book-brain-lies-2.png)  
 
 (a) 그림을 먼저보고 가운데 그림을 보자. 다음에는 (b) 그림을 보고 가운데 그림을 보자. 놀랍게도 우리뇌는 선험적으로 받아들인 정보(이미지)에 의해 모호함을 확신으로 바꾼다. 이를 `모호함의 감소`라 한다.
 
-다음 그림을 하나 더 보자. 왼쪽 눈을 손바닥으로 가리고 오른쪽 눈으로 십자가 모양에 집중한 후 모니터에 얼굴을 조금씩 가까이 가져가보자. 얼굴과 모니터 사이의 거리가 25cm 정도 되었을 때 오른쪽의 검은색 동그라미가 보이지 않는 구간이 있음을 발견할 것이다.
-![표지](https://theorydb.github.io/assets/img/review/2020-08-28-review-book-brain-lies-3.png)  
+다음 그림을 하나 더 보자. 왼쪽 눈을 손바닥으로 가리고 오른쪽 눈으로 십자가 모양에 집중한 후 모니터에 얼굴을 조금씩 가까이 가져가보자. 얼굴과 모니터 사이의 거리가 25cm 정도 되었을 때 오른쪽의 검은색 동그라미가 보이지 않는 구간인 `맹점`이 있음을 발견할 것이다.
+![맹점](https://theorydb.github.io/assets/img/review/2020-08-28-review-book-brain-lies-3.png)  
 
 드라마나 영화를 보다 보면 주인공이 확신에 찬 어조로 멋진 말을 하곤 한다.
 > "나는 내가 눈으로 직접 본 것만을 믿어."
