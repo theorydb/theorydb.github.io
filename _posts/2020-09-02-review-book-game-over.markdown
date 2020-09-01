@@ -3,7 +3,7 @@ layout: post
 title: "[리뷰] 게임 오버 GAME OVER"  
 subtitle: "소수만 누리는 번영, 누구도 원치 않는 민주주의, 모두가 바라는 민족주의, 그다음은?"  
 categories: review  
-tags: review book principles 원칙 레이달리오 인사이트 인생 사업 헤지펀드 경영 일 자서전
+tags: review book game over 세계 위기 민주주의 민족주의 신자유주의 양적완화 부채 양극화 분배 AI 기술 감시 다양성 기후 정치 경제 사회 
 comments: true  
 header-img: img/review/review-book-game-over-1.png
 ---  
