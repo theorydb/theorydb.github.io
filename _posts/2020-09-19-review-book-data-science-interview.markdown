@@ -72,7 +72,7 @@ HULU는 개인화 추천, 검색, 컨텐츠 이해, 광고 예측과 타기팅, 
 
   + LDA   
     PCA의 원리를 배우고 예제를 따라해보며 자신감을 얻은 후 실전에 적용해보니 원하는 대로 동작하지 않은 적이 있었다. 
-    ![LDA](https://theorydb.github.io/assets/img/review/review-book-data-science-interview-3.png)  
+    ![LDA](https://theorydb.github.io/assets/img/review/review-book-data-science-interview-9.png)  
   
     나중에야 클래스가 다른 레이블들의 차원 축소에는 LDA라는 기법이 도움이 된다는 사실을 알았는데 당시에는 LDA 지식이 이론으로만 머리속에서 따로 놀아 실전에서 유용한 해결 기법으로 매칭되지 않았다. 
   
