@@ -68,7 +68,7 @@ header-img: img/review/review-book-emotion-arrangement-1.png
 * __뇌와 감정__  
   - `맹점 채움 현상`  
     오른쪽 눈을 손바닥으로 가리고 왼쪽 눈으로 십자가 모양에 집중한 후 모니터에 얼굴을 조금씩 가까이 가져가보자. 얼굴과 모니터 사이의 거리가 25cm 정도 되었을 때 왼쪽의 하트가 보이지 않는 구간인 맹점이 있음을 발견할 것이다. 더 놀라운 것은 우리의 두뇌가 하트를 글씨로 채운다는 점인데 이것이 맹점 채움 현상이다.
-    ![표지](https://theorydb.github.io/assets/img/review/review-book-emotion-arrangement-2.png) 
+    ![맹점](https://theorydb.github.io/assets/img/review/review-book-emotion-arrangement-2.png) 
   - `미러뉴런 매칭` 시스템  
     + 시각뿐만 아니라 후각, 미각 또한 동일한 방식으로 작동한다.
     + 동일한 와인의 가격을 미리 알려주고 맛을 품평하는 실험에서 비싼 가격으로 칭한 와인의 맛이 좋다고 하는 현상은 이미 감정에 의한 판단이 일어났음을 의미한다. 
@@ -105,6 +105,7 @@ header-img: img/review/review-book-emotion-arrangement-1.png
 
 개인적으로 인상깊었던 부분들만 정리해 보았음에도 상당히 많은 분량이 되었다. 이처럼 우리 뇌와 감정에 관한 매커니즘을 이해하고 다스리기 위한 폭넓은 지식을 제공하기에 모든 분들께 일독을 권하고 싶다.
 
+![감정의 원리](https://theorydb.github.io/assets/img/review/review-book-emotion-arrangement-3.png)
 
 * [책소개 - 감정이 어려워 정리해 보았습니다](http://www.yes24.com/Product/Goods/92305212?OzSrank=1)
 
