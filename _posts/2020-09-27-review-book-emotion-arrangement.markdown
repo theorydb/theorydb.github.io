@@ -109,4 +109,5 @@ header-img: img/review/review-book-emotion-arrangement-1.png
 
 * [책소개 - 감정이 어려워 정리해 보았습니다](http://www.yes24.com/Product/Goods/92305212?OzSrank=1)
 
+> YES24 리뷰어클럽 서평단 자격으로 작성한 리뷰입니다.
 
