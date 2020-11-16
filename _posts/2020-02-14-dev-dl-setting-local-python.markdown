@@ -278,6 +278,52 @@ matplotlib 3.1.3
 h5py 2.10.0
 ```
 
+## PyTorch 설치
+---
+
+* 먼저 Anaconda Prompt 셀에 접속하여 Tensorflow를 설치할 때와 마찬가지로 새로운 가상 환경을 만든다. 여기에서는 가상환경의 이름으로 `pytorch17_p38`을 지정하였다.
+```
+C:\projects\torch> conda create -n pytorch17_p38 python=3.8
+```
+
+* 가상환경에 접속한다.
+```
+C:\projects\torch> conda activate pytorch17_p38
+```
+
+* <https://pytorch.org/>에 접속한 후, 스크롤을 내리다보면 아래 그림과 같은 INSTALL PYTORCH 메뉴가 보인다. OS 등 각자의 개발 환경 및 버전을 체크하면 보라색으로 표시한 부분과 같은 install 명령어가 자동 완성된다.
+  ![pytorch](https://theorydb.github.io/assets/img/dev/dl/2020-02-14-dev-dl-setting-local-python-16.png)
+
+* 위 명령어에 가상환경을 추가로 지정하여 설치한다.
+```
+(pytorch17_p38)C:\projects\torch> conda install pytorch torchvision torchaudio cudatoolkit=10.1 -c pytorch -n pytorch17_p38
+```
+
+* 주피터 노트북 등 추가로 원하는 라이브러리를 설치한다. 
+```
+(pytorch17_p38)C:\projects\torch> conda install -n pytorch17_p38 jupyter notebook ipython
+```
+
+* conda list 명령어를 통해 원하는 라이브러리가 원하는 버전으로 모두 설치되었는지 확인한다. 부족한 라이브러리는 위 명령어와 같이 추가로 설치한다.
+```
+(pytorch17_p38)C:\projects\torch> conda list
+```
+
+* 구축한 가상환경을 ipython kernel로 등록한다.
+```
+(pytorch17_p38)C:\projects\torch> python -m ipykernel install --user --name pytorch17_p38
+```
+
+* 주피터 노트북에 접속한 후, 방금 등록한 pytorch17_p38 커널을 선택하여 새 파일을 만든다.
+```
+(pytorch17_p38)C:\projects\torch> jupyter notebook
+```
+
+* 노트북 셀에 아래와 같은 import 문을 실행 시 오류가 발생하지 않으면 성공적으로 설치된 것이다.
+```
+import torch
+```
+
 
 ## 마치며...
 ---
