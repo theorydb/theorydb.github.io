@@ -73,7 +73,7 @@ header-img: img/review/review-book-quantum-1.png
 
 * __간섭무늬__  
   양자 역학에서 가장 중요한 간섭 무늬 실험에 대한 설명이다. 
-  ![간섭무늬](https://theorydb.github.io/assets/img/review/review-book-quantum-6.png)  
+  ![간섭무늬](https://theorydb.github.io/assets/img/review/review-book-quantum-7.png)  
 
   이 실험을 통해 아인슈타인이 왜 반은 맞고, 반은 틀렸는지 알게될 것이다.
 
