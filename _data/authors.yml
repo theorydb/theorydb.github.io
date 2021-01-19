@@ -2,13 +2,13 @@
 # Must be the same as `author` in `_config.yml`.
 # Change `qwtel` to your shortname (used in the front matter to set a page's author, e.g. `author: qwtel`).
 theorydb:
-  name:              min
-  email:             theorydb@gmail.com
+  name:              Gun
+  email:             daegeungim7301@gmail.com
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Data science enthusiast and addict :)
+       Wannabe a Good Developer
 
   # This photo will be used in the about section
   picture:
@@ -22,7 +22,7 @@ theorydb:
   # Comment/uncommet to show/hide
   # Icons appear in order, can be rearranged:
   social:
-    facebook:        cantouchmin
+    #facebook:        cantouchmin
     # twitter:         <username>
     # google:          <number>
     # vk:              <username>
@@ -43,10 +43,10 @@ theorydb:
     # steam:           <number>
     # reddit:          <username>
     # tumblr:          <username>
-    # pinterest:       <username>
+    pinterest:       daegeungim7301
     # foursquare:      <number>
     # yelp:            <string>
-    github:          theorydb
+    github:          D-Gun
     # stackoverflow:   <number/username>
     # npm:             <username>
     # hackernews:      <username>
@@ -57,13 +57,13 @@ theorydb:
     # delicious:       <username>
     # stumbleupon:     <username>
     # paypal:          <username>
-    email:           mailto:theorydb@gmail.com
-    rss:             https://theorydb.github.io/feed.xml
+    email:           mailto:dagegungim7301@gmail.com
+    # rss:             <>https://D-Gun.github.io/feed.xml
 
 # Another author
 mdo:
-  name:              <firtname> <lastname>
-  email:             <mail@domain.tld>
+  name:              <Daegeun> <Gim>
+  email:             <daegeungim7301@gmail.com>
   about:             |
     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -72,7 +72,7 @@ mdo:
     Open `_data/authors.yml` to edit this text.
   picture:           https://placehold.it/128x128
   social:
-    github:          <username>
-    twitter:         <username>
+    github:          <D-Gun>
+    pintrest:        <www.pinterest.com/daegeungim7301>
   image: 'data:image/gif;base64,R0lGODlhAQABAPAAACAgIP///yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==' # http://jsfiddle.net/LPxrT/
   color: '#268bd2'

@@ -2,31 +2,31 @@
 #  User configuration
 # -----------------------------------------------------------------------------
 
-title:               TheoryDB
+title:               D-Gun
 
 # The unique resource location of your page.
 # Set to `https://<username>.github.io` when hosting on GitHub Pages
-url:                 https://theorydb.github.io
+url:                 'https://D-Gun.github.io'
 
 # Set to '' when hosting a blog on GitHub Pages, ie on `//<username>.github.io`
 # Set to '/<reponame>' when using the `gh-pages` branch of a repository
 baseurl:             ""
 
 # A very short description of your page
-tagline:             "All roads lead to data."
+tagline:             "Wannabe a Good Developer"
 
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
 description:         >
-  Data science enthusiast and addict :)
+  Wannabe a Good Developer
 
 # This should be the same author as first entry in `_data/authors.yml`
 author:
-  name:              min
-  email:             theorydb@gmail.com
+  name:              Gun
+  email:             daegeungim7301@gmail.com
 
 # Fallback image and color
-image:               /assets/img/main_left.jpg
+image:               /assets/img/cosmo.png
 color:               '#4f86aa'
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
