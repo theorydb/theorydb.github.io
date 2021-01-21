@@ -1,11 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\_featured_categories",
     "\\_layouts",
     "\\_plugins",
     "\\_posts"
   ],
-  "SelectedNode": "\\_posts\\2021-01-19-think-hello-world-2021.markdown",
+  "SelectedNode": "\\_config.yml",
   "PreviewInSolutionExplorer": false
 }
