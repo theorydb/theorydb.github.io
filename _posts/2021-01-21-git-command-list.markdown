@@ -28,9 +28,8 @@ git설치는 [git download](https://git-scm.com/downloads)페이지에서 운영
     - 계정생성은 어렵지 않으니 금방 만들수 있다.
 ---
 ### Gitbash 명령어
-- git 홈페이지에서 제공하는 Reference 를 살펴봤더니
-![Git](../assets/img/post_img/git.png)
-![Gitrefrence](../assets/img/post_img/gitrefrence.png)
+- git 홈페이지에서 제공하는 Reference를 살펴봤더니
+![Gitrefrence](https://D-Gun.github.io/assets/img/post_img/gitrefrence.png)
 - 역시나 많다... 그러니 필요한 부분 몇개만 챙겨서 살펴보도록 하자. 허나,
   - 문서화된 부분을 읽어서는 기능을 이해하기 어려웠다. git의 구조를 어느정도 알고 있어야 이해가 가능할 것으로 보인다.
   - 구글링으로 간단하게 정리되어 있는 명령어들만 가져와서 메모해본다.
