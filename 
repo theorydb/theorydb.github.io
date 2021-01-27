@@ -1,0 +1,660 @@
+[33mcommit e5827fda051fbc6183a14a369d5cc22f77fce5a4[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: D-Gun <daegeungim7301@gmail.com>
+Date:   Wed Jan 27 22:31:24 2021 +0900
+
+    insidelink4 and git command insult
+
+[33mcommit 5862fd3eb0a259373c18a035b200b8fbf87c6fce[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: D-Gun <daegeungim7301@gmail.com>
+Date:   Wed Jan 27 21:54:02 2021 +0900
+
+    inside link1
+
+[33mcommit de56f0c1ab2403d82ea5f6a170bbda2e67c621ee[m
+Author: D-Gun <daegeungim7301@gmail.com>
+Date:   Wed Jan 27 21:50:15 2021 +0900
+
+    inside link1
+
+[33mcommit 44beb3965dac0a7acce78c2810b1f4d835cd64d9[m
+Author: D-Gun <daegeungim7301@gmail.com>
+Date:   Wed Jan 27 11:49:56 2021 +0900
+
+    memory st2
+
+[33mcommit 6ae17facb61ccef43ab2b1a4f06ac481d32e83d6[m
+Author: D-Gun <daegeungim7301@gmail.com>
+Date:   Tue Jan 26 23:32:17 2021 +0900
+
+    memory structure post
+
+[33mcommit be7844f7f01d6a7878eb75c76ebefc66e1c4b8c5[m
+Author: D-Gun <daegeungim7301@gmail.com>
+Date:   Thu Jan 21 22:02:04 2021 +0900
+
+    gitbash command4
+
+[33mcommit e8feb14bc7d58b2fcfdfee433d642ccbce112b85[m
+Author: D-Gun <daegeungim7301@gmail.com>
+Date:   Thu Jan 21 21:56:36 2021 +0900
+
+    gitbash command3
+
+[33mcommit 8b68083a3547efdca88a4e3fb9eae271d54a13dc[m
+Author: D-Gun <daegeungim7301@gmail.com>
+Date:   Thu Jan 21 21:47:42 2021 +0900
+
+    gitbash command2
+
+[33mcommit 4644eb8f3488ae89d3a6b6474322eb55becd7e7f[m
+Merge: 367dd1f 91d7c87
+Author: D-Gun <daegeungim7301@gmail.com>
+Date:   Thu Jan 21 21:42:49 2021 +0900
+
+    gitbash command
+
+[33mcommit 367dd1f6a623ca77af204c2b758f24f9730c3ea3[m
+Author: D-Gun <daegeungim7301@gmail.com>
+Date:   Thu Jan 21 21:39:56 2021 +0900
+
+    gitbash 명령어 정리
+
+[33mcommit 91d7c87bcce8b4ff4e9dac09f585d28a7d818a97[m
+Author: D-Gun <73294503+D-Gun@users.noreply.github.com>
+Date:   Wed Jan 20 00:05:49 2021 +0900
+
+    Update README.md
+
+[33mcommit 332d0fa08390f45c3307a511c7750e86e03e784f[m
+Author: D-Gun <daegeungim7301@gmail.com>
+Date:   Wed Jan 20 00:02:16 2021 +0900
+
+    updates
+
+[33mcommit 8f94bb5f3e4da1709442bff3fe0204e86fc23948[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Wed Jan 6 21:24:05 2021 +0900
+
+    updates
+
+[33mcommit fd61ad6907a19730169ee1285fed250da1405fc8[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Wed Jan 6 21:17:06 2021 +0900
+
+    updates
+
+[33mcommit c10269c1bc9f1797a1bd38ed2252b8a2fd60cc7f[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Wed Jan 6 21:15:49 2021 +0900
+
+    updates
+
+[33mcommit 184edf1c9367df0616943ef71242f2088d7b12c7[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sat Jan 2 10:57:17 2021 +0900
+
+    updates
+
+[33mcommit 42f3ba4f245ae265a5178d9f8da3ce2b87cb94f7[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sat Jan 2 06:58:59 2021 +0900
+
+    updates
+
+[33mcommit af2f04aaea35fdcdda359c4cd005e5551ab8e171[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sat Jan 2 06:41:08 2021 +0900
+
+    updates
+
+[33mcommit 626ff464383ad08fb2a02c1f266c68be932d7156[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sun Dec 20 08:24:37 2020 +0900
+
+    updates
+
+[33mcommit 373d6befed239190d2c7cd96f3fee4e10f88691c[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sun Dec 20 00:05:04 2020 +0900
+
+    updates
+
+[33mcommit e43abee0399297abd60b2bf95f051ba4545ffab6[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sat Dec 19 21:07:40 2020 +0900
+
+    updates
+
+[33mcommit eb05edcf93d4e6f69bcc69319f46429544bc113c[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Wed Dec 2 07:32:11 2020 +0900
+
+    updates
+
+[33mcommit 039e7863b4064ef25ae525e0888e8b8ef2cbb2fb[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Tue Dec 1 04:40:56 2020 +0900
+
+    updates
+
+[33mcommit c92275704bd0bce66670f96cb87334be34f2dfa8[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Mon Nov 30 07:38:03 2020 +0900
+
+    updates
+
+[33mcommit 3277a7f459d44d873d0d24f32f0eb18dcfb8e361[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Mon Nov 30 07:33:45 2020 +0900
+
+    updates
+
+[33mcommit e2a399374a6096dd39f4cc8e32bc89bc347910d9[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Mon Nov 30 06:47:28 2020 +0900
+
+    updates
+
+[33mcommit 7e7f8c0f9898f4c87b19a61fb10f8368abe8c512[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sat Nov 28 21:24:06 2020 +0900
+
+    updates
+
+[33mcommit 710510209f1b600c321520c96ba12a39fd018f70[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sat Nov 28 20:52:31 2020 +0900
+
+    updates
+
+[33mcommit 8dd970359af83870bc05c198ed7de8c12c571db8[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sat Nov 28 20:36:37 2020 +0900
+
+    updates
+
+[33mcommit 1fa948aa66ac104ac9aac15298550e9f237b5d63[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Mon Nov 23 06:24:36 2020 +0900
+
+    updates
+
+[33mcommit 7cd4838b6f7529a442c0b4f3f433b1bb109dd566[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Fri Nov 20 22:26:53 2020 +0900
+
+    updates
+
+[33mcommit 5a01485d8acf4fa331e322203c83ccf8246aa5b3[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Fri Nov 20 21:41:13 2020 +0900
+
+    updates
+
+[33mcommit e0b53f7ecc6553101251b10570fc23e2d2546b45[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Mon Nov 16 22:12:47 2020 +0900
+
+    updates
+
+[33mcommit bf5bc32753127ce1a638a94a6d1e00ee4b1bb90f[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Mon Nov 16 21:48:23 2020 +0900
+
+    updates
+
+[33mcommit 0342844f0a30f1f4bb47a1326da7ec882bae8647[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Wed Nov 11 12:46:07 2020 +0900
+
+    updates
+
+[33mcommit b605e9b6732a7ee32c257e35e6db397ca7efdee7[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Wed Nov 11 09:34:18 2020 +0900
+
+    updates
+
+[33mcommit 76d7fa4f9c84f0b6129f11b67676a99c56f514db[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sun Nov 8 03:43:27 2020 +0900
+
+    updates
+
+[33mcommit 1a4588043fd8569d195a2f88cc6c0144b1b43456[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Fri Nov 6 23:13:30 2020 +0900
+
+    updates
+
+[33mcommit d39f65173206c9d3f89bd3cf32c2bc5891672815[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Wed Nov 4 00:26:20 2020 +0900
+
+    updates
+
+[33mcommit 70a1f8b0e0b3070828fa6c4d8ee41fa824ab68e2[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Wed Nov 4 00:16:50 2020 +0900
+
+    updates
+
+[33mcommit 03c971c3986053b4626733d087df38d10de78c3a[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sat Oct 31 19:57:20 2020 +0900
+
+    updates
+
+[33mcommit 31618d3392d808cafa25d9207fb701a730bfcd0a[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sat Oct 24 19:43:07 2020 +0900
+
+    updates
+
+[33mcommit 899e67f840496af23ff89e1426a5386a7ac26fb9[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sat Oct 24 19:41:43 2020 +0900
+
+    updates
+
+[33mcommit ec8433d3c6d56af417eb4d8f5a4dcc0393cffb93[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Fri Oct 23 22:45:37 2020 +0900
+
+    updates
+
+[33mcommit 3369025ac0024d5ada3e60039c8a88f76b48ba9d[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Fri Oct 23 22:27:33 2020 +0900
+
+    updates
+
+[33mcommit b928355f53b2e6682954e88b1db07c06631c21ad[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sat Oct 17 22:57:38 2020 +0900
+
+    updates
+
+[33mcommit f3aec7e8f823827b4e1882fe965c593517bff0be[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sat Oct 17 06:05:10 2020 +0900
+
+    updates
+
+[33mcommit 58507a8a33632a963293d26a0c4a112efda8bbc2[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Wed Oct 14 04:21:02 2020 +0900
+
+    updates
+
+[33mcommit 0a662523260825f27a2567738c4d2b4dd5ff3e60[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Mon Oct 5 13:02:38 2020 +0900
+
+    updates
+
+[33mcommit 37248585913aa68fbdb5eb15cca0b1be6c4aaea9[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Mon Oct 5 09:58:21 2020 +0900
+
+    updates
+
+[33mcommit eca69b58e224860d501bdb3c0e0ce4fb8692eb73[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Mon Oct 5 08:33:03 2020 +0900
+
+    updates
+
+[33mcommit 7c6d4575ce0d2dbf79288439fa0515054fbb43c8[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sun Oct 4 18:22:02 2020 +0900
+
+    updates
+
+[33mcommit 322de8cd266d3deac022b69bea5e32d43087520a[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sun Oct 4 18:11:05 2020 +0900
+
+    updates
+
+[33mcommit 20764cf015e4f7cbec47afb0f374a53a66fadca4[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sat Sep 26 23:36:32 2020 +0900
+
+    updates
+
+[33mcommit c9a1b3eccac0a40d18c251b0b54f36abdd8dfdbe[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sat Sep 19 16:07:22 2020 +0900
+
+    updates
+
+[33mcommit d79c7e680b337df621bdd7bbc80fd50a8f683aef[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sat Sep 19 14:33:45 2020 +0900
+
+    updates
+
+[33mcommit b2cfde2648aa75d15269dca140adc56cefccbee6[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sat Sep 19 14:14:02 2020 +0900
+
+    updates
+
+[33mcommit 47b5d538333a061ad98c586bad24a6e49081d7b4[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Fri Sep 18 18:23:05 2020 +0900
+
+    updates
+
+[33mcommit 2a70472fd8657392814570bbfeb108c53ff4ace6[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Fri Sep 18 01:08:24 2020 +0900
+
+    updates
+
+[33mcommit 91fd8b270228eec354332413e11fb8e3ab518d7e[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Fri Sep 18 01:02:40 2020 +0900
+
+    updates
+
+[33mcommit 1ac855757dfa197f9d86a96e45caf7a62f859fa6[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Fri Sep 18 00:53:27 2020 +0900
+
+    updates
+
+[33mcommit 791ae0e61d0ad9e7fa6894f1435993153337ff9c[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Thu Sep 17 22:45:40 2020 +0900
+
+    updates
+
+[33mcommit f93d6e174d878717f9d9be17f0b6f6d96b802a77[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sun Sep 13 01:41:12 2020 +0900
+
+    updates
+
+[33mcommit 30ac0ddab16b8a22c1ad9c2c610c3ec52218ea42[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sat Sep 12 23:52:38 2020 +0900
+
+    updates
+
+[33mcommit 72f47eda1d8ef0837803eb5fd264aaeea726cc5f[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sat Sep 12 23:41:55 2020 +0900
+
+    updates
+
+[33mcommit d87b9c0af60d88712b73d312d757405863ce3cef[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sat Sep 12 23:40:28 2020 +0900
+
+    updates
+
+[33mcommit 2d49f8b304500b4ca0fb61227d1ecb134b69ff2d[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sat Sep 12 17:56:25 2020 +0900
+
+    updates
+
+[33mcommit ec594a6baf0db8acee68dd6ca4e86483b2120683[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sat Sep 5 21:04:58 2020 +0900
+
+    updates
+
+[33mcommit 55ed7c350485dfb48c4026a46c2f7b173239e331[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sat Sep 5 20:14:30 2020 +0900
+
+    updates
+
+[33mcommit 8862f36f2225d97f223970745060eaf9008e28ee[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Fri Sep 4 22:39:54 2020 +0900
+
+    updates
+
+[33mcommit ade5e5940f84177e219e17d3e120b54e44608040[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Fri Sep 4 22:32:45 2020 +0900
+
+    updates
+
+[33mcommit 11c31710a3af909cd9e7cc978969911b5a90a0e0[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Wed Sep 2 05:40:20 2020 +0900
+
+    updates
+
+[33mcommit 269b9ae20e64c38ae1aea83ad5f62ba5b1522467[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Wed Sep 2 05:35:45 2020 +0900
+
+    updates
+
+[33mcommit c1fc7307de1c5647005f161f27c6e19b8a2038fd[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Wed Sep 2 05:22:44 2020 +0900
+
+    updates
+
+[33mcommit 95203466e207e70560e7e80a561497f77bf5ede9[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Mon Aug 31 01:20:57 2020 +0900
+
+    updates
+
+[33mcommit 753b225ce49393b7398c7bf3378ea7de20fa545e[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sun Aug 30 22:06:44 2020 +0900
+
+    updates
+
+[33mcommit 95c680fcd4288dc20b77f149cd4761f756894c5c[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sun Aug 30 22:03:46 2020 +0900
+
+    updates
+
+[33mcommit 91a283812032cdb23ca0e26ec1083d1612cc3b5a[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sat Aug 29 20:50:53 2020 +0900
+
+    updates
+
+[33mcommit 744c94362e8c44e442d1ede11f152b8f1b32988c[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sat Aug 29 20:48:10 2020 +0900
+
+    updates
+
+[33mcommit fa5e8f40d37df6286bbee528b8fe63d913d4cdeb[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sat Aug 29 20:43:23 2020 +0900
+
+    updates
+
+[33mcommit 65d1645d371533d8f55714c757cc79eb8badbcef[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Thu Aug 27 23:29:40 2020 +0900
+
+    updates
+
+[33mcommit 21fe8dc7fbeb08063481a92f2dcc4e6f603385ec[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Fri Aug 21 22:38:10 2020 +0900
+
+    updates
+
+[33mcommit 1940f3e24a33f999ba3d729a13aa80cef3a7db98[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Fri Aug 21 22:35:44 2020 +0900
+
+    updates
+
+[33mcommit 6f7961697f8daf1d5659eea1f9321b7017e759cd[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Fri Aug 21 09:29:16 2020 +0900
+
+    updates
+
+[33mcommit b5a6e2b6e9465c6d05cd1b2753f93e5664de5542[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Fri Aug 21 08:07:25 2020 +0900
+
+    updates
+
+[33mcommit 8d4fd4b5956066fe38b61c01dad6d26c9a7e464a[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Thu Aug 20 02:11:34 2020 +0900
+
+    updates
+
+[33mcommit a3c53241f6c99de3515c007b33c61d94248456cb[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Thu Aug 20 01:33:18 2020 +0900
+
+    updates
+
+[33mcommit f5b3f797c433418b0fbf736d60e461afe6488dfe[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Thu Aug 20 00:20:34 2020 +0900
+
+    updates
+
+[33mcommit 0b8630a176fc199203ffc3b3bb7acf38b6c9ec8a[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Wed Aug 19 11:35:42 2020 +0900
+
+    updates
+
+[33mcommit 133c7236185c82861b0d78651421d5b5ba5bb3b4[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Wed Aug 19 08:07:09 2020 +0900
+
+    updates
+
+[33mcommit 224c8db14e4c17af932cae330df5c97814761719[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Fri Aug 14 21:48:54 2020 +0900
+
+    updates
+
+[33mcommit 1b60c35d6df532421e6ae04146127ce009e3a8e7[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Fri Aug 14 17:36:47 2020 +0900
+
+    updates
+
+[33mcommit 0841002fd353128c71f094c0f40fb52630774fd3[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Fri Aug 14 08:22:47 2020 +0900
+
+    updates
+
+[33mcommit 7624e988ae795f21adebe01e7567254f35c367b1[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Thu Aug 13 05:21:20 2020 +0900
+
+    updates
+
+[33mcommit fd7d2e1ff810f2b4bc6d5b7a24bcdff4d71e7d08[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Mon Aug 10 20:56:00 2020 +0900
+
+    updates
+
+[33mcommit cb214f5fbd044a875555fac76b52bc8c53eb6d98[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sun Aug 9 20:39:48 2020 +0900
+
+    updates
+
+[33mcommit 4d918968fcc26577851ee7078e71003cf5d72d75[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sun Aug 9 20:02:34 2020 +0900
+
+    updates
+
+[33mcommit 1bea542aa5650390519e8bacfbb20228d67b9fdb[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sun Aug 9 19:35:02 2020 +0900
+
+    updates
+
+[33mcommit f167f580826548d592f2bfd4d45c62be99654636[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Fri Aug 7 21:19:44 2020 +0900
+
+    updates
+
+[33mcommit 9d176cf8a018abbddf4c2f6883e21136e5dfa017[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sun Aug 2 21:12:51 2020 +0900
+
+    updates
+
+[33mcommit 2bac8b684ab1316852a922abca2fc09110af0eab[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sun Aug 2 16:33:21 2020 +0900
+
+    updates
+
+[33mcommit d793a32da1d9df6f27d069277be58c8a09c5f3c2[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Mon Jul 27 04:32:41 2020 +0900
+
+    updates
+
+[33mcommit f991f92d3b35045d6f49b1bc95a6a14e1eb8e7b3[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Mon Jul 27 04:23:58 2020 +0900
+
+    updates
+
+[33mcommit 631b62280655dcdb4d38d910aa9a8ed588ac820c[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sat Jul 25 22:07:01 2020 +0900
+
+    updates
+
+[33mcommit aa57eced79b4940114c433882217269af00697e2[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Thu Jul 23 21:23:13 2020 +0900
+
+    updates
+
+[33mcommit 74a3868defeafd9e56138100b07c1135b484d79c[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sun Jul 19 22:07:03 2020 +0900
+
+    updates
+
+[33mcommit 556080e310d43495a95bfb16fac8f4901f26084f[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sun Jul 19 17:09:20 2020 +0900
+
+    updates
+
+[33mcommit f9ae174ac6f3d51e8a12441846f6c02ab2ede189[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sun Jul 19 13:00:07 2020 +0900
+
+    updates
+
+[33mcommit 7efe5715469f89e725d03d98a23eb8588359a308[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Sun Jul 19 12:48:30 2020 +0900
+
+    updates
+
+[33mcommit d8e82f54cde7be20c5f28653427684fea000ede9[m
+Author: MIN-HEO <theorydb@gmail.com>
+Date:   Mon Jul 13 02:30:41 2020 +0900
+
+    updates
