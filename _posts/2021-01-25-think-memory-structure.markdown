@@ -16,6 +16,7 @@ header-img: img/post_img/memorytitle.png
 	> - https://velog.io/@hidaehyunlee/%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B5%AC%EC%A1%B0%EB%A5%BC-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90
 	> - http://www.programmerinterview.com/data-structures/difference-between-stack-and-heap/
 	> - https://goodgid.github.io/Memory-Structure/
+- 더 자세한 사항을 보고 싶으면 위 링크를 이용하자.   
 ## 메모리 구조
 프로그램을 실행할 때 컴퓨터의 메모리는 데이터를  
 [Code](#code)  
