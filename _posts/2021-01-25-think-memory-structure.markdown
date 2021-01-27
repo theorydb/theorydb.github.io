@@ -24,8 +24,7 @@ header-img: img/post_img/memorytitle.png
 [Heap](#heap)  
 이렇게 4가지로 분류되는 영역에 저장 공간을 할당해 사용한다.
 개략적으로 그리면 아래와 같다.
-![Memorystr](https://D-Gun.github.io/assets/img/post_img/memorystr.png)
-===   
+![Memorystr](https://D-Gun.github.io/assets/img/post_img/memorystr.png)   
 ### Code
 - 코드영역, 텍스트 영역이라고 불린다.
 - Source code와 함수, 제어문, 상수가 저장된다.
