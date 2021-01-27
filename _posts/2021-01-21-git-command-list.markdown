@@ -46,8 +46,16 @@ git설치는 [git download](https://git-scm.com/downloads)페이지에서 운영
   - github repository 관련 명령어(clone, commit, pull, push)
     - `git clone <github 저장소 주소>` : github repository를 복사한다.
     - `git add --all` : 수정된 파일을 포함한 모든 파일 local 저장소에 업로드
-    - `git add test.txt` : test.txt파일만 local 저장소에 업로드
+    - `git add <파일/디렉토리 경로>` : 해당파일 스테이징
+	- `git add .` : 현재 디렉토리의 모든 변경 내용을 스테이징
+	- `git add -A` : 모든 변경 내용을 스테이징
+	- `git add -p` : 변경사항을 터미널에서 확인 후 스테이징
     - `git commit -m "commit message"` : github로 commit. commit message는 꼭 작성도록 하자.
+	- `git reset HEAD <파일명>` : 해당파일 스테이징 취소. 파일명이 없으면 add한 파일 전체 취소
+	- `git reset --soft HEAD^` : 해당파일 커밋 취소, 파일들은 staged상태로 워킹 디렉토리에 보존
+	- `git reset --mixed HEAD^` : 해당파일 커밋 취소, 파일들은 unstaged상태로 워킹 디렉토리에 보존
+	- `git reset HEAD~2` : 마지막 2개 커밋 취소
+	- `git reset --hard HEAD^` : 커밋 취소, 파일들은 unstaged상태로 워킹 디렉토리에서 삭제
     - `git log` : commit 내용 확인
     - `git push -u origin master` : github에 push
     - ##### 잊지말자, add-> commit-> pull-> push-> pull request
