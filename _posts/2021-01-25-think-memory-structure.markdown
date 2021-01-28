@@ -10,13 +10,13 @@ header-img: img/post_img/memorytitle.png
 
 # 메모리 구조에 대해 알아보자
 - 아래 링크된 글들을 읽으며 정리해 보았다.
-	> - https://genesis8.tistory.com/181
-	> - https://jinshine.github.io/2018/05/17/%EC%BB%B4%ED%93%A8%ED%84%B0%20%EA%B8%B0%EC%B4%88/%EB%A9%94%EB%AA%A8%EB%A6%AC%EA%B5%AC%EC%A1%B0/
-	> - http://www.tcpschool.com/c/c_memory_structure
-	> - https://velog.io/@hidaehyunlee/%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B5%AC%EC%A1%B0%EB%A5%BC-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90
-	> - http://www.programmerinterview.com/data-structures/difference-between-stack-and-heap/
-	> - https://goodgid.github.io/Memory-Structure/
-- 더 자세한 사항을 보고 싶으면 위 링크를 이용하자.   
+	> - <https://genesis8.tistory.com/181>
+	> - <https://jinshine.github.io/2018/05/17/%EC%BB%B4%ED%93%A8%ED%84%B0%20%EA%B8%B0%EC%B4%88/%EB%A9%94%EB%AA%A8%EB%A6%AC%EA%B5%AC%EC%A1%B0/>
+	> - <http://www.tcpschool.com/c/c_memory_structure>
+	> - <https://velog.io/@hidaehyunlee/%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B5%AC%EC%A1%B0%EB%A5%BC-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90>
+	> - <http://www.programmerinterview.com/data-structures/difference-between-stack-and-heap/>
+	> - <https://goodgid.github.io/Memory-Structure/>
+<hr/>   
 ## 메모리 구조
 프로그램을 실행할 때 컴퓨터의 메모리는 데이터를  
 [Code](#code)  
