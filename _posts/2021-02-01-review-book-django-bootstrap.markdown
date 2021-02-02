@@ -87,9 +87,6 @@ header-img: img/review/2021-02-01-review-book-django-bootstrap-1.png
 
   물론 Do-it! 시리즈가 초급 기술을 주로 겨냥하고 있어 아쉬운 측면도 있다. 이제 나름 업계 짬밥도 차고 실력이 늘어가니 예전만큼 Do-it! 시리즈를 접할일이 줄어들고 있기 때문이다. 하지만 적어도 웹 개발이 전무하거나 Django 등 위에서 소개한 기술 스택이 하나라도 처음인 독자가 있다면 이 책이 분명 효율적인 지름길이 될 것이다.
 
-  ![표지](https://theorydb.github.io/assets/img/review/2021-02-01-review-book-django-bootstrap-1.png)  
-
-
 ---
 
 * [책소개 - Do it! 장고+부트스트랩 파이썬 웹 개발의 정석](http://www.yes24.com/Product/Goods/96541859)
