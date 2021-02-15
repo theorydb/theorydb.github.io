@@ -14,7 +14,7 @@ header-img: img/review/review-book-sw-spec-1.png
 
 ---
 
-이 책의 최고 장점을 꼽으라면 단연 96가지의 예시들이다. 통계학에 어울리는 귀납적인 예시를 통해 `저 위에 추상적으로 존재하는 딱딱하고 어려운 통계의 개념을 96가지나 되는 예제로 비추어 일상의 언어로 끌어내리는` 탁월한 가독성과 폭 넓은 저자의 박학다식에 극찬을 아낄 수 없다. 먼저 그 예시들이 무엇인지 몇 가지 소개해 보려 한다.
+[SRS Template 다운로드](https://www.abctech.software/download-templates/)
 
 ---
 
