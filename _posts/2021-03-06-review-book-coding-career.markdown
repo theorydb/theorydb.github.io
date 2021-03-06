@@ -57,7 +57,7 @@ header-img: img/review/review-book-coding-career-1.jpg
     윗 글에서도 밝혔듯 저자는 스스로 원하는 진로를 탐색하기 위한 여러 객관적인 팁을 제공한다. 그 방법으로 저자는 스스로 다음 5가지의 직업을 골랐고 가장 적합한 진로를 찾기까지의 여정이 매우 과학적이고, 적극적이고, 체계적이어서 놀랐다. 
 
     - 교사, 배우, 소설가, 카페창업, 개발자
-      ![여정_79p](https://theorydb.github.io/assets/img/review/review-book-coding-career-2.jpg)  
+      ![여정_79p](https://theorydb.github.io/assets/img/review/review-book-coding-career-2.png)  
 
     나는 한 사람의 경험과 노력을 오롯이 흡수할 수 있는 자서전 형태의 글을 좋아하는데 이 책도 유사한 방식으로 쓰여 있어 참 감동이었다. 더불어 저자가 국어국문학과 전공이기 때문인지 필력이 좋아 글도 잘 읽힌다. 어느새 저자의 진솔함이 전달되어서일까 전공이 이렇게 저술서에서 빛을 발하게 되어 나도 모르게 기뻤다.
 
@@ -85,7 +85,7 @@ header-img: img/review/review-book-coding-career-1.jpg
     - 블로그 구축 안내
     - 오픈소스 활동 
     - 대학원 : 체계적으로 정리가 잘 되어있어 직장인인 내게 너무도 유익한 정보였다.
-      ![대학원_140p](https://theorydb.github.io/assets/img/review/review-book-coding-career-3.jpg)  
+      ![대학원_140p](https://theorydb.github.io/assets/img/review/review-book-coding-career-3.png)  
 
   + 실행력  
     저자의 커리어 여정을 읽어보며 나에게 부족한 약점이자 저자의 특출난 강점을 하나 뽑을 수 있었는데 그것이 바로 `실행력`이다. 
@@ -109,7 +109,7 @@ header-img: img/review/review-book-coding-career-1.jpg
 
   + 취업준비컨설팅 A to Z  
     `파트2의 가장 주옥같은 부분`이라 할 수 있다. 이력서는 물론 자기소개서, 포트폴리오, 경력기술서, 면접에 이르기까지 상세한 노하우가 잘 정리되어 있으며 활용할 수 있는 예시가 담겨있어 구체적인 도움이 될 수 있을 듯 하다. 아래 그림은 이 중 경험을 정리하는 예시이다.
-    ![경험정리_220p](https://theorydb.github.io/assets/img/review/review-book-coding-career-3.jpg)  
+    ![경험정리_220p](https://theorydb.github.io/assets/img/review/review-book-coding-career-4.png)  
 
 ---
 
@@ -121,7 +121,7 @@ header-img: img/review/review-book-coding-career-1.jpg
     3부는 다른 파트와 달리 정보성 노하우가 상당한 비중을 차지한다. 특히 `글로벌 취업`에 도움이 되는 영어 관련 정보가 많은데 IT의 중요한 한 축이자 개발자들은 대부분 영어를 두려워 하기에 추후 큰 도움이 될 수 있을 듯하다.
 
     이력서에서 Cover Letter에 이르기까지 인사담당자가 읽는 포커스를 중심으로 서술하기에 선택과 집중에 유리한 전술을 활용하는데 도움이 된다. 아래 그림은 Action Verb를 정리한 부분인데 이처럼 짧은 시간 내에 고품질의 이력서를 쓸 수 있도록 잘 정리된 방법들이 인상적이었다.
-    ![ActionVerb_314p](https://theorydb.github.io/assets/img/review/review-book-coding-career-3.jpg)  
+    ![ActionVerb_314p](https://theorydb.github.io/assets/img/review/review-book-coding-career-5.png)  
 
   + 영어 인터뷰  
     `영어 실력, 기술, 인성, 프로젝트` 크게 4가지의 유형으로 나눠 설명해주는 구성이 유익했다. 세부적인 Tip들이 쏠쏠한데 특히 코로나 이후 온라인 인터뷰가 대세가 된 만큼 온라인 부분에서 사전에 준비할 사항들을 꼼꼼히 챙겨주고 있어 마음에 들었다.
