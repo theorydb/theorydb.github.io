@@ -18,3 +18,4 @@ header-img: img/review/review-book-the-best-career-1.png
 
 * [책소개 - 더 베스트 커리어](http://www.yes24.com/Product/Goods/97953447?OzSrank=1)
 
+> YES24 리뷰어클럽 서평단 자격으로 작성한 리뷰입니다.
