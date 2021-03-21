@@ -96,3 +96,4 @@ header-img: img/review/review-book-real-estate-encyclopedia-1.png
 
 * [책소개 - 돈이 된다! 부동산대백과](http://www.yes24.com/Product/Goods/97411458)
 
+> YES24 리뷰어클럽 서평단 자격으로 작성한 리뷰입니다.
