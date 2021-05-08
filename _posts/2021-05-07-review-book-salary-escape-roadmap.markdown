@@ -49,6 +49,6 @@ header-img: img/review/review-book-salary-escape-roadmap-1.png
 
 ---
 
-* [책소개 - 월급탈출 로드맵](http://www.yes24.com/Product/Goods/99125790)
+* [책소개 - 월급탈출 로드맵](http://www.yes24.com/Product/Goods/99398189?OzSrank=1)
 
 > YES24 리뷰어클럽 서평단 자격으로 작성한 리뷰입니다.
