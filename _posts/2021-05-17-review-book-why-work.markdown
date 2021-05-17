@@ -22,7 +22,7 @@ header-img: img/review/review-book-why-work-1.png
 
 결론부터 말하자면 저자는 본 도서를 통해 인생의 행복과 즐거움을 일에서 찾으라고 조언한다. 그리고 지금하고 있는 일에 대해 심각하게 다음의 두가지 질문을 던져보길 권유한다.
 
-![일의의미](https://theorydb.github.io/assets/img/review/review-book-why-work-2.png)  
+![일의의미](https://theorydb.github.io/assets/img/review/review-book-why-work-1.png)  
 
 어찌보면 너무도 당연히 답을 알고 있어야 할 이 질문에 쉽게 답변을 내릴 수 있는 사람은 드물 것이다. 지금 우리가 어지러운 이유는 역시나 위 질문에 대한 답을 하지 못한 것이기 때문이다. 
 
