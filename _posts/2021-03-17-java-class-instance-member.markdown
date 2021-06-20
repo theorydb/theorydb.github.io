@@ -29,6 +29,7 @@ header-img:
 
 ## Class 멤버와 Instance 멤버의 접근
 - 아래 구문에서 Class멤버인 Static변수와 int형 변수, 이 Class를 바탕으로 생성한 Instance의 멤버로의 접근에 대해 알아보자.
+```
 ```java
 class C1 { //클래스 C1
 	static int static_variable = 1;
@@ -55,7 +56,9 @@ class C1 { //클래스 C1
 
 }
 ```
+
 - 위와 같이 작성된 클래스는 아래 구문처럼 사용된다.
+
 ```java
 public class ClassMemberDemo{
 	public static void main(String[] args) { //메인함수
