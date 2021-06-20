@@ -1,10 +1,10 @@
 ---
 layout: list
-title: Git
-slug: git
+title: C#
+slug: c#
 menu: true
 submenu: false
-order: 8
+order: 9
 description: >
-  git관련.  
+  C#관련 내용
 ---
