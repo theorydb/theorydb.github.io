@@ -24,8 +24,6 @@ header-img: img/review/review-book-report-presentation-1.png
 
 이를 잘 전달할 수 있는 `3단 구성`의 보고 템플릿을 살펴보고 `5단계`의 프로세스로 준비하는 과정을 살핀다. 마지막으로 귀, 눈, 보조자료에 대응하는 음성, 신체, 시각 언어의 전달법을 익히는 구성으로 이루어져 있다.
 ![3단 구성](https://theorydb.github.io/assets/img/review/review-book-report-presentation-4.png)  
-![5단계 준비](https://theorydb.github.io/assets/img/review/review-book-report-presentation-5.png)  
-![5단계 예시](https://theorydb.github.io/assets/img/review/review-book-report-presentation-7.png)  
 
 전반적으로 너무 많지도 적지도 않게 적당히 유형을 나눈 점, 따라하기만 하면 보고 능력을 당장 키울 수 있도록 잘 설계된 프로세스, 발표에 대한 스킬을 쉽게 이해할 수 있도록 전달한다는 점이 전반적인 장점이라 할 수 있다. 
 
@@ -73,7 +71,7 @@ header-img: img/review/review-book-report-presentation-1.png
 
 보고서를 제법 작성해 본 실무자라면 위 예시만 봐도 느낌이 올 것이다. 때로는 스스로의 의견과 해결책을 필요로 하는 목적의 보고가 있는가 하면, 때로는 난무하는 정보의 홍수속에서 양질의 정보를 요약하는 보고도 있고, 세간에 알려지지 않은 최신 트렌드에 대한 동향분석이 필요한 경우도 있다. 
 
-![보고패턴](https://theorydb.github.io/assets/img/review/review-book-report-presentation-6.png)  
+![보고패턴](https://theorydb.github.io/assets/img/review/review-book-report-presentation-3.png)  
 
 이러한 다양한 보고 지시 유형에 따라 모두 대응할 수 있는 마법의 템플릿이 하나만 존재할 수 있는 경우는 불가능하다. 그럼에도 대부분의 직장인들이 예전에 썼던 보고서의 경험을 되짚어 보며 무리하여 기존 결재 승인된(?) 템플릿에 억지로 현안을 끼워넣는 일이 비일비재하다.
 
@@ -84,6 +82,8 @@ header-img: img/review/review-book-report-presentation-1.png
 목을 통해 이루어지는 보고 화법은 물론, 목소리의 속도나 톤의 변화 스킬, 바른자세와 보디랭귀지까지 구체적이고 당장 적용해 볼만한 쉬운 팁들이 아낌없이 소개되어 있다. 예전 직장에서 선배들이 아껴놓은 필살기 하나 알려주고 생색냈던 것들이 총집합되어 있어 놀랐다. 요즘같이 비대면 화상회의에서 써먹을 만한 노하우도 공개하고 있다. 
 
 16개 유형을 따라하다보면 5단계 준비 프로세스도 자연스레 몸에 베일 것이다. `소주제-본론-요약`, `예시-핵심 정리-혜택`의 3단 EOB 화법, 중간 중간 소개되는 `FAB`화법과 같은 Tip까지 앞서 설명한 유형으로 체계화된 책의 장점 외에도 언급할 만한 장점이 많이 소개되어 있다. 
+![5단계 준비](https://theorydb.github.io/assets/img/review/review-book-report-presentation-5.png)  
+![5단계 예시](https://theorydb.github.io/assets/img/review/review-book-report-presentation-7.png)  
 
 기본적인 글쓰기가 부족하다거나 스스로의 생각을 글로 옮기기에 현격하게 부족함이 있는 분들은 이 책은 어울리지 않을지도 모른다. 하지만 이미 여러차례 보고 경험이 있거나 기본적인 보고는 자신이 있는데 새로운 보고 과제가 주어질 때마다 안개속을 걷는 분이라면 꼭 일독을 권하고 싶다. 
 
