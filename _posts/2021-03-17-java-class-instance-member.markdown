@@ -32,6 +32,7 @@ header-img:
 
 
 
+<br>
 
 ```java
 class C1 { //클래스 C1
@@ -60,13 +61,10 @@ class C1 { //클래스 C1
 }
 ```
 
-
-
+<br>
 
 - 위와 같이 작성된 클래스는 아래 구문처럼 사용된다.
-
-
-
+<br>
 
 ```java
 public class ClassMemberDemo{
