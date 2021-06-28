@@ -116,10 +116,12 @@ public class NewlecExam implements Exam { //Exam interface를 implements
   - Entity는 2개 이상의 인스턴스를 가지고 있어야 한다.
   - Entity는 반드시 Attribute(속성)을 가지고 있어야 한다. 예) 학생 Entity에서는 학번, 이름, 학년 등..
   - 다른 Entity와 최소 한개 이상의 관계가 있어야 한다.
-  - 업무에서 관리도어야 하는 집합이어야 한다.
+  - 업무에서 관리되어야 하는 집합이어야 한다.
 - Entity는 그 구성에 따라 아래의 종류로 나뉜다.
 
 #### 유형, 무형에 따른 종류
+<br>
+
 |종류|내용|예시|
 | :---: | :--- | :--- |
 | 유형 Entity | 지속적으로 사용되는 Entity | 학생, 선생님..etc
@@ -127,6 +129,8 @@ public class NewlecExam implements Exam { //Exam interface를 implements
 | 사건 Entity | Business process를 실행하면서 생성되는 Entity | 주문, 취소, 수수료..etc
 
 #### 발생 시점에 따른 종류
+<br>
+
 |종류|내용|예시|
 | :---: | :--- | :--- |
 | 기본 Entity | 키 Entity 라고 불린다. 다른 엔티티에 영향을 받지 않는 독립적으로 생성되는 Entity | 고객, 상품..etc
