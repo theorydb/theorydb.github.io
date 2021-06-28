@@ -4,7 +4,7 @@ title: SQL
 slug: sql
 menu: true
 submenu: false
-order: 5
+order: 4
 description: >
   SQL관련.
 ---
