@@ -108,7 +108,7 @@ public class NewlecExam implements Exam { //Exam interface를 implements
 ```
 ## Entity는 뭐야?
 - 이 내용은 아래의 링크를 참조하여 만들었다.
-  - [엔티티란 무엇일까?](https://rh-cp.tistory.com/78)
+    - [엔티티란 무엇일까?](https://rh-cp.tistory.com/78)
   - 자세한 내용은 링크를 참고 바란다.
 - Entity는 RDB(관계형 데이터베이스)에서 사용되는 용어로, 데이터의 집합, 개체를 의미한다.
 - Entity는 아래와 같은 특징을 가진다.
