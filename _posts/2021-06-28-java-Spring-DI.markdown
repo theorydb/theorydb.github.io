@@ -122,8 +122,6 @@ public class NewlecExam implements Exam { //Exam interface를 implements
 <br>
 
 #### 유형, 무형에 따른 종류
-<br>
-
 |종류|내용|예시|
 | :---: | :--- | :--- |
 | 유형 Entity | 지속적으로 사용되는 Entity | 학생, 선생님..etc
@@ -133,8 +131,6 @@ public class NewlecExam implements Exam { //Exam interface를 implements
 <br>
 
 #### 발생 시점에 따른 종류
-<br>
-
 |종류|내용|예시|
 | :---: | :--- | :--- |
 | 기본 Entity | 키 Entity 라고 불린다. 다른 엔티티에 영향을 받지 않는 독립적으로 생성되는 Entity | 고객, 상품..etc
