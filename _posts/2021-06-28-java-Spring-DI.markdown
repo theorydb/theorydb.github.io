@@ -119,6 +119,8 @@ public class NewlecExam implements Exam { //Exam interface를 implements
   - 업무에서 관리되어야 하는 집합이어야 한다.
 - Entity는 그 구성에 따라 아래의 종류로 나뉜다.
 
+<br>
+
 #### 유형, 무형에 따른 종류
 <br>
 
@@ -127,6 +129,8 @@ public class NewlecExam implements Exam { //Exam interface를 implements
 | 유형 Entity | 지속적으로 사용되는 Entity | 학생, 선생님..etc
 | 개념 Entity | 물리적 형태가 없는 Entity | 보험상품, 조직..etc
 | 사건 Entity | Business process를 실행하면서 생성되는 Entity | 주문, 취소, 수수료..etc
+
+<br>
 
 #### 발생 시점에 따른 종류
 <br>
