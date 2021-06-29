@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\assets",
+    "\\assets\\img",
+    "\\assets\\img\\post_img",
     "\\_posts"
   ],
-  "SelectedNode": "\\_posts\\2021-01-25-think-memory-structure.markdown",
+  "SelectedNode": "\\assets\\img\\post_img",
   "PreviewInSolutionExplorer": false
 }

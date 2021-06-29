@@ -107,7 +107,7 @@ public class NewlecExam implements Exam { //Exam interface를 implements
 
 ```
 #### 구성을 보자면 아래 그림과 같다.
-![Spring_Tutorial_1](https://D-Gun.github.io/assets/img/post_img/Spring_Tutorial_1jpg) 
+![Spring_Tutorial_1](https://D-Gun.github.io/assets/img/post_img/Spring_Tutorial_1.jpg) 
 ## Entity는 뭐야?
 - 이 내용은 아래의 링크를 참조하여 만들었다.
     - [엔티티란 무엇일까?](https://rh-cp.tistory.com/78)
