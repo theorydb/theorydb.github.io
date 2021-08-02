@@ -2,7 +2,7 @@
 layout: post
 title:  "[Basic] Python 핵심 정리"
 subtitle:   "Insight, back to basics"
-categories: dev
+categories: think
 tags: ml data science insight analysis basics modeling practice
 comments: true
 ---
@@ -66,7 +66,7 @@ comments: true
 		a = x + y
 		b = x - y
 		return a, b # 다중값 리턴 가능
-
+  
 	# 호출측
 	a = test(y=5, x=1) # a=None
 	a = test(y=5, x=10) # a=(6, -4)
@@ -78,5 +78,4 @@ comments: true
 ---
 
 * 함수 도움말
-
 

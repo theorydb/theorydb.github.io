@@ -2,18 +2,18 @@
 layout: post  
 title: "[잡담] 첫 깃허브 블로그 개설!"  
 subtitle: "5번 실패 끝에 성공"  
-categories: think  
-tags:        
+categories: think
+tags:   
 comments: true  
 
-header-img: ![door](/assets/image/open-blog-door.png)
-​---  
+
+---  
 
 
 
 #### 꿈에 그리던 첫 깃헙 블로그 개설 성공!
 
-드디어... 그렇게 갖고 싶었던 깃헙 블로그를 만드는 데 성공했다..
+---
 
 엄청 빨리 걸린 건 아니지만,, 그래도 여러번 밤새고 시도했던게 무려 5번,,ㅠㅠ
 
@@ -39,5 +39,17 @@ header-img: ![door](/assets/image/open-blog-door.png)
 
 [TheoryDB 블로그](https://theorydb.github.io/envops/2019/05/22/envops-blog-how-to-use-md/)
 
-이다. 히히
+이다. 
+
+
+
+마지막으로 2019년도(1학년때)부터 써오던 블로그는
+
+[게임학부생의모험](https://blog.naver.com/kamin_s2)
+
+
+
+  
+
+
 
