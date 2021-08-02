@@ -1,7 +1,7 @@
 ---
 layout: tag-blog
-title: C#
-slug: c#
+title: Csharp
+slug: csharp
 category: programming
 menu: false
 order: 2
