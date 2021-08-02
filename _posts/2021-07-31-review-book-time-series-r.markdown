@@ -6,7 +6,7 @@ categories: think
 tags:        
 comments: true  
 
-header-img: https://Yeram522.github.io/assets/img/think/open-blog-door.png
+header-img: ![door](/assets/image/open-blog-door.png)
 ​---  
 
 
