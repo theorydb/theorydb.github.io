@@ -1,8 +1,8 @@
 ---
 layout: tag-blog
-title: C#_Note
-slug: C#
-category: Programming
+title: C#
+slug: c#
+category: programming
 menu: false
 order: 2
 ---

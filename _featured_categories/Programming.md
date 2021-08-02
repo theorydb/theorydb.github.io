@@ -1,6 +1,6 @@
 ---
 layout: list
-title: Progromming
+title: Programming
 slug: programming
 menu: true
 submenu: true
