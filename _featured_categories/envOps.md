@@ -1,10 +1,11 @@
 ---
 layout: list
-title: DirextX
+title: Study
 slug: envops
 menu: true
 submenu: false
 order: 2
 description: >
-  DirextX의 이론 및 실습에 관한 글
+  학교 공부에 관한 글
 ---
+
