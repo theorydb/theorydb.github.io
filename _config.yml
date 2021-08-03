@@ -10,10 +10,10 @@ url:                 https://Yeram522.github.io
 
 # Set to '' when hosting a blog on GitHub Pages, ie on `//<username>.github.io`
 # Set to '/<reponame>' when using the `gh-pages` branch of a repository
-baseurl:             "A charm that unlocked objects such as doors or windows."
+baseurl:             ""
 
 # A very short description of your page
-tagline:             ""
+tagline:             "A charm that unlocked objects such as doors or windows."
 
 # A short description of the page, used in the sidebar and as fallback for the meta description tag.
 # Markdown enabled, but don't use more than one paragraph (enforced by `>`)
