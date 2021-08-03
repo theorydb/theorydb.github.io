@@ -12,11 +12,11 @@ theorydb:
 
   # This photo will be used in the about section
   picture:
-    src:             /assets/img/blog_Logo.png
+    src:             /assets/img/blog_Logo3.png
     # srcset is optional, but can be used to provide higher res versions for retina displays
     srcset:
-      1x:            /assets/img/blog_Logo.png
-      2x:            /assets/img/blog_Logo.png
+      1x:            /assets/img/blog_Logo3.png
+      2x:            /assets/img/blog_Logo3.png
 
   # Social media icons in sidebar
   # Comment/uncommet to show/hide
