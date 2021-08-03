@@ -48,7 +48,7 @@ google_analytics:    UA-137374202-1
 
 # Setting a disqus shortname will enable the comment section on pages with `comments: true` in the front matter
 disqus: True
-disqus_shortname:    Yeram522
+disqus_shortname: Yeram522
 
 # This text will appear in the footer of every page. Markdown enabled.
 copyright:           '&copy; 2019.04. by Yeram522'
