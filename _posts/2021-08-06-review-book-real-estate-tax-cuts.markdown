@@ -8,7 +8,7 @@ comments: true
 header-img: img/review/review-book-real-estate-tax-cuts-1.png
 ---  
   
-> `한경비피` 출판사의 `"부동산 절세 완전정복(조선희 저)"`를 읽고 작성한 리뷰입니다.  
+> `한경비피` 출판사의 `"부동산 절세 완전정복(이승현 저)"`를 읽고 작성한 리뷰입니다.  
 
 ![표지](https://theorydb.github.io/assets/img/review/review-book-real-estate-tax-cuts-1.png)  
 
