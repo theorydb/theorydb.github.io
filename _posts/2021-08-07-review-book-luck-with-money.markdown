@@ -20,7 +20,7 @@ header-img: img/review/review-book-luck-with-money-1.png
 
 풍수는 `음양과 오행`으로 이루어진다. 음양은 우리가 흔히 아는 "남-여", "낮-밤" 등의 관계를 말하고 오행은 아래 그림에서 보는 것과 같이 만물이 5가지 물질로 구성되어 있으며 각 요소가 관계를 갖고 있다는 것에 주목한다.
 ![오행1](https://theorydb.github.io/assets/img/review/review-book-luck-with-money-2.png)  
-![오행2](https://theorydb.github.io/assets/img/review/review-book-luck-with-money-2.png)  
+![오행2](https://theorydb.github.io/assets/img/review/review-book-luck-with-money-3.png)  
 
 위 그림에서 볼 수 있듯 돈은 금의 기운을 갖고 있기에 흙과 물의 기운이 필요하다. 이 책은 이런 사상에 기초하여 흙과 물의 기운을 일상에서 어떤 방법으로 활용하여 금전운을 본인 혹은 집안으로 불러들이는지에 대한 방법을 기술한다. 
 
