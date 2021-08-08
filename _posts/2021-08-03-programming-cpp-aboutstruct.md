@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[cpp] c++ 클래스의 기본"
-subtitle: "basic of cpp clalss"
+subtitle: "basic of cpp class"
 categories: programming
 tags: cpp 
 comments: true
@@ -104,6 +104,8 @@ Car SimpleCar;
        ```
 
    
+
+
 
 
 ​       하지만 이 상수들이 어떠한 `구조체`에게만 의미가 있다면, <u>상수들도 구조체 내에 포함시키는 것이 좋을 수 있다.</u> (✔무조건 좋다는 것은 아님!)
