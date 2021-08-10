@@ -240,7 +240,7 @@ int main(void)
 
 디폴트 복사 생성자는 멤버 대 멤버를 단순히 복사만 하므로, 다음의 구조를 띠게 된다.(객체 내에 함수는 표현하지 않음.)
 
-![이미지](https://yeram522.github.io/assets/img/programming/cpp/2021-08-08-programming-cpp-copy-constructor-shallowcopy.JPG "shallowcopy")
+![이미지](https://yeram522.github.io/assets/img/programming/cpp/2021-08-08-programming-cpp-copy-constructor-shallowcopy.JPG?raw=true)
 
 
 
@@ -254,13 +254,13 @@ man2의 객체의 소멸과정에서 man2가 참조하던 문자열은 이미 �
 
 man1객체의 소멸자에 포함되어 있는 위의 문장은 이미 지워진 문자열을 대상으로 delete연산을 하기 때문에 문제가 된다.
 
-![이미지](https://yeram522.github.io/assets/img/programming/cpp/2021-08-08-programming-cpp-copy-constructor-shallowcopy-1.JPG "shallowcopy-1")
+![이미지](https://yeram522.github.io/assets/img/programming/cpp/2021-08-08-programming-cpp-copy-constructor-shallowcopy-1.JPG?raw=true)
 
 
 
 `깊은 복사의 예시`
 
-![이미지](https://yeram522.github.io/assets/img/programming/cpp/2021-08-08-programming-cpp-copy-constructor-deepcopy.JPG "deepcopy")
+![이미지](https://yeram522.github.io/assets/img/programming/cpp/2021-08-08-programming-cpp-copy-constructor-deepcopy.JPG?raw=true)
 
 
 
