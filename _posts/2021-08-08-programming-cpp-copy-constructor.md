@@ -217,18 +217,44 @@ _따라서_  키워드 `explicit`가 생성자에 선언되면, <u>묵시적 형
 📌 디폴트 복사 생성자의 문제점
 
 ```c++
-int main(void)
+#include <iostream>
+#include <cstirng>
+using namespace std;
+
+Class Person
 {
-    //Class Person은 생성자에서 new를 이용한 동적할당, 소멸자에서 delete를 이용한 메모리의 해제를 진행한다고 가정.
-    /*~Person()
+private:
+    char * name;
+    int age;
+public:
+    Person(char *myname, int myage)
+    {
+        int len=strlen(myname)+1;
+        name=new char[len];
+        strcpy(name, myname);
+        age=myage;
+    }
+    void showPersonInfo() const
+    {
+        cout<<"이름: "<<name<<endl;
+        cout<<"나이: "<<age<<endl;
+    }
+    ~Person()
     {
       delete []name;
       cout<<"called desstructor!"<<endl;
-    }*/
+    }
+}
+int main(void)
+{
+    //Class Person은 생성자에서 new를 이용한 동적할당, 소멸자에서 delete를 이용한 메모리의 해제를 진행하고 있다.
+  
     Person man1("Lee dong woo", 29);
     Person mas2=man1; //객체가 2개 생성된다.
     man1.ShowPersonInfo();
     man2.ShowPersonInfo();
+    
+    return 0;
 }
 
 //result
@@ -237,6 +263,8 @@ int main(void)
 //called destructor!
 //소멸자 한번만 실행
 ```
+
+
 
 디폴트 복사 생성자는 멤버 대 멤버를 단순히 복사만 하므로, 다음의 구조를 띠게 된다.(객체 내에 함수는 표현하지 않음.)
 
@@ -258,11 +286,298 @@ man1객체의 소멸자에 포함되어 있는 위의 문장은 이미 지워진
 
 
 
-`깊은 복사의 예시`
 
-![이미지](https://yeram522.github.io/assets/img/programming/cpp/2021-08-08-programming-cpp-copy-constructor-deepcopy.JPG?raw=true)
 
 
 
 📌 '깊은 복사'를 위한 복사 생성자의 정의
+
+![이미지](https://yeram522.github.io/assets/img/programming/cpp/2021-08-08-programming-cpp-copy-constructor-deepcopy.JPG?raw=true)
+
+  위의 형태로 복사가 이루어진다면, 객체 별로 각각 문자열을 참조하기 때문에, 위에서 언급한 객체 소멸과정에서의 문제는 발생하지 않는다. 
+
+_이러한 형태를 가리켜 `깊은 복사(deep copy)`라 한다._
+
+_멤버뿐만 아니라, 포인터로 참조하는 대상까지 깊게 복사한다는 뜻이다._
+
+```c++
+#include <iostream>
+#include <cstirng>
+using namespace std;
+
+Class Person
+{
+private:
+    char * name;
+    int age;
+public:
+    Person(char *myname, int myage)
+    {
+        int len=strlen(myname)+1;
+        name=new char[len];
+        strcpy(name, myname);
+        age=myage;
+    }
+    //깊은 복사(deep copy)를 위해 아래의 생성자를 추가하였다.
+    Person(const Person& copy): age(copy.age)
+    {
+        name.new char[strlen(copy.name)+1];
+        strcpy(name, copy.name);
+    }
+    
+    void showPersonInfo() const
+    {
+        cout<<"이름: "<<name<<endl;
+        cout<<"나이: "<<age<<endl;
+    }
+    ~Person()
+    {
+      delete []name;
+      cout<<"called desstructor!"<<endl;
+    }
+}
+int main(void)
+{
+    //Class Person은 생성자에서 new를 이용한 동적할당, 소멸자에서 delete를 이용한 메모리의 해제를 진행하고 있다.
+  
+    Person man1("Lee dong woo", 29);
+    Person man2=man1; //객체가 2개 생성된다.
+    man1.ShowPersonInfo();
+    man2.ShowPersonInfo();
+    
+    return 0;
+}
+```
+
+
+
+깊은 복사를 구현하기 위해 위의 코드에 다음과 같은 정의의 생성자를 추가하였다.
+
+```c++
+ Person(const Person& copy): age(copy.age)
+    {
+        name.new char[strlen(copy.name)+1];
+        strcpy(name, copy.name);
+    }
+```
+
+- 멤버변수 age의 멤버 대 멤버 복사
+- 메모리 공간 할당후 문자열 복사, 그리고 할당된 메모리의 주소 값을 멤버 name에 저장.
+
+
+
+## 복사 생성자의 호출시점
+
+---
+
+📌 복사 생성자가 호출되는 시점은?
+
+​    복사 생성자가 호출되는 시점은 크게 3가지로 구분할 수 있다.
+
+- case 1: 기존에 생성된 객체를 이용해서 새로운 객체를 초기화하는 경우.
+
+```c++
+Person man1("Lee dong woo",29);
+Person man2=man1 //복사 생성자 호출
+```
+
+
+
+- case 2: Call-by-value 방식의 함수호출 과정에서 **객체를 인자로 전달하는 경우.**
+- case3: 객체를 반환하되, **참조형으로 반환하지 않는 경우.**
+
+
+
+위 3가지 케이스는 
+
+``객체를 새로 생성해야 한다. 단, 생성과 동시에 동일한 자료형의 객체로 초기화해야 한다!``
+
+라는 공통점을 지닌다.
+
+
+
+📌 메모리 공간의 할당과 초기화가 동시에 일어나는 상황!
+
+[1]
+
+`int num1=num2;`
+
+위의 문장은 num1이라는 이름의 메모리 공간을 <span style = "color : violet">할당과 동시에</span> num2에 저장된 값으로 <span style = "color : violet">초기화</span> 시키는 문장이다.
+
+
+
+[2]  
+
+```c++
+int SimpleFunc(int n)
+{
+    .....
+}
+int main(void)
+{
+    int num=10;
+    SimpleFunc(num); //호출되는 순간 매개변수 n이 할당과 동시에 초기화!
+    ....
+}
+```
+
+위 코드에서 SimpleFunc가 호출되는 순간에 매개변수 n이 할당과 동시에 변수 num에 저장되어 있는 값으로 초기화된다.
+
+
+
+[3]
+
+```c++
+int SimpleFunc(int n)
+{
+    ....
+    return n;  //반환하는 순간 메모리 공간이 할당되면서 동시에 초기화!
+}
+int main(void)
+{
+    int num=10;
+    cout<<SimpleFunc(num)<<endl;
+}
+```
+
+반환되는 값을 별도의 변수에 저장하는 것과 별개로, 값을 반환하면 반환된 값은 별도의 메모리 공간이 할당되어 저장이된다.
+
+`cout<<SimpleFunc(num)<<endl;`
+
+반환 되는 값을 메모리 공간의 어딘가에 저장해 놓지 않았다면, cout에 의한 출력이 불가능하다.
+
+출력되기 위해서는 그 값을 **참조**할 수 있어야 하고, 참조가 가능하려면 메모리 공간의 어딘가에 저장되어야 한다.
+
+_"함수가 값을 반환하면, 별도의 메모리 공간이 할당되고, 이 공간에 반환 값이 저장된다.(반환 값으로 초기화 된다)."_
+
+`따라서`  객체의 전달도 기본 자료형의 인자전달과 차이가 없다.
+
+```c++
+SoSimple SimpleFucObj(SoSimple ob)
+{
+    ....
+        return ob; //반환하는 순간 메모리 공간이 할당되면서 동시에 초기화!
+}
+```
+
+위의 `return문`이 실행되는 순간, SoSimple 객체를 위한 메모리 공간이 할당되고, 이 공간에 할당된 객체는 반환되는 객체 ob내용으로 초기화 된다.
+
+
+
+
+
+📌할당 이후, 복사 생성자를 통한 초기화
+
+   `초기화`는 멤버 대 멤버가 복사되는 형태로 이뤄져야 하기 때문에, `객체`의 초기화는 `복사 생성자의 호출`의 방식으로 진행된다.
+
+_`디폴트 복사생성자`는 멤버 대 멤버가 복사되도록 정의가 가능하기 때문에, 적절한 초기화 방식이다.
+
+
+
+:star:`PassObjCopycon.cpp`  : Call-by-value 방식의 함수호출 과정에서 **객체를 인자로 전달하는 경우.**
+
+```c++
+#include <iostream>
+using namespace std;
+
+class SoSimple
+{
+private:
+    int num;
+public:
+    SoSimple(int n) : num(n)
+    { }
+    SoSimple(const SoSimple& copy) : num(copy.num)
+    {
+        cout<<"Called SoSimple(const SoSimple& copy)"<<endl;
+    }
+    void ShowData()
+    {
+        cout<<"num: "<<num<<endl;
+    }
+};
+
+void SimpleFuncObj(SoSimple ob)
+{
+    ob.ShowData();
+}
+
+int main(void)
+{
+    SoSimple obj(7);
+    cout<<"함수호출 전"<<endl;
+    SimpleFuncObj(obj);
+    cout<<"함수호출 후"<<endl;
+    return 0;
+}
+
+//result::
+//함수호출 전
+//Called SoSimple(const SoSimple& copy)
+//num: 7
+//함수호출 후
+```
+
+❔ 그렇다면 복사 생성자의 호출 주제는 obj일까, ob일까?
+
+
+
+​                                                                  `복사생성자의 호출관계`
+
+![이미지](https://yeram522.github.io/assets/img/programming/cpp/2021-08-08-programming-cpp-copy-constructor-avoke-copy-constructor.JPG?raw=true)
+
+
+
+위의 그림과 같이 초기화 대상은 `ob`객체이다.
+
+그리고 ob객체는 obj객체로 초기화 된다.
+
+_따라서 ob객체의 복사 생성자가 호출되면서, obj객체가 인자로 전달되어야 한다._
+
+
+
+
+
+:star:`ReturnObjCopycon.cpp` : 객체를 반환하되, **참조형으로 반환하지 않는 경우.**
+
+```c++
+#include <iostream>
+using namespace std;
+
+class SoSimple
+{
+private:
+    int num;
+public:
+    SoSimple(const SoSimple& copy) : num(copy.num)
+    {
+        cout<<"Called SoSimple(const SoSimple& copy)"<endl;
+    }
+    SoSimple& AddNum(int n)
+    {
+        num +=n;
+        return *this;
+    }
+    void ShowData()
+    {
+        cout << "num: "<<endl;
+    }
+};
+
+SoSimple SimpleFuncObj(SoSimple ob)
+{
+    cout<<"return 이전"<<endl;
+    return ob;
+}
+
+int main(void)
+{
+    SoSimple obj(7);
+    SimpleFuncObj(obj).AddNum(30).ShowData();
+    obj.ShowData();
+    return 0;
+}
+```
+
+
 
