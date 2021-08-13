@@ -66,6 +66,8 @@ int main(void)
 
 
 
+
+
 📌SoSimple sim2(sim1);
 
    - SoSimple형 객체를 생성해라.
@@ -137,6 +139,8 @@ _멤버 대 멤버의 복사에 사용되는 원본을 변경시키는 것은 �
 
 
 
+
+
 📌 자동으로 삽입이 되는 디폴트 복사 생성자
 
 ```c++
@@ -156,6 +160,8 @@ public:
 
 
   [**복사 생성자를 정의하지 않으면, 멤버 대 멤버의 복사를 진행하는 디폴트 복사 생성자가 자동으로 삽입된다.**]()
+
+
 
 
 
@@ -556,7 +562,7 @@ public:
     SoSimple& AddNum(int n)
     {
         num +=n;
-        return *this;
+        return *this; //참조형 반환, 객체 자기 자신 반환!
     }
     void ShowData()
     {
@@ -564,7 +570,7 @@ public:
     }
 };
 
-SoSimple SimpleFuncObj(SoSimple ob)
+SoSimple SimpleFuncObj(SoSimple ob)//객체 매개변수,ob의 복사 생성자 호출
 {
     cout<<"return 이전"<<endl;
     return ob;
@@ -574,10 +580,187 @@ int main(void)
 {
     SoSimple obj(7);
     SimpleFuncObj(obj).AddNum(30).ShowData();
+    //SimpleFuncObj에서 ob가 return되면서 새로운 메모리에 복사본 저장 후 반환!
+    //반환형이 참조형이 아니기 때문에 가능.
     obj.ShowData();
     return 0;
 }
 ```
 
+🔎`인자 전달에 의한 복사생성자 호출`
+
+![이미지](https://yeram522.github.io/assets/img/programming/cpp/2021-08-08-programming-cpp-copy-constructor-avoke-copy-constructor-1.JPG?raw=true)
+
+🔎`반환에 의한 복사 생성자 호출`
+
+![이미지](https://yeram522.github.io/assets/img/programming/cpp/2021-08-08-programming-cpp-copy-constructor-avoke-copy-constructor-2.JPG?raw=true)
+
+객체를 **반환**하게 되면 `임시객체`라는 것이 생성되고,  이 객체의 `복사 생성자`가 호출되면서 `return`문에 명시된 객체가 인자로 전달된다.
+
+✔<span style = "color : green">즉, 최종적으로 반환되는 객체는 새롭게 생성되는 `임시객체`이다.</span>
+
+_**따라서**함수 호출이 완료되고 나면, 지역적으로 선언된 객체 ob는 소멸되고  [obj객체와 임시객체만 남는다.]()_
 
 
+
+
+
+📌반환할 때 만들어진 객체가 사라지는 시점.
+
+```c++
+#include <iostream>
+using namespace std;
+
+class Temporary
+{
+private:
+    int num;
+public:
+    Temporary(int n): num(n)
+    {
+        cout<<"create obj" "<<num<<endl";
+    }
+    ~Temporary()
+    {
+        cout<<"destroy obj: "<<num<<endl;
+    }
+    void ShowTempInfo()
+    {
+        cout<<"My num is"<<num<<endl;
+    }
+};
+
+int main(void)
+{
+    Temporary(100); //100으로 초기화된 임시객체 생성
+    cout<<"********** after make!"<<endl<<endl;
+    
+    Temporary(200).ShowTempInfo(); //임시객체 생성 후, 이를 대상으로 ShoWtempinfo()호출
+    //객체가 생성 및 반환되면, 생성 및 반환된 위치에 객체를 참조할 수 있는 참조 값이 반환 되기 때문에 이러한 문장을 구성할 수 있다.
+    cout<<"********** after make"<<endl<<endl;
+    
+    cont Temporary &ref=Temporary(300);
+    //임시객체 생성! 참조자 ref로 임시객체를 '참조'하고 있다.
+    cout<<"********** end of main!"<<endl<<endl;
+    return 0;
+}
+
+
+//result
+//create obj: 100
+//destroy obj: 100
+//********** after make!
+
+//create obj: 200
+//My num is 200
+//destroy obj: 200
+//********** after make!
+
+//destroy obj: 300
+//********** end of main!
+
+//destroy obj: 300
+```
+
+
+
+🔎 `Temporary(200).ShowTempInfo();`
+
+​     클래스 외부에서 객체의 멤버함수를 호출하기 위해 필요한 것은 다음 세가지 중 하나이다.
+
+   - 객체에 붙여진 이름
+   - 객체의 참조 값(객체 참조에 사용되는 정보)
+   - 객체의 주소 값
+
+ 그런데 임시객체가 생성된 위치에서는 임시객체의 `참조값`이 **반환**되므로, 위 문장의 경우 먼저 임시객체가 생성되면서 다음의 형태가 된다.
+
+`(임시객체의 참조 값).ShowTempInfo()`
+
+
+
+ 그래서, **이어서 멤버함수의 호출**이 **가능**한 것이다. 또한 `참조 값`이 반환되기 때문에
+
+`const Temporary &ref=Temporary(300)` 과 같은 문장 구성도 가능한 것이다.
+
+위의 경우는 임시객체 생성시 반환되는 `참조 값`이 참조자 ref에 전달되어, ref가 임시객체를 [참조]()하게 된다.
+
+
+
+✔<span style = "color : green">즉, 반환을 위해서 임시객체가 생성은 되지만, 이 객체는 메모리 공간에 존재하고, 이 객체의 **참조 값**이 **반환**되어서 함수의 호출이 진행되는 원리이다.</span>
+
+   -  소멸자의 출력을 통해서 내릴 수 있는 결론은 다음과 같다.
+
+​        👉 `임시객체`는 다음 행으로 넘어가면 바로 `소멸`된다.
+
+​        👉 참조자에 `참조`되는 임시객체는 바로 소멸되지 않는다.
+
+
+
+📄`객체의 생성과 소멸을 확인하기 위한 예제`
+
+```c++
+#include <iostream>
+using namespace std;
+
+class SoSimple
+{
+private:
+    int num;
+public:
+    SoSimple(int n) : num(n)
+    {
+        cout<<"New Object: "<<this<<endl;
+    }
+    SoSimple(const SoSimple& copy) : num(copy.num)
+    {
+        cout<<"New Copy obj: "<<this<<endl;
+    }
+    ~SoSimple()
+    {
+        cout<<"Destroy obj:"<<this<<endl;
+    }
+};
+
+SoSimpel SimpleFuncObj(SoSimple ob)
+{
+    cout<<"Parm ADR: "<<&ob<<<endl;
+    return ob;
+}
+
+int main(void)
+{
+    SoSimple obj(7);
+    SimpleFuncObj(obj);
+    
+    cout<<endl;
+    SoSimple tempRef=SimplewFuncObj(obj);
+    //새로운 tempRef 객체를 생성해서 대입연산을 하는 것 처럼 보이지만, 실행 결과를 확인해 보면 추가로 객체를 생성하지 않고, 반환되는 임시객체에 tempref아는 이름을 할당하고 있음을 보여준다.
+    cout<<"Return Obj"<<&tempRef<<endl;
+    return 0;
+}
+
+//result
+/*
+New Object: 0012FF54
+New Copy obj: 0012FE38
+
+Parm ADR: 0012FE38
+New Copy obj: 0012FE64
+Destroy obj: 0012FE38
+Destroy obj: 0012FE64
+
+New Copy obj: 0012FE38
+Parm ADR: 0012FE38
+New Copy obj: 0012FE48
+Destroy obj: 0012FE38
+Return Obj 0012FF48
+Destroy obj: 0012FF48
+Destroy obj: 0012FF54 
+*/
+```
+
+
+
+
+
+   
