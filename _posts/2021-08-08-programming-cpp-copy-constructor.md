@@ -1,19 +1,34 @@
 ---
 layout: post
-title: "[cpp] 복사 생성자(Copy Constructor)"
+title: "[c++] 복사 생성자(Copy Constructor)"
 subtitle: "copy constructor"
 categories: programming
-tags: cpp 
+tags: cpp study
 comments: true
-
+header-img: img/programming/cpp/0000-00-00-programming-cpp-book-cover-1.JPG
 ---
 
->
->
 >`복사 생성자`에 관한 내용을 다룬다.
+>
+>`윤성우의 열혈 C++` 교재를 바탕으로 작성되었다.
 
 - 개요
-  - '복사 생성자'와의 첫 만남
+  - ['복사 생성자'와의 첫 만남](#복사 생성자와의-첫-만남)
+         - C++ 스타일의 초기화
+         - SoSimple sim2(sim1);
+         - 자동으로 삽입이 되는 디폴트 복사 생성자
+         - 변환에 의한 초기화! 키워드 `explicit`으로 막을 수 있다.
+
+     -   [깊은 복사와 얕은 복사](#깊은-복사와-얕은-복사)
+            - 디폴트 복사 생성자의 문제점
+            - '깊은 복사'를 위한 복사 생성자의 정의
+  -   [복사 생성자의 호출시점](#복사-생성자의-호출시점)
+      - 복사 생성자가 호출되는 시점은?
+      - 메모리 공간의 할당과 초기화가 동시에 일어나는 상황!
+      - 할당 이후, 복사 생성자를 통한 초기화
+      - 반환할 때 만들어진 객체가 사라지는 시점.
+
+  ​        
 
 
 

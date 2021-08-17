@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[cpp] friend와 static 그리고 const"
+title: "[c++] friend와 static 그리고 const"
 subtitle: "friend,static and const"
 categories: programming
 tags: cpp study
@@ -8,12 +8,27 @@ comments: true
 header-img: img/programming/cpp/0000-00-00-programming-cpp-book-cover-1.JPG
 ---
 
-> 
->
 > `friend`,`static`,`const`에 관한 내용을 다룬다.
+>
+> `윤성우의 열혈 C++` 교재를 바탕으로 작성되었다.
 
 - 개요
-  - const와 관련해서 아직 못다한 이야기
+  - [const와 관련해서 아직 못다한 이야기](#const와-관련해서-아직-못다한-이야기)
+        - const 객체와 const 객체의 특성들
+        - const와 함수 오버로딩
+
+  - [클래스와 함수에 대한 friend 선언](#클래스와-함수에-대한-friend-선언)
+           - 클래스의 friend 선언
+           - 함수의 friend선언
+
+  - [C++ 에서의 static](#cpp-에서의-static)
+            - C언어에서 이야기한 static
+            - static 멤버변수(클래스 변수)
+            - static 멤버변수의 또 다른 접근방법
+       - static 멤버함수
+       - 키워드 mutable
+
+  
 
 
 
@@ -302,7 +317,7 @@ void ShowPointPos(const Point& pos)
 
 
 
-## C++ 에서의 static
+## Cpp 에서의 static
 
 ---
 
@@ -538,9 +553,181 @@ _왜냐하면, 변수 simObjCnt는 객체가 생성될 때 동시에 생성되�
 
 
 
+📌 static 멤버변수의 또 다른 접근방법
+
+​     `static 멤버변수`는 어디서든 **접근이 가능한 변수**이다. 
+
+   - static 멤버가  `private`으로 선언
+
+     👉**해당 클래스**의 **객체**들만 [접근 가능]()
+
+- static 멤버가 `public`으로 선언
+
+​       👉**클래스의 이름 **또는 **객체의 이름**을 통해서 [어디서든 접근 가능]()
+
+```c++
+#include <iostream>
+using namespace std;
+
+class SoSimple
+{
+public:
+    static int simObjCnt; //static 변수가 public 으로 선언!
+public:     //불필요하지만 변수와 함수의 구분을 목적으로 삽입하기도 함
+    SoSimple()
+    {
+       simObjCnt++;   
+    }
+};
+int SOSimple::simObjCnt=0; //static 변수 초기화
+
+int main(void)
+{
+    //객체를 하나도 생성하지 않은 상태임에도 불구하고, 클래스의 이름을 이용해서 simObjCnt에 접근을 할 수 있다.(static 멤버변수가 객체 내에 존재하지 않음을 증명.)
+    cout<<SoSimple::simObjCnt<<"번째 SoSimple 객체"<<endl;
+    SoSimple sim1;
+    SoSimple sim2;
+    
+    cout<<SoSimple::simObjCnt<<"번째 SoSimple 객체"<<endl;
+    
+    //객체 sim1,sim2를 이용한 static 멤버변수 접근은 멤버변수 접근과 같은 오해를 불러일으키기 때문에 지양한다.
+    cout<<sim1.simObjCnt<<"번째 SoSimple 객체"<<endl;
+    cout<<sim2.simObjCnt<<"번째 SoSimple 객체"<<endl;
+    return 0;
+}
+
+//result
+/*
+0번째 SoSimple 객체
+1번째 SoSimple 객체
+2번째 SoSimple 객체
+2번째 SoSimple 객체
+*/
+```
 
 
 
 
 
+📌static 멤버함수
+
+  `static 멤버변수`와 특성이 동일하다.
+
+- 선언된 클래스의 모든 객체가 공유한다.
+- public으로 선언이 되면, 클래스의 이름을 이용해서 호출이 가능하다.
+- 객체의 멤버로 존재하는 것이 아니다.
+
+
+
+⚠ <span style = "color : firebrick">다음과 같은 코드는 컴파일 에러를 일으킨다.</span>
+
+      ```c++
+      class SoSimple
+      {
+      private:
+          int num;
+          static int num2;
+      public:
+          SoSimple(int n):num1(n)
+          { }
+          static void Adder(int n)
+          {
+              num1+=n; //컴파일 에러 발생
+              num2+=n;
+          }
+      };
+      int SoSimple::num2=0;
+      ```
+
+​           ✔ 객체의 멤버가 아니기 떄문에, 멤버 변수 접근 불가능
+
+​           ✔ 객체생성 이전에도 호출 가능한 static 함수이기 떄문에, 멤버변수 접근 불가능
+
+​           ✔ 멤버 변수에 접근해도, 어떤 객체의 멤버 변수에 접근해야 하는지 불확실.
+
+   
+
+​    👉 <span style = "color : hotpink">`static 멤버함수`   내에서는 **static 멤버변수**와 **static 멤버함수**만 호출이 가능하다.</span>
+
+​         _이러한 특성을 잘 활용한다면,  대부분 경우에 있어서 전역변수와 전역함수를 대체할 수 있다._
+
+
+
+
+
+📌 const static 멤버
+
+    - **클래스 내에** 선언된 `const 멤버변수(상수)`의 초기화:  `이니셜라이저`를 통해 가능
+    - **const static**으로 선언된 `멤버변수(상수)`:  `선언과 동시`에 초기화 가능  ⬇
+
+```c++
+#include <iostream>
+using namespace std;
+
+//국가별 면적 크기를 정해 놓은 클래스, const static 상수는 하나의 클래스에 둘 이상이 보이는 것이 보통이다.
+class ContryArea
+{
+public:
+    const static int RUSSIA = 1707540;
+    const static int CANADA = 998467;
+    const static int CHINA = 957290;
+    const static int SOUTH_KOREA = 9922;
+};
+
+int main(void)
+{
+    //정의된 "상수"에  접근하기 위해서 굳이 객체를 생성할 필요는 없다. 클래스의 이름을 통해서 직접 접근하는 것이 편하고, 접근하는 대상에 대한 정보를 쉽게 노출 할 수 있다.
+    cout<<"러시아 면적:"<<CountryArea::RUSSIA<<"km"<<endl;
+    cout<<"캐나다 면적:"<<CountryArea::CANADA<<"km"<<endl;
+    cout<<"중국 면적:"<<CountryArea::CHINA<<"km"<<endl;
+    cout<<"한국 면적:"<<CountryArea::SOUTH_KOREA<<"km"<<endl;
+    return 0;
+}
+```
+
+👉 `const static 멤버변수`는, 클래스가 [정의될 때 지정된 값이 유지되는 상수]()이기 떄문에, 위 예제에서 보이는 바와 같이 **초기화가 가능**하도록 **문법으로 정의**하고 있다.
+
+
+
+
+
+📌 키워드 mutable
+
+​      👉 `const 함수 내`에서의 **값의 변경**을 **예외적**으로 **허용**한다.
+
+```c++
+#include <iostream>
+using namespace std;
+
+class SoSimple
+{
+private:
+    int num1;
+    mutable int num2; //const 함수에 대해 예외를 둔다!
+public:
+    SoSimple(int n1. int n2)
+        : num1(n1),num2(n2)
+    { }
+    void ShowSimpleData() const
+    {
+        cout<<num1<<", "<<num2<<endl;
+    }
+    void CopyToNum2() const
+    {
+        num2=num1;
+        //const 함수 내에서 num2에 저장된 값을 변경하고 있다. num2가 mutable로 선언되었기 떄문에 가능!
+    }
+};
+
+int main(void)
+{
+    SoSimple sm(1,2);
+    sm.ShowSimpleData();
+    sm.CopyToNum2();
+    sm.ShowSimpleData();
+    return 0;
+}
+```
+
+⚠ `num1=num2;`와 같이 대입 연산을 거꾸라 진행하는 상황을 방지한다는 측면에서 좋을 수 있겠지만, 어찌되었든 c++의 키워드인 const의 선언을 의미 없게 만들기 떄문에 제한적이고 매우 예외적인 경우에 한해서 사용해야한다.
 

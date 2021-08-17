@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "[cpp] c++ 클래스의 기본"
+title: "[c++] c++ 클래스의 기본"
 subtitle: "basic of cpp class"
 categories: programming
-tags: cpp 
+tags: cpp study
 comments: true
+header-img: img/programming/cpp/0000-00-00-programming-cpp-book-cover-1.JPG
 ---
 
 > `구조체`와 `클래스`에 관한 공부 내용을 다루고 있다.
@@ -104,6 +105,8 @@ Car SimpleCar;
        ```
 
    
+
+
 
 
 

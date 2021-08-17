@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "[cpp] 클래스의 완성"
+title: "[c++] 클래스의 완성"
 subtitle: "master of cpp class"
 categories: programming
-tags: cpp 
-comments: true
-
+tags: cpp study
+comments: true 
+header-img: img/programming/cpp/0000-00-00-programming-cpp-book-cover-1.JPG
 ---
 
 > `클래스`의 `중요요소` 관한 공부 내용을 다루고 있다.
