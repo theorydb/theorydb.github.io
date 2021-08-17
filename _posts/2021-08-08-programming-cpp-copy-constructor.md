@@ -19,7 +19,6 @@ header-img: img/programming/cpp/0000-00-00-programming-cpp-book-cover-1.JPG
        - SoSimple sim2(sim1);
        - 자동으로 삽입이 되는 디폴트 복사 생성자
        - 변환에 의한 초기화! 키워드 `explicit`으로 막을 수 있다.
-    
   - [깊은 복사와 얕은 복사](#깊은-복사와-얕은-복사)
        - 디폴트 복사 생성자의 문제점
        - '깊은 복사'를 위한 복사 생성자의 정의
