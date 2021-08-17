@@ -14,21 +14,24 @@ header-img: img/programming/cpp/0000-00-00-programming-cpp-book-cover-1.JPG
 
 - 개요
   - [const와 관련해서 아직 못다한 이야기](#const와-관련해서-아직-못다한-이야기)
-        - const 객체와 const 객체의 특성들
-        - const와 함수 오버로딩
+
+    - const 객체와 const 객체의 특성들
+    - const와 함수 오버로딩
 
   - [클래스와 함수에 대한 friend 선언](#클래스와-함수에-대한-friend-선언)
+       
            - 클래스의 friend 선언
            - 함수의 friend선언
-
+       
   - [C++ 에서의 static](#cpp-에서의-static)
+        
             - C언어에서 이야기한 static
-            - static 멤버변수(클래스 변수)
-            - static 멤버변수의 또 다른 접근방법
+           -  static 멤버변수(클래스 변수)
+          - static 멤버변수의 또 다른 접근방법
+       
        - static 멤버함수
        - 키워드 mutable
 
-  
 
 
 
