@@ -26,7 +26,8 @@ header-img: img/programming/cpp/0000-00-00-programming-cpp-book-cover-1.JPG
 
 👀 상속은 특히 적용이 중요한 문법이다.  따라서, 확실히 이해하고 적절한 때에 선별적으로 적용할 수 있도록 노력하자!😉
 
-<p>
+
+
 
 📌 상속(Inheritance)의 이해를 위한 접근 방식 제안
 
@@ -42,13 +43,13 @@ header-img: img/programming/cpp/0000-00-00-programming-cpp-book-cover-1.JPG
 
 ​                  처음 제시한 문제를, 상속을 적용하여 해결한다.✨
 
-<p>
+
 
 📌 상속에 대한 새로운 관점의 이해
 
 ​       _<span style = "color:gray">과거에는 "기존에 정의해 놓은 클래스의 재활용을 목적으로 만들어진 문법적 요소가 상속이다."라는 관점으로 상속을 바라보았다.</span>_
 
-<p>
+
 
 📌 문제 제시를 위한 시나리오 도입
 
@@ -111,7 +112,8 @@ public:
 
 👉 `class EmployeeHandler`는 기능적 성격이 강한데, 이렇게 기능의 처리를 실제로 담당하는 클래스를 가리켜 **'컨트롤(control) 클래스'**또는 **'핸들러(handler)클래스'**라 한다.
 
-<p>
+
+
 
 `위의 두 클래스를 기반으로 작성된 main함수.cpp`
 
@@ -235,7 +237,8 @@ UnivStudent(char*myname, int myage, char * mymajor)
 
  💡 <span style = "color :goldenrod">UnivStudent 생성자가 Person 클래스의 생성자를 호출해서 Person 클래스의 멤버를 초기화 하는 것이 좋다!😉</span>
 
-<p>
+
+
 
 
 
@@ -305,7 +308,8 @@ int main(void)
 
 
 
-<p>
+
+
 
 
 
@@ -322,7 +326,6 @@ int main(void)
 
 
 
-<p
 
 📌 유도 클래스의 객체 생성과정
 
@@ -404,7 +407,6 @@ int main(void)
 
 
 
-<p>
 
 
 
@@ -532,7 +534,8 @@ int main(void)
 
 ---
 
-<p>
+
+
 
 ## protected 선언과 세 가지 형태의 상속
 
@@ -575,7 +578,8 @@ public:
 
 
 
-<p>
+
+
 
 
 
@@ -598,7 +602,8 @@ class Derived : private Base
 
 
 
-<p>
+
+
 
 
 
@@ -639,7 +644,8 @@ public:
 
 
 
-<p>
+
+
 
 
 
@@ -680,7 +686,12 @@ private:
 
 👉 num2와 num3는Derived 클래스 내에서만 접근이 가능한 멤버가 된다.
 
-<p>
+
+
+<br>
+
+
+
 
 🤔 만약 다른 클래스가 Derived 클래스를 다음과 같이 상속한다면..............
 
@@ -705,7 +716,8 @@ class DeDerived : public Derived
 
 👉 `private 상속이 이뤄진 클래스를 다시 상속할 경우` , 멤버함수를 포함하여 모든 멤버가 '접근불가'가 되기 때문에 사실상 의미 없는 상속이 되고 만다.
 
-<p>
+
+
 
 
 
@@ -716,9 +728,6 @@ class DeDerived : public Derived
 > ✔ C++의 상속은 public 상속만 있다고 생각해라.
 
 ---
-
-<p>
-
 
 
 ## 상속을 위한 조건
@@ -815,7 +824,8 @@ int main(void)
 
 
 
-<p>
+
+
 
 
 
@@ -952,3 +962,4 @@ int main(void)
 _상속으로 묶인 두 개의 클래스는 강한 연관성을 띤다._
 
 _상속은 IS-A 관계의 표현에 매우 적절하다. 그리고 경우에 따라서는 HAS-A 관계의 표현에도 사용될 수 있으나, 이는 프로그램의 변경에 많은 제약을 가져다 줄 수 있다._
+
