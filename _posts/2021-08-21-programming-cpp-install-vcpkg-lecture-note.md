@@ -5,7 +5,7 @@ subtitle: "Implement Basic function"
 categories: programming
 tags: cpp opengl gamedev
 comments: true
-header-img: img/programming/cpp/0000-00-00-programming-cpp-game-lecture-cover-1.JPG
+header-img: img/programming/cpp/0000-00-00-programming-cpp-game-lecture-cover.JPG
 ---
 
 > `홍정모`교수님의 `게임 만들기 연습 문제 패키지`를 수강하고 작성한 문서이다.
@@ -165,7 +165,7 @@ drawLine(Colors::red, p2, Colors::blue, p0);
 
 `result`
 
-![이미지](https://github.com/Yeram522/Yeram522.github.io/tree/master/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-1.JPG){: width="300" height="300"}
+<img src="https://github.com/Yeram522/Yeram522.github.io/tree/master/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-1.JPG" width="300" height="300"/>
 
 .
 
@@ -184,7 +184,7 @@ drawWiredBox(Colors::skyblue, 0.5f, 0.22f);
 
 `result` 👉 회전이 원점에서 이루어졌다.
 
-![이미지](https://github.com/Yeram522/Yeram522.github.io/tree/master/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-2.JPG){: width="300" height="300"}
+<img src="https://github.com/Yeram522/Yeram522.github.io/tree/master/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-2.JPG" width="300" height="300"/>
 
 .
 
@@ -212,7 +212,7 @@ endTransformation();
 
 `drawWiredBox` ▶ `rotate` ▶  `translate`    순으로 적용.
 
-![이미지](https://github.com/Yeram522/Yeram522.github.io/tree/master/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-3.JPG){: width="300" height="300"}
+<img src="https://github.com/Yeram522/Yeram522.github.io/tree/master/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-3.JPG" width="300" height="300"/>
 
 ➕
 
@@ -229,11 +229,11 @@ endTransformation();
 
 `result` 
 
-![이미지](https://github.com/Yeram522/Yeram522.github.io/tree/master/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-4.JPG){: width="300" height="300"}
+<img src="https://github.com/Yeram522/Yeram522.github.io/tree/master/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-4.JPG" width="300" height="300"/>
 
 `회전은 무조건 원점기준으로 진행된다.`
 
-![이미지](https://github.com/Yeram522/Yeram522.github.io/tree/master/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-5.JPG){: width="300" height="300"}
+<img src="https://github.com/Yeram522/Yeram522.github.io/tree/master/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-5.JPG" width="300" height="300"/>
 
 ⚠<span style = "color : red"> `translate`과 `rotate`의 순서가 달라지면, 결과도 달라진다!!</span>
 
@@ -247,11 +247,11 @@ endTransformation();
 
 💡 <span style = "color:goldenrod">**원점이 아닌 점이 원점에 위치할 수 있도록 이동시킨 후 회전한다.**</span>
 
-![이미지](https://github.com/Yeram522/Yeram522.github.io/tree/master/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-6.JPG){: width="300" height="300"}
+<img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-6.JPG" width="300" height="300"/>
 
 1. 물체를 통째로 들어서 원점이 아닌점이 원점에 위치하도록 한다.
 
-![이미지](https://github.com/Yeram522/Yeram522.github.io/tree/master/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-7.JPG){: width="300" height="300"}
+<img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-7.JPG" width="300" height="300"/>
 
 ```c++
 setLineWidth(3.0f);
@@ -265,7 +265,7 @@ drawPoint(Colors::black, center_of_rot, 5.0f);
 
 2. 원점에 대해서 회전
 
-![이미지](https://github.com/Yeram522/Yeram522.github.io/tree/master/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-8.JPG){: width="300" height="300"}
+<img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-8.JPG" width="300" height="300"/>
 
 ```c++
 setLineWidth(3.0f);
@@ -282,7 +282,7 @@ drawPoint(Colors::black, center_of_rot, 5.0f);
 
 3. 다시 원래 위치로 복원한다.
 
-![이미지](https://github.com/Yeram522/Yeram522.github.io/tree/master/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-9.JPG){: width="300" height="300"}
+<img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-9.JPG" width="300" height="300"/>
 
 ```c++
 setLineWidth(3.0f);
@@ -300,13 +300,13 @@ drawPoint(Colors::black, center_of_rot, 5.0f);
 
 ✔ 회전이 좌표중심이 아닌 검은점을 기준으로 회전된 것을 확인할 수 있다!
 
-![이미지](https://github.com/Yeram522/Yeram522.github.io/tree/master/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-10.JPG){: width="300" height="300"}
+<img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-10.JPG" width="300" height="300"/>
 
 .
 
 🔎`회전 기준점`을 변경했을때.
 
-![이미지](https://github.com/Yeram522/Yeram522.github.io/tree/master/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-11.JPG){: width="300" height="300"}
+<img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-11.JPG" width="300" height="300"/>
 
 .
 
@@ -324,7 +324,7 @@ scale(2.0f, 0.25f); // !
 drawWiredBox(Colors::gold, 0.5f, 0.5f); //크기 조정 후(gold one)
 ```
 
-![이미지](https://github.com/Yeram522/Yeram522.github.io/tree/master/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-12.JPG){: width="300" height="300"}
+<img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-12.JPG" width="300" height="300"/>
 
 .
 
@@ -346,7 +346,7 @@ void update() override
 }
 ```
 
-![이미지](https://github.com/Yeram522/Yeram522.github.io/tree/master/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-13.gif){: width="300" height="300"}
+<img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-13.gif" width="300" height="300"/>
 
 .
 
@@ -369,7 +369,7 @@ void update() override
 }
 ```
 
-![이미지](https://github.com/Yeram522/Yeram522.github.io/tree/master/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-14.gif){: width="300" height="300"}
+<img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-14.gif" width="300" height="300"/>
 
 .
 
@@ -394,7 +394,7 @@ void update() override
 }
 ```
 
-![이미지](https://github.com/Yeram522/Yeram522.github.io/tree/master/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-15.gif){: width="300" height="300"}
+<img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-15.gif" width="300" height="300"/>
 
 ✔ 회전하는 공간 자체가 scale이 되어있다.
 
@@ -419,7 +419,7 @@ void update() override
 }
 ```
 
-![이미지](https://github.com/Yeram522/Yeram522.github.io/tree/master/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-16.gif){: width="300" height="300"}
+<img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-16.gif" width="300" height="300"/>
 
 .
 
@@ -442,7 +442,7 @@ void update() override
 }
 ```
 
-![이미지](https://github.com/Yeram522/Yeram522.github.io/tree/master/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-17.gif){: width="300" height="300"}
+<img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-17.gif" width="300" height="300"/>
 
 .
 
@@ -467,6 +467,14 @@ void update() override
 }
 ```
 
-![이미지](https://github.com/Yeram522/Yeram522.github.io/tree/master/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-18.gif){: width="300" height="300"}
+<img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-18.gif" width="300" height="300"/>
 
 👀 자전도 하면서 공전도 하고 있다!
+
+
+
+📑`21.08.21.SAT`
+
+- `Union`에 대해서 알아보기.
+- [Assignment](): Solar System 만들어보기(+태양이 자전하는 움직임도 포함해보기!)🌞
+- [Assignment](): 얼굴 그리기
