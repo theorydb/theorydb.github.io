@@ -165,7 +165,7 @@ drawLine(Colors::red, p2, Colors::blue, p0);
 
 `result`
 
-<img src="https://github.com/Yeram522/Yeram522.github.io/tree/master/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-1.JPG" width="300" height="300"/>
+<img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-1.JPG" width="300" height="300"/>
 
 .
 
@@ -184,7 +184,7 @@ drawWiredBox(Colors::skyblue, 0.5f, 0.22f);
 
 `result` 👉 회전이 원점에서 이루어졌다.
 
-<img src="https://github.com/Yeram522/Yeram522.github.io/tree/master/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-2.JPG" width="300" height="300"/>
+<img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-2.JPG" width="300" height="300"/>
 
 .
 
@@ -212,7 +212,7 @@ endTransformation();
 
 `drawWiredBox` ▶ `rotate` ▶  `translate`    순으로 적용.
 
-<img src="https://github.com/Yeram522/Yeram522.github.io/tree/master/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-3.JPG" width="300" height="300"/>
+<img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-3.JPG" width="300" height="300"/>
 
 ➕
 
@@ -229,11 +229,11 @@ endTransformation();
 
 `result` 
 
-<img src="https://github.com/Yeram522/Yeram522.github.io/tree/master/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-4.JPG" width="300" height="300"/>
+<img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-4.JPG" width="300" height="300"/>
 
 `회전은 무조건 원점기준으로 진행된다.`
 
-<img src="https://github.com/Yeram522/Yeram522.github.io/tree/master/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-5.JPG" width="300" height="300"/>
+<img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-22-programming-cpp-game-lecture-5.JPG" width="300" height="300"/>
 
 ⚠<span style = "color : red"> `translate`과 `rotate`의 순서가 달라지면, 결과도 달라진다!!</span>
 
