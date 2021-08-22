@@ -1,0 +1,64 @@
+---  
+layout: post  
+title: "SQL Basic"  
+subtitle: "MSSQL_SELECT CLAUSE"  
+categories: SQL
+tags: 
+comments: true  
+header-img: img/post_img/SQL.png
+---  
+
+# MS-SQL
+- 개발환경
+- MS-SQL Sever 2019
+- SSMS(MS SQL Server Management Studio)v18.9.1
+### SELECT
+- SELECT는 굉장히 다양한 기능을 가지고 있다.
+- 아래의 예제를 통해 공부해 보도록 하자
+  - [MSDN-SELECT예제](https://docs.microsoft.com/ko-kr/sql/t-sql/queries/select-examples-transact-sql?view=sql-server-ver15)
+- 첫번째 예제
+```SQL
+USE [DB_Name];
+GO
+SELECT * --전체 column선택
+FROM [Table_Name]
+ORDER BY [Column_Name] ASC; --Column_Name의 Column을 오름차순으로 정렬
+
+-- Alternate way.
+USE DB_Name;
+GO
+SELECT p.*
+FROM [Table_Name] AS p --Table_Name을 별칭 p로 설정하고 별칭p 테이블의 모든 column을 select
+ORDER BY [Column_Name] ASC; --Column_Name의 Data를 기준으로 column을 오름차순 정렬
+GO
+```
+<br/>
+
+이처럼 *을 통해 해당 테이블 내의 모든 정보를 검색할수도 있고 WHERE절을 사용해 조건에 해당되는 내용을 검색할수도 있다.
+아래 예제를 보자
+
+```SQL
+USE [DB_Name];
+GO
+SELECT [col_1], [col_2], [col_3] AS Price --col_1,col_2,col_3 값 검색, 단 col_3은 Price라는 별칭을 붙임.
+FROM [Table_Name] 
+WHERE [col_4] = 'R' --col_4 column의 값이 'R'에 해당하고, col_5의 값이 4 미만인 조건을 만족하는 
+AND [col_5] < 4
+ORDER BY [col_1] ASC; --col_1의 Data를 기준으로 column을 오름차순 정렬
+GO
+```
+
+<br/>
+
+위 예제의 쓰임 이외에도
+- SELECT-FOR
+- SELECT-GROUP BY
+- SELECT-HAVING
+- SELECT-INTO
+- SELECT-ORDER BY
+- SELECT-OVER
+
+<br/>
+
+의 형태로 사용할수 있다.
+추가로 사용디는 형태에 대해서는 따로 업데이트 해 볼 예정이다.
