@@ -68,7 +68,7 @@ namespace jm
 
 ## 1.2 기본적인 그리기 - 이동, 회전, 애니메이션
 
-#### 🕹 점과 선 그리기
+### 🕹 점과 선 그리기
 
 
 
@@ -102,7 +102,7 @@ drawLine(Colors::red, p2, Colors::blue, p0);
 
 .
 
-#### 🕹 이동
+### 🕹 이동
 
 ```c++
 const float dx = 0.1f;
@@ -173,7 +173,7 @@ drawLine(Colors::red, p2, Colors::blue, p0);
 
 .
 
-#### 🕹 회전
+### 🕹 회전
 
 ```c++
 drawWiredBox(Colors::gold, 0.5f, 0.22f);
@@ -243,7 +243,7 @@ endTransformation();
 
 .
 
-#### 🕹 원점이 아닌 곳에서의 회전
+### 🕹 원점이 아닌 곳에서의 회전
 
 💡 <span style = "color:goldenrod">**원점이 아닌 점이 원점에 위치할 수 있도록 이동시킨 후 회전한다.**</span>
 
@@ -314,7 +314,7 @@ drawPoint(Colors::black, center_of_rot, 5.0f);
 
 .
 
-#### 🕹 스케일링
+### 🕹 스케일링
 
 ```c++
 setLineWidth(3.0f);
@@ -337,11 +337,11 @@ void update() override
 {
    setLineWidth(3.0f);
 
-	rotate(time * 10.0f);
-	scale(2.0f, 0.25f);
-	drawWiredBox(Colors::gold, 0.5f, 0.5f);
+   rotate(time * 10.0f);
+   scale(2.0f, 0.25f);
+   drawWiredBox(Colors::gold, 0.5f, 0.5f);
 
-	time += this->getTimeStep();
+   time += this->getTimeStep();
 
 }
 ```
@@ -478,3 +478,39 @@ void update() override
 - `Union`에 대해서 알아보기.
 - [Assignment](): Solar System 만들어보기(+태양이 자전하는 움직임도 포함해보기!)🌞
 - [Assignment](): 얼굴 그리기
+
+.
+
+.
+
+.
+
+## 1.3 상호작용 맛보기: 키보드 입력과 반응
+
+```c++
+class MouseExample : public Game2D
+	{
+	public:
+		void update() override
+		{
+			const vec2 mouse_pos = getCursorPos();
+			
+			if (this->isMouseButtonPressed(GLFW_MOUSE_BUTTON_1) == true)
+			{
+				translate(mouse_pos);
+				drawFilledCircle(Colors::gold, 0.1f);
+			}
+		
+			if (this->isMouseButtonPressed(GLFW_MOUSE_BUTTON_2))
+			{
+				translate(mouse_pos);
+				drawFilledCircle(Colors::red, 0.1f);
+			}
+		}
+	};
+```
+
+
+
+## 1.4 마우스 입력
+
