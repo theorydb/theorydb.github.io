@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[c++]gamepack:1장 과제"
+title: "[c++]Gamepack:section01_(1.2)과제"
 subtitle: "Making Solar System and Drawing Face"
 categories: programming
 tags: cpp opengl gamedev assignment
@@ -8,11 +8,11 @@ comments: true
 header-img: img/programming/cpp/0000-00-00-programming-cpp-game-lecture-cover.JPG
 ---
 
-> `홍정모`교수님의 `게임 만들기 연습 문제 패키지`를 수강하고 작성한 문서이다.
+> `홍정모`교수님의[ `게임 만들기 연습 문제 패키지`](https://www.inflearn.com/course/c-2#)를 수강하고 작성한 문서이다.
 >
-> 교수님이 내주신 `과제`에 대한 해결을 담고 있다.
+> 교수님이 내주신 `과제`에 대한 `해결`을 담고 있다.
 >
-> ✔태양계 움직임 나타내기 ✔ 도형을 이용한 그림 그리기.
+> 태양계 움직임 나타내기 [✔] , 도형을 이용한 그림 그리기 [✔]
 
 ---
 
@@ -35,15 +35,11 @@ header-img: img/programming/cpp/0000-00-00-programming-cpp-game-lecture-cover.JP
 		{
 			beginTransformation();
 			{
-				
-				//rotate(10.f * time);
 				drawFilledStar(Colors::gold, 0.2f, 0.13f);	// Sun
 
-				//rotate(15.f * time);
 				translate(0.5f, 0.0f);
 				drawFilledCircle(Colors::blue, 0.1f);		// Earth
 
-				//rotate(90.f * time);
 				translate(0.2f, 0.0f);				
 				drawFilledCircle(Colors::yellow, 0.05f);	// Moon
 			}
@@ -57,7 +53,7 @@ header-img: img/programming/cpp/0000-00-00-programming-cpp-game-lecture-cover.JP
 
 
 
-⚒ 달이 지구를 공전하도록 만들기.
+📌 달이 지구를 공전하도록 만들기.
 
 <img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-22-programming-cpp-making-solar-system-and-drawing-face-1.gif" width="300" height="300"/>
 
@@ -84,7 +80,7 @@ endTransformation();
 
 .
 
-⚒ 지구가 태양을 공전하도록 만들기.
+📌 지구가 태양을 공전하도록 만들기.
 
 <img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-23-programming-cpp-making-solar-system-and-drawing-face-3.gif" width="300" height="300"/>
 
@@ -108,7 +104,7 @@ endTransformation();
 
 
 
-⚒ 태양이 자전 하도록 만들기.
+📌 태양이 자전 하도록 만들기.
 
 <img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-23-programming-cpp-making-solar-system-and-drawing-face-4.gif" width="300" height="300"/>
 
