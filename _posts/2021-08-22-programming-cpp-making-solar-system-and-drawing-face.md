@@ -76,7 +76,7 @@ beginTransformation();
 endTransformation();
 ```
 
-<img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-22-programming-cpp-making-solar-system-and-drawing-face-2.gif" width="300" height="300"/>
+<img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-23-programming-cpp-making-solar-system-and-drawing-face-2.JPG" width="300" height="300"/>
 
 🔎 `rotate(회전)`은 원점을 중심으로 이루어지기 때문에, 0.2f를 이동한 상태에서 회전을 하고, 지구 도형과 같이 0.5f 평행이동 하므로 달이 지구를 공전 하는 것 처럼 보이는 것이다.
 
@@ -86,7 +86,7 @@ endTransformation();
 
 ⚒ 지구가 태양을 공전하도록 만들기.
 
-<img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-23-programming-cpp-making-solar-system-and-drawing-face-3.gif.gif" width="300" height="300"/>
+<img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-23-programming-cpp-making-solar-system-and-drawing-face-3.gif" width="300" height="300"/>
 
 ```c++
 beginTransformation();
@@ -110,7 +110,7 @@ endTransformation();
 
 ⚒ 태양이 자전 하도록 만들기.
 
-<img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-23-programming-cpp-making-solar-system-and-drawing-face-4.gif.gif" width="300" height="300"/>
+<img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-23-programming-cpp-making-solar-system-and-drawing-face-4.gif" width="300" height="300"/>
 
 ```c++
 beginTransformation();
@@ -141,7 +141,7 @@ endTransformation();
 
 나는 요즘 핫한 춘식이를 만들어 보았다...😊
 
-<img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-23-programming-cpp-making-solar-system-and-drawing-face-6.gif.gif" width="300" height="300"/>
+<img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-23-programming-cpp-making-solar-system-and-drawing-face-6.JPG" width="300" height="300"/>
 
 ```c++
 
