@@ -5,7 +5,7 @@ subtitle: "Making Solar System and Drawing Face"
 categories: programming
 tags: cpp opengl gamedev assignment
 comments: true
-header-img: img/programming/cpp/0000-00-00-programming-cpp-making-solar-system-and-drawing-face-cover.JPG
+header-img: img/programming/cpp/0000-00-00-programming-cpp-game-lecture-cover.JPG
 ---
 
 > `홍정모`교수님의 `게임 만들기 연습 문제 패키지`를 수강하고 작성한 문서이다.
@@ -135,7 +135,7 @@ endTransformation();
 
 ## jm::FaceExample().run();
 
-<img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-23-programming-cpp-making-solar-system-and-drawing-face-5.gif.gif" width="300" height="300"/>
+<img src="https://yeram522.github.io/assets/img/programming/cpp/2021-08-23-programming-cpp-making-solar-system-and-drawing-face-5.JPG" width="300" height="300"/>
 
 🧐 위의 예제 그림처럼 자신만의 얼굴을 만들자!
 
