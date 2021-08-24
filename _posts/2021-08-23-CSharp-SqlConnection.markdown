@@ -2,7 +2,7 @@
 layout: post  
 title: "C#-SqlConnection Class"  
 subtitle: "SqlConnection사용해보기"  
-categories: C#
+categories: c#
 tags: 
 comments: true  
 header-img: 

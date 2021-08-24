@@ -2,7 +2,7 @@
 layout: post  
 title: "SQL Basic"  
 subtitle: "MSSQL_SELECT CLAUSE"  
-categories: SQL
+categories: sql
 tags: 
 comments: true  
 header-img: img/post_img/SQL.png
