@@ -1,10 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\assets",
-    "\\assets\\img",
-    "\\assets\\img\\post_img",
+    "\\_featured_categories",
+    "\\_layouts",
     "\\_posts"
   ],
+  "SelectedNode": "\\_featured_categories\\sql.md",
   "PreviewInSolutionExplorer": false
 }
