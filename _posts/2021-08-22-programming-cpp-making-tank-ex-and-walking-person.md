@@ -25,3 +25,6 @@ header-img: img/programming/cpp/0000-00-00-programming-cpp-game-lecture-cover.JP
 - [ ] TODO: allow multiple bullets
 - [ ] TODO: delete bullets when they go out of the screen
 
+
+
+.
