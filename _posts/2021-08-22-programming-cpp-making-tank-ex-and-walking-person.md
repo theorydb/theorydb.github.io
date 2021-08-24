@@ -27,4 +27,3 @@ header-img: img/programming/cpp/0000-00-00-programming-cpp-game-lecture-cover.JP
 
 
 
-.깃 컴시 시도
