@@ -32,7 +32,7 @@ public sealed class SqlConnection : System.Data.Common.DbConnection, ICloneable
 //using.System.Data; 전처리기는 미리 선언해준다.
 private static void OpenSqlConnection()
 {
-    string connectionString = GetConnectionString();
+    string connectionString = GetConnectionString(); //ConncetionString을 담기 위한 인스턴스 생성
 
     using (SqlConnection connection = new SqlConnection())
     {
@@ -50,9 +50,11 @@ static private string GetConnectionString()
 {
     // To avoid storing the connection string in your code,
     // you can retrieve it from a configuration file.
+    // 아래 ConnectionString은 App.config파일을 이용해서 setting가능하다.
     return "Data Source=MSSQL1;Initial Catalog=AdventureWorks;"
         + "Integrated Security=true;";
 }
 ``` 
 
 - GetConnectionString() method의 주석에서 보이는 configuration file은 App.config파일의 ```<connectionString>``` 태그를 이용하여 구현할 수 있다.
+- App.config파일을 다루는 내용은 차후 따로 다뤄보기로 한다.
