@@ -43,6 +43,7 @@ git설치는 [git download](https://git-scm.com/downloads)페이지에서 운영
     - `git init` : git과의 연결을 위한 명령어다. `.git`이라는 숨김폴더를 생성한다.
     - `git config --global user.name <github username>` : github에 생성된 계정의 username을 등록한다.
     - `git config --global user.email <github useremail>` : github에 생성된 계정의 email을 등록한다.
+    - `git config --list` : git config의 list를 출력한다.
   - github repository 관련 명령어(clone, commit, pull, push)
     - `git clone <github 저장소 주소>` : github repository를 복사한다.
     - `git add --all` : 수정된 파일을 포함한 모든 파일 local 저장소에 업로드
