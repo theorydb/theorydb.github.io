@@ -58,7 +58,25 @@ git설치는 [git download](https://git-scm.com/downloads)페이지에서 운영
 	- `git reset HEAD~2` : 마지막 2개 커밋 취소
 	- `git reset --hard HEAD^` : 커밋 취소, 파일들은 unstaged상태로 워킹 디렉토리에서 삭제
     - `git log` : commit 내용 확인
-    - `git push -u origin master` : github에 push
+    - ##### git의 branch를 local에서 생성 후 remote repository에 push하기 위해선 remote repository를 등록해주어야 한다.
+    - `git remote` : remote repository 확인하기
+    - `git remote -v` : remote repository의 단축이름과 URL보기
+    - `git remote show <github remote repo name>` : remote repository의 상세정보 보기
+    - `git remote rename <oldName> <newName>` : remote repository 의 이름 바꾸기
+    - `git remote add <github remote repo name> <url>` : 워킹 디렉토리에 새 <github remote repo name>의 remote repository 추가
+    - `git remote rm <github remote repo name>` : git remote repository 삭제
+    - `git push <github remote repo name> --delete <github branch name>` : github remote branch 삭제
+    - `git fetch <github remot repo name>` : <github remote repo name>의 remote repo fetch,로컬에는 없지만, remote repo에 있는 데이터를 모두 가져온다.
+      - remote repo의 데이터를 모두 local로 가지오기는 하나, 자동으로 Merge하지 않는다. 따라서 수동으로 Merge해주어야 한다.
+      - 그럴바엔 차라리 pull을 사용하는게 더 편할수도 있다.
+    - `git branch` : branch목록 확인
+    - `git branch -v` : banch 목록 및 마지막 커밋 메시지까지 확인
+    - `git branch -merge` : branch merge여부 확인
+    - `git branch -m <oldName> <newName>` : branch 이름 변경
+    - `git branch -d <branchName>` : <branchName> branch 삭제
+    - `git checkout <branchName>` : <branchName> branch로 switch.
+    - `git checkout -b <branchName>` : branch확인 후 없으면 생성 
+    - `git push -u origin master` : github master branch에 push
     - ##### 잊지말자, add-> commit-> pull-> push-> pull request
     - `git status` : 현재 폴더의 git 정보 확인
     - `git branch <github branch name>` : 등록된 저장소에 <github branch name>의 branch 생성
