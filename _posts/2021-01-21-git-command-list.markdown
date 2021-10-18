@@ -24,7 +24,7 @@ git설치는 [git download](https://git-scm.com/downloads)페이지에서 운영
 - 앞서 말한대로 프롬프트창을 사용하는 형식이다.
 - 지금 필요한건 Gitbash를 사용하는데 필요한 명령어다.
 - 명령어를 찾아보자.
-- #### 아래 명령어들을 사용하기 전 github에 계정부터 만드는 것, 잊지말자.
+- ##### 아래 명령어들을 사용하기 전 github에 계정부터 만드는 것, 잊지말자.
     - 계정생성은 어렵지 않으니 금방 만들수 있다.
 ---
 ### Gitbash 명령어
@@ -66,7 +66,7 @@ git설치는 [git download](https://git-scm.com/downloads)페이지에서 운영
     - `git remote add <github remote repo name> <url>` : 워킹 디렉토리에 새 `<github remote repo name>`의 remote repository 추가
     - `git remote rm <github remote repo name>` : git remote repository 삭제
     - `git push <github remote repo name> --delete <github branch name>` : github remote branch 삭제
-    - `git fetch <github remot repo name>` : `<github remote repo name>`의 remote repo fetch,로컬에는 없지만, remote repo에 있는 데이터를 모두 가져온다.
+    - `git fetch <github remote repo name>` : `<github remote repo name>`의 remote repo fetch,로컬에는 없지만, remote repo에 있는 데이터를 모두 가져온다.
       - remote repo의 데이터를 모두 local로 가지오기는 하나, 자동으로 Merge하지 않는다. 따라서 수동으로 Merge해주어야 한다.
       - 그럴바엔 차라리 pull을 사용하는게 더 편할수도 있다.
     - `git branch` : branch목록 확인
@@ -76,7 +76,9 @@ git설치는 [git download](https://git-scm.com/downloads)페이지에서 운영
     - `git branch -d <branchName>` : `<branchName>` branch 삭제
     - `git checkout <branchName>` : `<branchName>` branch로 switch.
     - `git checkout -b <branchName>` : branch확인 후 없으면 생성 
-    - `git push -u origin master` : github master branch에 push
+    - `git push -u origin master` : github origin 리모트 저장소의 master branch에 push
+      - -u 옵션은 해당 브런치를 자동으로 가리키게 되는 옵션이다. 위 명령을 한번 실행 후 이후부터는 `git push` 명령 실행 시 자동으로 기존 push된 설정대로 push한다.
+    - `git push -u <remote repo name> <branch name>` : github origin 리모트 저장소의 해당 브랜치에 push
     - ##### 잊지말자, add-> commit-> pull-> push-> pull request
     - `git status` : 현재 폴더의 git 정보 확인
     - `git branch <github branch name>` : 등록된 저장소에 `<github branch name>`의 branch 생성

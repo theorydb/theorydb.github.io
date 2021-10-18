@@ -1,6 +1,6 @@
 ---  
 layout: post  
-title: "SQL Basic"  
+title: "SQL Basic-Select"  
 subtitle: "MSSQL_SELECT CLAUSE"  
 categories: sql
 tags: 
