@@ -32,7 +32,7 @@ header-img: img/review/review-book-dark-data-1.png
 ![15유형](https://theorydb.github.io/assets/img/review/review-book-dark-data-2.png)  
 
 2부에서는 한 걸음 더 나아가 다크데이터에 `대비`하는 법과 더불어 오히려 이를 역이용하여 `활용`하는 방법까지 알아본다.
-![결측치](https://theorydb.github.io/assets/img/review/review-book-dark-data-2.png)  
+![결측치](https://theorydb.github.io/assets/img/review/review-book-dark-data-3.png)  
 
 위 그림은 자세히 보면 무응답이라고 기재된 결측치가 상당수 존재한다. 저자가 의도적으로 만든 데이터임을 밝혔지만 사실 결측치가 하나의 필드라도 존재하는 데이터를 제거하면 남는 데이터는 존재하지 않는다. 
 
