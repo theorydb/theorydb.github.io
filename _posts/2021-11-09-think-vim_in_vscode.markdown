@@ -1,7 +1,7 @@
 ---  
 layout: post  
 title: "VSCode Vim Editor"  
-subtitle: "강려크한 기능들을 가진 에디터"  
+subtitle: "Powerful editor extension"  
 categories: think
 tags: 
 comments: true  
