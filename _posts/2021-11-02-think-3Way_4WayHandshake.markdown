@@ -18,15 +18,13 @@ header-img:
 		- TCP 연결 처리에 필요한 정보가 담겨저 있다.
 			- Connection state(LISTEN, ESTABLISHED, TIME-WAIT등)
 			- Receive window, Congestion Window, Sequence number, 재전송 타이머 등
-
-
-|Client State|Client|Server|Sever State|
-|----|----|----|----|
-|CLOSED|Wait For Server|Passive Open: Create TCB|CLOSED -> LISTEN|
-|CLOSED -> SYN-SENT|Active Open: Create TCB, Send SYN|Wait For Client|LISTEN -> SYN-RECEIVED|
-|SYN-SENT -> ESTABLISHED|Wait For ACK to SYN|Receive SYN, Send SYN+ACK|SYN-RECEIVED|
-|ESTABLISHED|Receive SYN+ACK, Send ACK|Wait For ACK to SYN|SYN-RECEIVED -> ESTABLISHED|
-|||Receive ACK|ESTABLISHED|
+    |Client State|Client|Server|Sever State|
+	|----|----|----|----|
+	|CLOSED|Wait For Server|Passive Open: Create TCB|CLOSED -> LISTEN|
+	|CLOSED -> SYN-SENT|Active Open: Create TCB, Send SYN|Wait For Client|LISTEN -> SYN-RECEIVED|
+	|SYN-SENT -> ESTABLISHED|Wait For ACK to SYN|Receive SYN, Send SYN+ACK|SYN-RECEIVED|
+	|ESTABLISHED|Receive SYN+ACK, Send ACK|Wait For ACK to SYN|SYN-RECEIVED -> ESTABLISHED|
+	|||Receive ACK|ESTABLISHED|
 
 
 
