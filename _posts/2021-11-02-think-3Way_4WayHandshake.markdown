@@ -1,24 +1,23 @@
 ---  
 layout: post  
 title: "3Way-Handshake, 4Way-Handshake"  
-subtitle: "TCPÅë½ÅÀÇ ½ÃÀÛ°ú ³¡¿¡ ÇÊ¿äÇÑ ±â¼ú"  
+subtitle: "TCPí†µì‹ ì˜ ì‹œìž‘ê³¼ ëì— í•„ìš”í•œ ê¸°ìˆ "  
 categories: think
 tags: 
 comments: true  
 header-img:
 ---
-
 ## 3-Way, 4-Way Handshake
 ### 3-Way Handshake	
-- TCP(Transmission Control Protocol) Åë½ÅÀ» ÀÌ¿ëÇØ ¿¬°áÀ» ¼³Á¤(Connection Establishment) ÇÔÀ¸·Î¼­ Á¤È®ÇÑ Àü¼ÛÀ» º¸Àå ÇÒ ¼ö ÀÖµµ·Ï ÇÏ´Â ¹æ¹ýÀÌ´Ù.
-- TCP¿¬°áÀ» ÃÊ±âÈ­ ÇÒ ¶§ »ç¿ëÇÑ´Ù.
-- Client¿Í ServerÀÇ »óÅÂ¸¦ Ç¥·Î ³ªÅ¸³»¸é ¾Æ·¡¿Í °°´Ù.
+- TCP(Transmission Control Protocol) í†µì‹ ì„ ì´ìš©í•´ ì—°ê²°ì„ ì„¤ì •(Connection Establishment) í•¨ìœ¼ë¡œì„œ ì •í™•í•œ ì „ì†¡ì„ ë³´ìž¥ í•  ìˆ˜ ìžˆë„ë¡ í•˜ëŠ” ë°©ë²•ì´ë‹¤.
+- TCPì—°ê²°ì„ ì´ˆê¸°í™” í•  ë•Œ ì‚¬ìš©í•œë‹¤.
+- Clientì™€ Serverì˜ ìƒíƒœë¥¼ í‘œë¡œ ë‚˜íƒ€ë‚´ë©´ ì•„ëž˜ì™€ ê°™ë‹¤.
 	- SYN : SYnchronize Sequence Number
 	- ACK : ACKnowledgements
 	- TCB : Transmission Control Block
-		- TCP ¿¬°á Ã³¸®¿¡ ÇÊ¿äÇÑ Á¤º¸°¡ ´ã°ÜÀú ÀÖ´Ù.
-			- Connection state(LISTEN, ESTABLISHED, TIME-WAITµî)
-			- Receive window, Congestion Window, Sequence number, ÀçÀü¼Û Å¸ÀÌ¸Ó µî
+		- TCP ì—°ê²° ì²˜ë¦¬ì— í•„ìš”í•œ ì •ë³´ê°€ ë‹´ê²¨ì € ìžˆë‹¤.
+			- Connection state(LISTEN, ESTABLISHED, TIME-WAITë“±)
+			- Receive window, Congestion Window, Sequence number, ìž¬ì „ì†¡ íƒ€ì´ë¨¸ ë“±
 
 |Client State|Client|Server|Sever State|
 |----|----|----|----|
@@ -29,7 +28,7 @@ header-img:
 |||Receive ACK|ESTABLISHED|
 
 ### 4-Way Handshake
-- TCPÀÇ ¿¬°áÀ» ÇØÁ¦ÇÒ ¶§(Connection Termination) »ç¿ëÇÑ´Ù.
+- TCPì˜ ì—°ê²°ì„ í•´ì œí•  ë•Œ(Connection Termination) ì‚¬ìš©í•œë‹¤.
 
 |Client State|Client|Sever|Sever State|
 |----|----|----|----|
@@ -40,4 +39,4 @@ header-img:
 |FIN-WAIT-2 -> TIME-WAIT|Receive FIN, Send ACK|Wait for ACK to FIN|LAST-ACK -> CLOSED|
 |TIME-WAIT|Wait For Double Maximum Segment Life(MSL) Time|Receive ACK|CLOSED|
 |CLOSED|||CLOSED|
-- ServerÃø¿¡¼­ Client¿¡°Ô Àü¼ÛÇÑ ÆÐÅ¶ÀÌ FIN ÆÐÅ¶º¸´Ù ´Ê°Ô µµÂøÇØ µ¥ÀÌÅÍ°¡ À¯½Ç µÉ »óÈ²À» ´ëºñÇØ SeverÃøÀº ÀÏÁ¤ ½Ã°£(Default : 240 sec)µ¿¾È À×¿© ÆÐÅ¶À» ±â´Ù¸®´Â °úÁ¤À» °¡Áø´Ù. ÀÌ¸¦ **TIME-WAIT**ÀÌ¶ó ÇÑ´Ù. 
+- Serverì¸¡ì—ì„œ Clientì—ê²Œ ì „ì†¡í•œ íŒ¨í‚·ì´ FIN íŒ¨í‚·ë³´ë‹¤ ëŠ¦ê²Œ ë„ì°©í•´ ë°ì´í„°ê°€ ìœ ì‹¤ ë  ìƒí™©ì„ ëŒ€ë¹„í•´ Severì¸¡ì€ ì¼ì • ì‹œê°„(Default : 240 sec)ë™ì•ˆ ìž‰ì—¬ íŒ¨í‚·ì„ ê¸°ë‹¤ë¦¬ëŠ” ê³¼ì •ì„ ê°€ì§„ë‹¤. ì´ë¥¼ **TIME-WAIT**ì´ë¼ í•œë‹¤. 
