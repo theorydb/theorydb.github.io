@@ -31,11 +31,8 @@ header-img:
 
 
 ### 4-Way Handshake
-- TCP의 연결을 해제할 때(Connection Termination) 사용한다.
-
-
-
-|Client State|Client|Sever|Sever State|
+- TCP의 연결을 해제할 때(Connection Termination) 사용한다. 
+- |Client State|Client|Sever|Sever State|
 |----|----|----|----|
 |ESTABLISHED -> FIN-WAIT-1|Receive Close Signal From App, Send FIN|Normal Operation|ESTABLISHED|
 |FIN-WAIT-1|Wait for ACK and FIN From Server|Receive FIN, Send ACK, Tell App To Close|ESTABLISHED -> CLOSE-WAIT|
