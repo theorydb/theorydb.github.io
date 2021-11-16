@@ -32,15 +32,16 @@ header-img:
 
 ### 4-Way Handshake
 - TCP의 연결을 해제할 때(Connection Termination) 사용한다. 
-- |Client State|Client|Sever|Sever State|
-|----|----|----|----|
-|ESTABLISHED -> FIN-WAIT-1|Receive Close Signal From App, Send FIN|Normal Operation|ESTABLISHED|
-|FIN-WAIT-1|Wait for ACK and FIN From Server|Receive FIN, Send ACK, Tell App To Close|ESTABLISHED -> CLOSE-WAIT|
-|FIN-WAIT-1 -> FIN-WAIT-2|Receive ACK|(Wait for App)|CLOSE-WAIT -> LAST-ACK|
-|FIN-WAIT-2|Wait for Server FIN|App is Ready To Close, Send FIN|LAST-ACK|
-|FIN-WAIT-2 -> TIME-WAIT|Receive FIN, Send ACK|Wait for ACK to FIN|LAST-ACK -> CLOSED|
-|TIME-WAIT|Wait For Double Maximum Segment Life(MSL) Time|Receive ACK|CLOSED|
-|CLOSED|||CLOSED|
+
+	|Client State|Client|Sever|Sever State|
+	|----|----|----|----|
+	|ESTABLISHED -> FIN-WAIT-1|Receive Close Signal From App, Send FIN|Normal Operation|ESTABLISHED|
+	|FIN-WAIT-1|Wait for ACK and FIN From Server|Receive FIN, Send ACK, Tell App To Close|ESTABLISHED -> CLOSE-WAIT|
+	|FIN-WAIT-1 -> FIN-WAIT-2|Receive ACK|(Wait for App)|CLOSE-WAIT -> LAST-ACK|
+	|FIN-WAIT-2|Wait for Server FIN|App is Ready To Close, Send FIN|LAST-ACK|
+	|FIN-WAIT-2 -> TIME-WAIT|Receive FIN, Send ACK|Wait for ACK to FIN|LAST-ACK -> CLOSED|
+	|TIME-WAIT|Wait For Double Maximum Segment Life(MSL) Time|Receive ACK|CLOSED|
+	|CLOSED|||CLOSED|
 
 
 - Server측에서 Client에게 전송한 패킷이 FIN 패킷보다 늦게 도착해 데이터가 유실 될 상황을 대비해 Sever측은 일정 시간(Default : 240 sec)동안 잉여 패킷을 기다리는 과정을 가진다. 이를 **TIME-WAIT**이라 한다. 
