@@ -19,6 +19,8 @@ header-img:
 			- Connection state(LISTEN, ESTABLISHED, TIME-WAIT등)
 			- Receive window, Congestion Window, Sequence number, 재전송 타이머 등
 
+---
+
 |Client State|Client|Server|Sever State|
 |----|----|----|----|
 |CLOSED|Wait For Server|Passive Open: Create TCB|CLOSED -> LISTEN|
