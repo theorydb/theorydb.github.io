@@ -20,4 +20,4 @@ header-img: img/review/review-book-tax-law-ending1-1.png
 
 * [책소개 - 해커스 세법엔딩 1](http://www.yes24.com/Product/Goods/104499880)
 
-
+> YES24 리뷰어클럽 서평단 자격으로 작성한 리뷰입니다.

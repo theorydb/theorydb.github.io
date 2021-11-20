@@ -20,4 +20,4 @@ header-img: img/review/review-book-debt-crisis-1.png
 
 * [책소개 - 2022 피할 수 없는 부채 위기](http://www.yes24.com/Product/Goods/104687451)
 
-
+> YES24 리뷰어클럽 서평단 자격으로 작성한 리뷰입니다.
