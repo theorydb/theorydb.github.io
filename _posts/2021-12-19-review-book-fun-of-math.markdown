@@ -68,4 +68,4 @@ header-img: img/review/review-book-fun-of-math-1.png
 
 * [책소개 - 소름 돋는 수학의 재미 (상편)](http://www.yes24.com/Product/Goods/105385395)
 
-
+> YES24 리뷰어클럽 서평단 자격으로 작성한 리뷰입니다.

@@ -62,4 +62,4 @@ header-img: img/review/review-book-webtoon-pd-1.png
 
 * [책소개 - 웹툰PD가 되고 싶습니다](http://www.yes24.com/Product/Goods/105416825)
 
-
+> YES24 리뷰어클럽 서평단 자격으로 작성한 리뷰입니다.

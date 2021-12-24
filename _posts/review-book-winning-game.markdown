@@ -18,4 +18,4 @@ header-img: img/review/review-book-winning-game-1.png
 
 * [책소개 - 패자의 게임에서 승자가 되는 법](http://www.yes24.com/Product/Goods/105642264)
 
-
+> YES24 리뷰어클럽 서평단 자격으로 작성한 리뷰입니다.
