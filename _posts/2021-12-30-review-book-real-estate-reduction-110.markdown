@@ -44,4 +44,4 @@ header-img: img/review/review-book-real-estate-reduction-110-1.png
 
 * [책소개 - 합법적으로 세금 안 내는 110가지 방법 : 부동산편](http://www.yes24.com/Product/Goods/105537061)
 
-
+> YES24 리뷰어클럽 서평단 자격으로 작성한 리뷰입니다.
