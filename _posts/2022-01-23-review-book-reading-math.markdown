@@ -3,7 +3,7 @@ layout: post
 title: "[리뷰★] 수학을 읽어드립니다"  
 subtitle: "수학과 코딩을 가르치는 별난 영문과 교수의 특별하고 재미있는 수학이야기"  
 categories: review  
-tags: review book 문과용 수학 인공지능 음성학 코딩 님즈 융합 도구 교육 응용 장벽 함수 미분 행렬 벡터 확률 AI    
+tags: review book 문과용 수학 인공지능 음성학 코딩 남즈 융합 도구 교육 응용 장벽 함수 미분 행렬 벡터 확률 AI    
 comments: true  
 header-img: img/review/review-book-reading-math-1.png
 ---  
