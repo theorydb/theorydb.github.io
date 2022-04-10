@@ -66,4 +66,4 @@ header-img: img/review/review-book-make-good-friends-1.png
 
 * [책소개 - 친구 잘 사귀는 법](http://www.yes24.com/Product/Goods/108179521)
 
-
+> YES24 리뷰어클럽 서평단 자격으로 작성한 리뷰입니다.
