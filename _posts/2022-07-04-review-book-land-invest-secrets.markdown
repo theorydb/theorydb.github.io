@@ -94,3 +94,5 @@ header-img: img/review/review-book-land-invest-secrets-1.png
 ---
 
 * [책소개 - 1000억 땅부자들의 토지 투자 시크릿](http://www.yes24.com/Product/Goods/109857317)
+
+> YES24 리뷰어클럽 서평단 자격으로 작성한 리뷰입니다.
