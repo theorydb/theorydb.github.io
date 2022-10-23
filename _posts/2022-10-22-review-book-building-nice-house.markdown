@@ -5,7 +5,7 @@ subtitle: "건축주와 건축가가 알려주는 집짓기의 모든 것 A to Z
 categories: review  
 tags: review book 아이디어 설계 경험담 디테일 건축 집짓기 노하우 재료 토지 가구 물건 햇살 바람   
 comments: true  
-header-img: img/reviewreview-book-building-nice-house-1.png
+header-img: img/review/review-book-building-nice-house-1.png
 ---  
   
 > `즐거운상상` 출판사의 `"살기 좋은 집 짓기 50(주부의벗사 저/박승희 역)"`를 읽고 작성한 리뷰입니다.  
