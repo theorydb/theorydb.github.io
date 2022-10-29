@@ -16,7 +16,13 @@ header-img: img/review/review-book-concept-of-wealth-power-1.png
 
 > 
 
+
+
 삶의 큰 변화는 경제와 정치에서 비롯된다.
+
+
+요약함으로써 외워야할 정도로 핵심을 잘 추스린다. 
+
 
 교과서는 의외로 핵심 개념을 알차게 담아내고 있다. 
 그림2
