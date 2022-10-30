@@ -1,6 +1,6 @@
 ---  
 layout: post  
-title: "[리뷰] 미르카, 수학에 빠지다 6"  
+title: "[리뷰★] 미르카, 수학에 빠지다 6"  
 subtitle: "내일과 푸앵카레 추측"  
 categories: review  
 tags: review book 수학 소설 한붓그리기 뫼비우스띠 테트라 다양체 미분방정식 가우스곡률 영감 끈기 푸앵카레 추측   
