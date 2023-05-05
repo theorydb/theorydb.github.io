@@ -81,3 +81,5 @@ header-img: img/review/review-book-class-mentoring-1.png
 ---
 
 * [책소개 - 평생 연금 받는 온라인 클래스 멘토링](http://www.yes24.com/Product/Goods/118279169)
+
+> YES24 리뷰어클럽 서평단 자격으로 작성한 리뷰입니다.
