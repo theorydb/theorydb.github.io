@@ -26,7 +26,7 @@ header-img: img/review/review-book-ml-python-cookbook-1.png
 
 8장~12장에는 주로 `전처리` 내용을 다룬다. OpenCV로 이미지를 다루는 방법에서부터 차원 축소 등의 피처 엔지니어링 기법도 다루며 모델을 평가하는 방법이나 선택하는 방법 등 실무에 자주 활용되는 파이프라인의 큰 그림을 포괄적으로 이해할 수 있는 파트이다.
 ![OpenCV](https://theorydb.github.io/assets/img/review/review-book-ml-python-cookbook-2.png)  
-![PCA](https://theorydb.github.io/assets/img/review/review-book-ml-python-cookbook-3.png)  
+![PCA](https://theorydb.github.io/assets/img/review/review-book-ml-python-cookbook--3.png)  
 
 14장~19장에는 가장 흔하게 널리 알려진 `ML모델`을 하나씩 살펴본다. 회귀나 분류 모델은 물론 나이브베이즈나 군집 모델에 대해서도 상세히 실습해 볼 수 있다. 또한 기본 베이스라인 수준의 코드들이 잘 갖춰져있기에 이 책의 모델을 조금만 수정하면 실무 어디에도 쉽게 활용할 수 있도록 구성된 점이 눈에 띈다. 제목에서 알 수 있듯 이 책이 실무에 많은 도움이 되는 내용이기도 하다.
 
