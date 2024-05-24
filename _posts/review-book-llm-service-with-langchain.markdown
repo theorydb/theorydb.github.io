@@ -15,6 +15,10 @@ header-img: img/review/review-book-llm-service-with-langchain-1.png
 ---
 
 > 
+
+트렌드, 딥러닝 서비스의 큰흐름
+OpenAI API등 LLM을 기술을 빠르게 활용하는 방법 - 기획자 레벨 
+
 ---
 
 * [책소개 - 랭체인으로 LLM 기반의 AI 서비스 개발하기](https://www.yes24.com/Product/Goods/125134177)
