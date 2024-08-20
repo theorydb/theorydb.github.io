@@ -22,7 +22,7 @@ header-img: img/review/review-book-hard-to-be-human-1.png
 저자의 해석 6방향 
 
 
-
+![본질](https://theorydb.github.io/assets/img/review/review-book-hard-to-be-human-2.png)  
 
 ---
 
