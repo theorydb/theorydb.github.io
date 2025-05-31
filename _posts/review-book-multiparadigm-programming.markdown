@@ -14,7 +14,7 @@ header-img: img/review/review-book-multiparadigm-programming-1.png
 ---
 
 > 
-
+  
 
 ---
 

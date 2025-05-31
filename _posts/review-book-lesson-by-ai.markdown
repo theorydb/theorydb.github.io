@@ -17,8 +17,8 @@ header-img: img/review/review-book-lesson-by-ai-1.png
 ---
 
 > 
-
-
+ 
+ 
 ---
 
 * [책소개 - 열정민쌤의 챗GPT&AI 수업 실전서](https://www.yes24.com/product/goods/146143006)
