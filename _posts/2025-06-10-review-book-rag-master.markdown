@@ -54,7 +54,7 @@ Self RAG나 자체교정 RAG 파트만 봐도 다른 레퍼런스들은 쓸데�
 ![자체교정 RAG](https://theorydb.github.io/assets/img/review/review-book-rag-master-11.png)  
 
 더불어 추후 필요시 논문이나 `다른 이론과 연계`하여 서비스를 확장할 수 있도록 도와준다. 본문에 반영하기엔 너무 방대한 기술이지만 추후 서비스 확장 혹은 또 다른 해결책을 찾을 때 도움이 될 수 있는 연계 연구자료가 군데군데 수록되어있어 실무에 매우 유익했다. 아래 그림과 같이 그리닝 기법의 연구 내용 소개가 그 예시이다.
-![Gleaning]](https://theorydb.github.io/assets/img/review/review-book-rag-master-10.png)  
+![Gleaning](https://theorydb.github.io/assets/img/review/review-book-rag-master-10.png)  
 
 후반부는 파인튜닝이 핵심이다. 개인적으로는 실무에서 궁극적으로 파인튜닝 LLM을 로컬에서 도입할 예정인데, `LLM Qwen 파인튜닝` 실습 부분은 로컬 LLM 전반을 이해하는데 많은 도움을 받을 수 있었다. 
 
