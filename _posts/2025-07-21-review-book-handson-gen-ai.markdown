@@ -3,7 +3,7 @@ layout: post
 title: "[리뷰] 핸즈온 생성형 AI"  
 subtitle: "GPT, 라마, 뮤직젠, 스테이블 디퓨전으로 배우는 트랜스포머와 확산 모델 활용법"  
 categories: review  
-tags: review book Runway AI 영상 3D Text to Video 립싱크 영화 영상 쇼츠 홍보영상 광고 미래 영상기술 GAN    
+tags: review book AI 트랜스포머 VAE GAN 오토인코더 스테이블디퓨전 파인튜닝 드림부스 인페인팅 컨트롤넷 오디오 허깅페이스 멀티모달   
 comments: true  
 header-img: img/review/review-book-handson-gen-ai-1.png
 ---  
