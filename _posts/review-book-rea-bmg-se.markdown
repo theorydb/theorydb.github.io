@@ -10,6 +10,8 @@ header-img: img/review/review-book-rea-bmg-se-1.png
   
 > `박문각` 출판사의 `"2025 박문각 공인중개사 하천재의 중요비교정리와 출제예상지문(하헌진 편저)"`를 읽고 작성한 리뷰입니다.  
 
+> “예스24 리뷰어클럽 서평단 자격으로 도서를 제공받고 작성한 리뷰입니다.”  
+
 ![표지](https://theorydb.github.io/assets/img/review/review-book-rea-bmg-se-1.png)  
 
 ---
@@ -20,6 +22,8 @@ header-img: img/review/review-book-rea-bmg-se-1.png
 ![세부비교](https://theorydb.github.io/assets/img/review/review-book-rea-bmg-se-2.png)  
 ![예상문제](https://theorydb.github.io/assets/img/review/review-book-rea-bmg-se-4.png)  
 
+
+#리뷰어클럽리뷰
 
 ---
 
