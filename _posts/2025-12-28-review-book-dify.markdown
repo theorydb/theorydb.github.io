@@ -49,7 +49,7 @@ Dify에서 연동가능한 각종 Agent API 목록이나, 네이버와의 MCP �
 ![워크플로우](https://theorydb.github.io/assets/img/review/review-book-dify-5.png)  
 
 사실 여기까지만 해도 참 높은 점수를 주고 싶은 책인데 마지막 부록 부분에서는 온프레미스 방식으로 Dify를 설치하는 부분, Ollama나 Qwen3와 같은 오픈소스 LLM을 설치하는 방법도 안내를 하고 있어 현존하는 AI 대세 기술을 집대성한 느낌이 들었다. AI 시대에도 책이 가지는 가치와 방향성을 잘 드러내는 양서라는 생각이 들었다. 
-![Ollama]](https://theorydb.github.io/assets/img/review/review-book-dify-6.png)  
+![Ollama](https://theorydb.github.io/assets/img/review/review-book-dify-6.png)  
 
 그 외에도 Zapier와의 연동을 통해 플랫폼 구글, 슬랙 등 대세 플랫폼과의 연동은 물론 AI가 상황을 판단하고 최적의 행동을 선택하는 지능형 자동화에 이르기까지 생태계 전반을 엮어주는 책이기에 단순히 Dify를 넘어 빠르게 AI 트렌드 변화를 파악하기에 제 격이다. 
 
