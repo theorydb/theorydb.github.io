@@ -1,6 +1,6 @@
 ---  
 layout: post  
-title: "[리뷰] 우리, 프로그래머들 We, Programmers"  
+title: "[리뷰★] 우리, 프로그래머들 We, Programmers"  
 subtitle: "AI 시대에 잊혀 가는 ‘프로그래머 정신’을 다시 깨우다"  
 categories: review  
 tags: review book AI 프로그래머 마틴 세대 컴퓨터 역사 거장 튜링 다익스트라 프로그래밍 하드웨어 웹 전환점 반추   
